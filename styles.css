@@ -136,6 +136,9 @@ main {
 
 .hero {
     background-image: url(src/img/img-hero.jpg);
+    background-size: cover;
+    /* taille à changer !! */
+    height: 85vh;
 }
 
 
