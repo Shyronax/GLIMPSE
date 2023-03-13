@@ -27,6 +27,8 @@ body {
   /* --color-danger: #dc2626; */
   /* --color-danger-hover: #991b1b; */
   --color-card-header: #420F10;
+
+  --title: 'Megrim', cursive;
 }
 
 h1,
