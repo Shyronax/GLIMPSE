@@ -134,6 +134,10 @@ main {
  *              HERO             *
  * ----------------------------- */
 
+.hero {
+    background-image: url(src/img/img-hero.jpg);
+}
+
 
 /* ----------------------------- *
  *              CARD             *
