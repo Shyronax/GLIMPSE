@@ -132,6 +132,7 @@ main {
 .logo__text {
     font-family: var(--title);
     -webkit-text-stroke: 0.6px var(--color-light);
+    width: 50%;
 }
 
 .list {
