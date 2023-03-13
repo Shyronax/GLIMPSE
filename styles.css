@@ -56,3 +56,46 @@ p,
 span {
   font-weight: 500;
 }
+
+/* text */
+.text {
+    font-size: 1rem;
+}
+
+.text--semi-bold {
+    font-weight: 600;
+}
+
+/* button */
+.btn {
+    padding: 0.75rem 1rem;
+}
+
+.btn--primary {
+    color: var(--color-primary-text);
+    background-color: var(--color-primary);
+    text-transform: uppercase;
+}
+
+.btn--secondary {
+    background-color: #86463D;
+}
+
+/* ----------------------------- *
+ *            NAVBAR             *
+ * ----------------------------- */
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+}
+
+.list {
+    list-style: none;
+    display: flex;
+}
+
