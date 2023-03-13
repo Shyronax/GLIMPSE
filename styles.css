@@ -81,6 +81,8 @@ h1 {
 /* button */
 .btn {
     padding: 0.75rem 1rem;
+    width: fit-content;
+    height: fit-content;
 }
 
 .btn--primary {
@@ -95,8 +97,10 @@ h1 {
 }
 
 /* flex */
-.display-flex {
+.flex {
     display: flex;
+    align-items: center;
+    justify-content: center;
     gap: 1rem;
 }
 
@@ -135,23 +139,13 @@ main {
 }
 
 /* ----------------------------- *
- *              HERO             *
- * ----------------------------- */
-
-.hero {
-    background-image: url(src/img/img-hero.jpg);
-    background-size: cover;
-    /* taille à changer !! */
-    height: 85vh;
-}
-
-.hero__title {
-    font-family: var(--title);
-}
-
-/* ----------------------------- *
  *              CARD             *
  * ----------------------------- */
+
+.card {
+    display: flex;
+    flex-direction: column;
+}
 
 .card__header {
     background-color: var(--color-secondary-background);
@@ -162,3 +156,20 @@ main {
 .card__header--sm {
     padding: 1.25rem 2.5rem;
 }
+
+/* ----------------------------- *
+ *              HERO             *
+ * ----------------------------- */
+
+.hero {
+    background-image: url(src/img/img-hero.jpg);
+    background-size: cover;
+    /* taille à changer !! */
+    height: 85vh;
+    justify-content: space-between;
+}
+
+.hero__title {
+    font-family: var(--title);
+}
+
