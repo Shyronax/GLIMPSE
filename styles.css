@@ -1,0 +1,56 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  margin: 1rem;
+  font-family: 'Montserrat', sans-serif;
+  background-color: var(--color-background);
+  color: var(--color-light);
+}
+
+:root {
+  --color-primary: #E5BA63;
+  --color-primary-text: #420F10;
+  /* --color-primary-hover: #218fc7; */
+  --color-background: #75251A;
+  --color-dark: #000000;
+  /* --color-dark-hover: #1b222a; */
+  --color-light: #ffffff;
+  /* --color-light-hover: #ffffff; */
+  /* --color-danger: #dc2626; */
+  /* --color-danger-hover: #991b1b; */
+  --color-card-header: #420F10;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span {
+  margin: 0;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 800;
+}
+
+p,
+span {
+  font-weight: 500;
+}
