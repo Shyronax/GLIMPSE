@@ -9,8 +9,9 @@ html {
 }
 
 body {
+  margin: 0;
   font-family: 'Montserrat', sans-serif;
-  background-color: var(--color-background);
+  background-color: var(--color-primary-background);
   color: var(--color-light);
   display: flex;
   flex-direction: column;
@@ -21,14 +22,14 @@ body {
   --color-primary: #E5BA63;
   --color-primary-text: #420F10;
   /* --color-primary-hover: #218fc7; */
-  --color-background: #75251A;
+  --color-primary-background: #75251A;
+  --color-secondary-background: #420F10;
   --color-dark: #000000;
   /* --color-dark-hover: #1b222a; */
   --color-light: #ffffff;
   /* --color-light-hover: #ffffff; */
   /* --color-danger: #dc2626; */
   /* --color-danger-hover: #991b1b; */
-  --color-card-header: #420F10;
 
   --title: 'Megrim', cursive;
 }
@@ -121,3 +122,15 @@ span {
     gap: 3.75rem;
 }
 
+/* ----------------------------- *
+ *              HERO             *
+ * ----------------------------- */
+
+
+/* ----------------------------- *
+ *              CARD             *
+ * ----------------------------- */
+
+.card__header {
+    background-color: var(--color-secondary-background);
+}
