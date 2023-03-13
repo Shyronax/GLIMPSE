@@ -126,10 +126,12 @@ main {
 
 .logo {
     display: flex;
+    gap: 1rem;
 }
 
 .logo__text {
     font-family: var(--title);
+    -webkit-text-stroke: 0.6px var(--color-light);
 }
 
 .list {
