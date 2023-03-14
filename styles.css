@@ -24,7 +24,8 @@ body {
   --color-primary-text: #420F10;
   /* --color-primary-hover: #218fc7; */
   --color-primary-background: #75251A;
-  --color-secondary-background: #420F10;
+  --color-secondary-background: #FAEFE4;
+  --color-tertiary-background: #420F10;
   --color-dark: #000000;
   /* --color-dark-hover: #1b222a; */
   --color-light: #ffffff;
@@ -169,7 +170,7 @@ main {
 }
 
 .card__header {
-    background-color: var(--color-secondary-background);
+    background-color: var(--color-tertiary-background);
     display: flex;
     justify-content: space-between;
     padding: 2rem 4rem;
@@ -187,14 +188,23 @@ main {
 
 .card__main {
     display: flex;
+    background-color: #86463D;
 }
 
 .card__media {
     width: 60%;
+    /* à changer !! */
+    height: 467px;
 }
 
 .card__info {
     width: 40%;
+    padding: 0 2.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2.5rem;
+    background-color: var(--color-secondary-background);
 }
 
 /* ----------------------------- *
