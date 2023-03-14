@@ -168,10 +168,17 @@ main {
     background-color: var(--color-secondary-background);
     display: flex;
     justify-content: space-between;
+    padding: 2rem 4rem;
 }
 
 .card__header--sm {
     padding: 1.25rem 2.5rem;
+}
+
+.card__title {
+    font-family: var(--title);
+    font-size: 2rem;
+    -webkit-text-stroke: 1px var(--color-light);
 }
 
 /* ----------------------------- *
