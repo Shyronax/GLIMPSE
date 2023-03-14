@@ -120,6 +120,10 @@ h1 {
     flex-direction: column;
 }
 
+.flex--reverse {
+    flex-direction: row-reverse;
+}
+
 /* ----------------------------- *
  *             MAIN              *
  * ----------------------------- */
