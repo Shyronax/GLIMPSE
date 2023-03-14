@@ -207,6 +207,10 @@ main {
     background-color: var(--color-secondary-background);
 }
 
+.card__text {
+    color: var(--color-dark);
+}
+
 /* ----------------------------- *
  *              HERO             *
  * ----------------------------- */
