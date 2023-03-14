@@ -78,6 +78,15 @@ h1 {
     font-weight: 700;
 }
 
+.text--italic {
+    font-style: italic;
+}
+
+.text--highlight {
+    font-weight: 800;
+    color: var(--color-primary-text);
+}
+
 /* button */
 .btn {
     padding: 0.75rem 1rem;
