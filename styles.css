@@ -115,6 +115,10 @@ h1 {
     gap: 1rem;
 }
 
+.flex--column {
+    flex-direction: column;
+}
+
 /* ----------------------------- *
  *             MAIN              *
  * ----------------------------- */
@@ -179,6 +183,10 @@ main {
     font-family: var(--title);
     font-size: 2rem;
     -webkit-text-stroke: 1px var(--color-light);
+}
+
+.card__main {
+    display: flex;
 }
 
 /* ----------------------------- *
