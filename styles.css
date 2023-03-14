@@ -112,6 +112,9 @@ h1 {
 
 main {
     width: 85vw;
+    display: flex;
+    flex-direction: column;
+    gap: 3.75rem;
 }
 
 /* ----------------------------- *
