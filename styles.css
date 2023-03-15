@@ -241,3 +241,28 @@ main {
     max-width: 35vw;
 }
 
+/* ----------------------------- *
+ *             FOOTER            *
+ * ----------------------------- */
+
+.footer {
+    background-color: var(--color-tertiary-background);
+    padding: 2.5rem 5rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__title {
+    font-size: 1.25rem;
+    color: var(--color-primary);
+}
+
+.footer__copyright {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__social-media {
+    display: flex;
+}
