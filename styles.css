@@ -94,6 +94,7 @@ h1 {
     width: fit-content;
     height: fit-content;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .btn--primary {
