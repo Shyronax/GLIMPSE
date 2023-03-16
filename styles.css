@@ -277,6 +277,7 @@ main {
 
 .review-card {
     background-color: var(--color-light);
+    padding: 1.5rem;
 }
 
 /* ----------------------------- *
