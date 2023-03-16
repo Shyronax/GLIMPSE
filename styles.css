@@ -278,6 +278,8 @@ main {
 .review-card {
     background-color: var(--color-light);
     padding: 1.5rem;
+    border: 3px solid var(--color-primary-text);
+    border-radius: 1rem;
 }
 
 /* ----------------------------- *
