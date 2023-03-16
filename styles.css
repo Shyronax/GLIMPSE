@@ -267,6 +267,7 @@ main {
     gap: 2rem;
     padding: 3rem;
     color: var(--color-dark);
+    letter-spacing: normal;
 }
 
 .container__title {
