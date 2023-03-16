@@ -313,6 +313,10 @@ main {
     font-family: 'Montserrat', sans-serif;
 }
 
+.form__input:focus {
+    border: 4px solid var(--color-tertiary-background);
+}
+
 .form__input--error {
     border-color: var(--color-error);
 }
