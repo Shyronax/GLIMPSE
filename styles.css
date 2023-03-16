@@ -134,6 +134,11 @@ a {
     background-color: #86463D;
 }
 
+/* list */
+.list--none {
+    list-style: none;
+}
+
 /* flex */
 .flex {
     display: flex;
