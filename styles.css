@@ -291,6 +291,14 @@ main {
     gap: 0.5rem;
 }
 
+.form__input {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 0.75rem;
+    border: 2px solid var(--color-tertiary-background);
+    font-family: 'Montserrat', sans-serif;
+}
+
 /* ----------------------------- *
  *             FOOTER            *
  * ----------------------------- */
