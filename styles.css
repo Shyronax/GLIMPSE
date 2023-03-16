@@ -246,6 +246,18 @@ main {
 }
 
 /* ----------------------------- *
+ *           CONTAINER           *
+ * ----------------------------- */
+
+.container {
+    background-color: var(--color-secondary-background);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ----------------------------- *
  *             FOOTER            *
  * ----------------------------- */
 
