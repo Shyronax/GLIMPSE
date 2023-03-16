@@ -99,6 +99,8 @@ a {
 
 .link-back {
     font-size: 2rem;
+    position: absolute;
+    left: 10vh;
 }
 
 /* button */
