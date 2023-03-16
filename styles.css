@@ -309,7 +309,7 @@ main {
     width: 100%;
     padding: 1rem;
     border-radius: 0.75rem;
-    border: 2px solid var(--color-tertiary-background);
+    border: 3px solid var(--color-tertiary-background);
     font-family: 'Montserrat', sans-serif;
 }
 
