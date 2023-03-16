@@ -313,6 +313,11 @@ main {
     font-family: 'Montserrat', sans-serif;
 }
 
+.form__input--error {
+    border-color: var(--color-error);
+}
+
+
 .form__link {
     text-decoration: none;
     font-weight: 500;
