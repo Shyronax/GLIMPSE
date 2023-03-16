@@ -274,6 +274,11 @@ main {
     color: var(--color-primary-text);
 }
 
+.container__link {
+    color: var(--color-primary-text);
+    font-weight: 400;
+}
+
 /* ----------------------------- *
  *              FORM             *
  * ----------------------------- */
