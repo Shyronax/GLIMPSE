@@ -179,6 +179,7 @@ main {
     border-bottom: var(--color-light) solid 1px;
     padding: 20px 16px;
     position: fixed;
+    z-index: 100;
     background-color: var(--color-primary-background);
 }
 
