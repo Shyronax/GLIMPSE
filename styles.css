@@ -271,6 +271,12 @@ main {
     gap: 1.5rem;
 }
 
+.form__field {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
 /* ----------------------------- *
  *             FOOTER            *
  * ----------------------------- */
