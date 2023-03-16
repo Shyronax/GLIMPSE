@@ -311,7 +311,6 @@ main {
     border-radius: 0.75rem;
     border: 2px solid var(--color-tertiary-background);
     font-family: 'Montserrat', sans-serif;
-    background-color: var(--color-secondary-background);
 }
 
 .form__link {
