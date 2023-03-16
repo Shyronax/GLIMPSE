@@ -2,10 +2,8 @@
 const icon = document.querySelector('#eyeIcon');
 const password = document.querySelector('#password');
 
-const show = () => {
+eyeIcon.addEventListener('click', function () {
     const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
     password.setAttribute('type', type);
     this.classList.toggle('fa-eye-slash');
-}
-
-eyeIcon.addEventListener('click', show());
+});
