@@ -291,10 +291,6 @@ main {
     letter-spacing: normal;
 }
 
-.container--start {
-    align-items: start;
-}
-
 .container__title {
     color: var(--color-primary-text);
 }
