@@ -133,6 +133,11 @@ h1 {
     flex-direction: row-reverse;
 }
 
+/* position */
+.pos-relative {
+    position: relative;
+}
+
 /* ----------------------------- *
  *             MAIN              *
  * ----------------------------- */
@@ -321,11 +326,17 @@ main {
     border-color: var(--color-error);
 }
 
-
 .form__link {
     text-decoration: none;
     font-weight: 500;
     color: var(--color-primary-text);
+}
+
+.input__icon {
+    /* margin-left: -30px;  */
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
 }
 
 /* ----------------------------- *

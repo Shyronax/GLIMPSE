@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Megrim&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
 </head>
 <body>
     <nav class="nav">
@@ -43,7 +44,10 @@
                     </div>
                     <div class="form__field">
                         <label for="mdp" class="form__label">Mot de passe*</label>
-                        <input type="password" name="mdp" class="form__input">
+                        <div class="pos-relative">
+                            <input type="password" name="mdp" class="form__input">
+                            <i class="far fa-eye input__icon" id="togglePassword"></i>
+                        </div>
                         <a href="" class="form__link">Mot de passe oublié ?</a>
                     </div>
                 </div>
