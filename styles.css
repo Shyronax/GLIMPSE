@@ -289,7 +289,7 @@ main {
     padding: 3rem;
     color: var(--color-dark);
     letter-spacing: normal;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .container--medium {
