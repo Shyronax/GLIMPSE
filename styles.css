@@ -30,7 +30,7 @@ body {
   /* --color-dark-hover: #1b222a; */
   --color-light: #ffffff;
   /* --color-light-hover: #ffffff; */
-  /* --color-danger: #dc2626; */
+  --color-error: #DE330D;
   /* --color-danger-hover: #991b1b; */
 
   --title: 'Megrim', cursive;
