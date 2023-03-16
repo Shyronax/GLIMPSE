@@ -125,6 +125,10 @@ h1 {
     gap: 1rem;
 }
 
+.flex--start {
+    align-items: start;
+}
+
 .flex--column {
     flex-direction: column;
 }
@@ -276,6 +280,7 @@ main {
 .form {
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: center;
     gap: 1.5rem;
 }
