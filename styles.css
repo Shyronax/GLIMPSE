@@ -296,6 +296,13 @@ main {
     color: var(--color-primary-text);
 }
 
+.container__subtitle {
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: var(--color-primary-text);
+}
+
 .container__link {
     color: var(--color-primary-text);
     font-weight: 400;
