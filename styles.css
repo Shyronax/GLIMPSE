@@ -292,6 +292,10 @@ main {
     height: 100vh;
 }
 
+.container--medium {
+    padding: 3rem 12rem;
+}
+
 .container__title {
     color: var(--color-primary-text);
 }
