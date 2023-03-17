@@ -1,5 +1,6 @@
-.nav{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: left;
+  flex-direction: column;
 }
