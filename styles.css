@@ -380,7 +380,7 @@ main {
     align-items: center;
     justify-content: center;
     gap: 2.5rem;
-    width: 35%;
+    width: 25vw;
 }
 
 .form__container {
