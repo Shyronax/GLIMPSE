@@ -131,9 +131,7 @@ function delete($table,$id){
     if($stmt->execute()){
         $response=array(
             'status'=> 1,
-            'status_message'=>'Suppression réalisée.',
-            'status_deleted_id'=>$id,
-            'yo'=>getOneById($table,$id)
+            'status_message'=>'Suppression réalisée.'
         );
     } else {
         $response=array(

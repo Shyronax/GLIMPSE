@@ -43,6 +43,7 @@ switch($request_method){
         }
         break;
     case 'PUT':
+        switch($url[0]){
         case "ticket" : 
             if(!empty($url[1])){
                 updateTicket('ticket',$url[1]);
@@ -57,7 +58,9 @@ switch($request_method){
                throw new Exception ("Vous n'avez pas renseigné le numéro du utilisateur à modifier");
             }
         break;
+        }
     case 'DELETE':
+        switch($url[0]){
         case "ticket" : 
             if(!empty($url[1])){
                 delete('ticket',$url[1]);
@@ -69,7 +72,8 @@ switch($request_method){
             if(!empty($url[1])){
                 delete('utilisateur',$url[1]);
             } else {
-               throw new Exception ("Vous n'avez pas renseigné le numéro du utilisateur à supprimer");
+               throw new Exception ("Vous n'avez pas renseigné l'identifiant de l'utilisateur");
             }
         break;
+        }
 }
