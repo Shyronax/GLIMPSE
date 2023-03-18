@@ -30,7 +30,7 @@ switch($request_method){
             break;
             default : throw new Exception ("La demande n'est pas valide, vérifiez l'url");
         }
-        break;
+    break;
     case 'POST':
         switch($url[0]){
             case "tickets" : 
@@ -41,24 +41,27 @@ switch($request_method){
             break;
             default : throw new Exception ("La demande n'est pas valide, vérifiez l'url");
         }
-        break;
+    break;
     case 'PUT':
         switch($url[0]){
         case "ticket" : 
             if(!empty($url[1])){
-                updateTicket('ticket',$url[1]);
+                parse_str(file_get_contents('php://input'), $_PUT);
+                updateTicket($_PUT,($url[1]));
             } else {
                throw new Exception ("Vous n'avez pas renseigné le numéro du ticket à modifier");
             }
         break;
         case "utilisateur" : 
             if(!empty($url[1])){
-                updateUser('utilisateur',$url[1]);
+                parse_str(file_get_contents('php://input'), $_PUT);
+                updateUser($_PUT,($url[1]));
             } else {
                throw new Exception ("Vous n'avez pas renseigné le numéro du utilisateur à modifier");
             }
         break;
         }
+    break;
     case 'DELETE':
         switch($url[0]){
         case "ticket" : 
@@ -76,4 +79,5 @@ switch($request_method){
             }
         break;
         }
+    break;
 }

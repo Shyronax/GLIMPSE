@@ -98,12 +98,12 @@ function updateTicket($data,$id){
 
 function updateUser($data,$id){
 		$db=dbConnexion();
-    $query="UPDATE ticket SET pseudo_utilisateur=:pseudo, mdp_utilisateur=:mdp, email_utilisateur=:email WHERE id_utilisateur=:id";
+    $query="UPDATE utilisateur SET pseudo_utilisateur=:pseudo, mdp_utilisateur=:mdp, email_utilisateur=:email WHERE id_utilisateur=:id";
 
     $stmt= $db->prepare($query);
     $stmt->bindParam(':pseudo',$data["pseudo"], PDO::PARAM_STR); 
     $stmt->bindParam(':mdp',$data["mdp"], PDO::PARAM_STR); 
-    $stmt->bindParam(':email',$data["email"], PDO::PARAM_INT);
+    $stmt->bindParam(':email',$data["email"], PDO::PARAM_STR);
     $stmt->bindParam(':id',$id, PDO::PARAM_INT); 
 
 
