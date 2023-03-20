@@ -457,6 +457,12 @@ main {
     color: var(--color-primary);
 }
 
+.footer__link-list-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
 .footer__copyright {
     display: flex;
     justify-content: space-between;
