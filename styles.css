@@ -531,8 +531,9 @@ main {
     gap: 0.5rem;
 }
 
-.footer__social-media-img {
-    border-radius: 100%;
+.footer__social-media-logo {
+    font-size: 1.5rem;
+    color: var(--color-primary);
 }
 
 .footer__utility {
