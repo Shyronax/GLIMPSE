@@ -104,25 +104,25 @@
                 </div>
             </div>
             <div class="section">
-                <h2 class="section__title">Conditions Générales d’Utilisation (CGU)</h2>
+                <h2 class="section__title">Conditions Générales d'Utilisation (CGU)</h2>
                 <p class="section__text">Les présentes conditions générales d'utilisation (CGU) régissent l'utilisation du site de réservation de tickets pour les expositions “Milles Cultures, une Origine”. En accédant et en utilisant ce site, vous acceptez ces CGU dans leur intégralité.</p>
                 <div class="sub-section">
                     <h3 class="sub-section__title">Description des services</h3>
                     <p class="sub-section__text">Le site de réservation de tickets pour le musée [nom du musée] permet aux utilisateurs de réserver des tickets pour les expositions du musée en ligne. Le site peut également offrir des fonctionnalités supplémentaires pour les utilisateurs inscrits.</p>
                 </div>
                 <div class="sub-section">
-                    <h3 class="sub-section__title">Création d’un compte utilisateur</h3>
+                    <h3 class="sub-section__title">Création d'un compte utilisateur</h3>
                     <p class="sub-section__text">La création d'un compte utilisateur est facultative et n'est pas nécessaire pour effectuer une réservation. Cependant, si vous choisissez de créer un compte utilisateur, vous devez fournir un login non-utilisé par un autre utilisateur, une adresse e-mail valide et un mot de passe sécurisé. Vous êtes entièrement responsable de la confidentialité de votre mot de passe, de votre compte et ses données. Vous êtes également entièrement responsable de toutes les activités qui se produisent sous votre compte. </p>
 
-                    <p class="sub-section__text">Une fois les données entrées et que l’utilisateur ait validé, un email de confirmation lui est envoyé avec un lien de confirmation sur lequel l’utilisateur doit cliquer pour compléter et finir son inscription.</p>
+                    <p class="sub-section__text">Une fois les données entrées et que l'utilisateur ait validé, un email de confirmation lui est envoyé avec un lien de confirmation sur lequel l'utilisateur doit cliquer pour compléter et finir son inscription.</p>
 
-                    <p class="sub-section__text">Lors de la connexion à son espace personnel, l’utilisateur devra entrer son login ou son adresse email ainsi que son mot de passe.</p>
+                    <p class="sub-section__text">Lors de la connexion à son espace personnel, l'utilisateur devra entrer son login ou son adresse email ainsi que son mot de passe.</p>
 
-                    <p class="sub-section__text">La création d’un compte utilisateur vous permettra de remplir automatiquement vos données lors d’une réservation, vous pourrez choisir d’entrer des données différentes.</p>
+                    <p class="sub-section__text">La création d'un compte utilisateur vous permettra de remplir automatiquement vos données lors d'une réservation, vous pourrez choisir d'entrer des données différentes.</p>
                 </div>
                 <div class="sub-section">
                     <h3 class="sub-section__title">Réservation de tickets</h3>
-                    <p class="sub-section__text">Pour réserver des tickets pour une exposition, vous devez sélectionner la date l’heure de visite, ainsi que le nombre de tickets par catégories (plein tarifs, moins de 26 ans, enfants de moins de 10 ans). Vous devez ensuite remplir une adresse email de réservation avec confirmation de l’adresse (remplies automatiquement dans le cas d’une connexion à un compte).</p>
+                    <p class="sub-section__text">Pour réserver des tickets pour une exposition, vous devez sélectionner la date l'heure de visite, ainsi que le nombre de tickets par catégories (plein tarifs, moins de 26 ans, enfants de moins de 10 ans). Vous devez ensuite remplir une adresse email de réservation avec confirmation de l'adresse (remplies automatiquement dans le cas d'une connexion à un compte).</p>
 
                     <p class="sub-section__text">Une fois le récapitulatif visionné, le paiement se fait en ligne par carte bancaire.</p>
 
@@ -130,14 +130,14 @@
                 </div>
                 <div class="sub-section">
                     <h3 class="sub-section__title">Utilisation du ticket, modification, annulation et remboursement</h3>
-                    <p class="sub-section__text">La vente de billets pour un musée ou de prestations liées à celui-ci est assimilée à une vente de services de loisirs et, conformément aux articles L 221-28° et L 121-21-8-12° du Code de la consommation, n’ouvre aucun droit au délai de rétractation. <span class="text--bold">Ainsi, les billets ne sont échangeables, ni modifiables, ni remboursables dans le cas où nos établissements sont ouverts au public.</span>
-                    <p class="sub-section__text"><span class="text--bold">Il est donc impossible d’échanger vos billets.</span></p>
-                    <p class="sub-section__text">Le billet d’entrée est horodaté et ne vous permet pas de vous rendre au musée un autre jour ou le même jour sur un autre créneau horaire.</p>
+                    <p class="sub-section__text">La vente de billets pour un musée ou de prestations liées à celui-ci est assimilée à une vente de services de loisirs et, conformément aux articles L 221-28° et L 121-21-8-12° du Code de la consommation, n'ouvre aucun droit au délai de rétractation. <span class="text--bold">Ainsi, les billets ne sont échangeables, ni modifiables, ni remboursables dans le cas où nos établissements sont ouverts au public.</span>
+                    <p class="sub-section__text"><span class="text--bold">Il est donc impossible d'échanger vos billets.</span></p>
+                    <p class="sub-section__text">Le billet d'entrée est horodaté et ne vous permet pas de vous rendre au musée un autre jour ou le même jour sur un autre créneau horaire.</p>
                 </div>
                 <div class="sub-section">
                     <h3 class="sub-section__title">Propriété intellectuelle (médias, contenus…)</h3>
                     <h4 class="sub-section__subtitle">Contenu créé en interne</h4>
-                    <p class="sub-section__text">L'ensemble des médias et contenus présents sur ce site web et créés en interne par ses concepteurs et son éditeur, tels que les textes, les images, les vidéos, les sons, les logos ou graphiques, ainsi que leur mise en page, leur organisation et leur présentation, sont la propriété exclusive de l’éditeur ou de ses partenaires, et sont protégés par les lois relatives à la propriété intellectuelle en vigueur.</p>
+                    <p class="sub-section__text">L'ensemble des médias et contenus présents sur ce site web et créés en interne par ses concepteurs et son éditeur, tels que les textes, les images, les vidéos, les sons, les logos ou graphiques, ainsi que leur mise en page, leur organisation et leur présentation, sont la propriété exclusive de l'éditeur ou de ses partenaires, et sont protégés par les lois relatives à la propriété intellectuelle en vigueur.</p>
 
                     <p class="sub-section__text">Toute reproduction, représentation, modification, diffusion, adaptation, traduction, transfert ou exploitation de quelque manière que ce soit, sous quelque forme que ce soit, de tout ou partie de ces contenus, sans notre autorisation, est interdite.</p>
                     <br>
@@ -154,12 +154,12 @@
                 </div>
                 <div class="sub-section">
                     <h3 class="sub-section__title">Limitation de responsabilité</h3>
-                    <p class="sub-section__text">L’IUT de Marne-la-Vallée ne sera en aucun cas responsable de tout dommage, y compris les dommages indirects, consécutifs ou spéciaux, découlant de l'utilisation ou de l'impossibilité d'utiliser le site de réservation de tickets pour les expositions “Mille Cultures, une Origine”. L’IUT de Marne-la-Vallée ne garantit pas que le site sera disponible sans interruption ou sans erreur.</p>
+                    <p class="sub-section__text">L'IUT de Marne-la-Vallée ne sera en aucun cas responsable de tout dommage, y compris les dommages indirects, consécutifs ou spéciaux, découlant de l'utilisation ou de l'impossibilité d'utiliser le site de réservation de tickets pour les expositions “Mille Cultures, une Origine”. L'IUT de Marne-la-Vallée ne garantit pas que le site sera disponible sans interruption ou sans erreur.</p>
                 </div>
                 <div class="sub-section">
                     <span id="autre"></span>
                     <h3 class="sub-section__title">Modification des CGU</h3>
-                    <p class="sub-section__text">L’IUT de Marne-la-Vallée se réserve le droit de modifier ces CGU à tout moment et sans préavis. Les modifications entreront en vigueur dès leur publication sur le site. Il est recommandé aux utilisateurs de consulter régulièrement ces CGU pour prendre connaissance de toute mise à jour.</p>
+                    <p class="sub-section__text">L'IUT de Marne-la-Vallée se réserve le droit de modifier ces CGU à tout moment et sans préavis. Les modifications entreront en vigueur dès leur publication sur le site. Il est recommandé aux utilisateurs de consulter régulièrement ces CGU pour prendre connaissance de toute mise à jour.</p>
                 </div>
             </div>
             <div class="section">
@@ -174,7 +174,7 @@
             <div class="section">
                 <h2 class="section__title">Contenu intégré d'autres sites web</h2>
                 <div class="section__container-text">
-                    <p class="section__text">Chaque personne dont l'image apparaît sur le site certifie l’autorisation du droit à l’image. Nous respectons ce droit et nous ne publions aucune vidéo ou image mettant en scène une personne sans son consentement.</p>
+                    <p class="section__text">Chaque personne dont l'image apparaît sur le site certifie l'autorisation du droit à l'image. Nous respectons ce droit et nous ne publions aucune vidéo ou image mettant en scène une personne sans son consentement.</p>
                 </div>
             </div>
             <div class="section">
