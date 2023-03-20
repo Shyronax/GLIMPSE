@@ -407,7 +407,7 @@ main {
     gap: 1.5rem;
 }
 
-.form__container-date {
+.form__container-date, .form__container-ticket {
     display: flex;
     flex-direction: column;
     gap: 1rem;
