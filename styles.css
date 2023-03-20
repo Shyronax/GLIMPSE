@@ -487,6 +487,10 @@ main {
     gap: 0.5rem;
 }
 
+.footer__social-media-img {
+    border-radius: 100%;
+}
+
 .footer__copyright {
     display: flex;
     justify-content: space-between;
