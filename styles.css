@@ -283,6 +283,7 @@ main {
 
 .card-gallery {
     display: flex;
+    justify-content: center;
 }
 
 .card-gallery__group--column {
