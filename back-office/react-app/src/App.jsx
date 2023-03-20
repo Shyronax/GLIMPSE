@@ -1,30 +1,23 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import { Utilisateurs } from "./components/Utilisateurs";
-import { Login } from "./components/Login";
 import "./App.css";
 
-function App() {
-	const [count, setCount] = useState(0);
+import { Accounts } from "./pages/Accounts";
+import { Settings } from "./pages/Settings";
+import { Stats } from "./pages/Stats";
+import { LoginPage } from "./pages/login";
+import { Nav } from "./components/nav/Nav";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
+function App() {
 	return (
-		<div className="App">
-			<div>
-				<a href="https://vitejs.dev" target="_blank">
-					<img src="/vite.svg" className="logo" alt="Vite logo" />
-				</a>
-				<a href="https://reactjs.org" target="_blank">
-					<img src={reactLogo} className="logo react" alt="React logo" />
-				</a>
-			</div>
-			<h1>Vite + React</h1>
-			<Login />
-			<div className="card">
-				<button onClick={() => setCount((count) => count + 1)}>
-					count is {count}
-				</button>
-			</div>
-		</div>
+		<Router>
+			<Nav />
+			<Routes>
+				<Route exact path="/" element={<Stats />} />
+				<Route path="/connexion" element={<LoginPage />} />
+				<Route path="/parametres" element={<Settings />} />
+				<Route path="/comptes" element={<Accounts />} />
+			</Routes>
+		</Router>
 	);
 }
 
