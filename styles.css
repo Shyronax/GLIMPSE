@@ -409,6 +409,10 @@ main {
     font-weight: 700;
 }
 
+.section__list-item-link, .section__link {
+    color: var(--color-dark);
+}
+
 /* ----------------------------- *
  *              FORM             *
  * ----------------------------- */
