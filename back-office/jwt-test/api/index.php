@@ -15,7 +15,11 @@ switch($request_method){
                 if(!empty($url[1])){
                     getOneById('ticket',$url[1]);
                 } else {
-                   throw new Exception ("Vous n'avez pas renseigné le numéro du ticket");
+                   $response=array(
+                    'status'=> 0,
+                    'status_message'=>"Erreur : vous n'avez pas renseigné le numéro du ticket"
+                    );
+                    sendJSON($response);
                 }
             break;
             case "utilisateurs" : 
@@ -25,10 +29,19 @@ switch($request_method){
                 if(!empty($url[1])){
                     getOneById('utilisateur',$url[1]);
                 } else {
-                   throw new Exception ("Vous n'avez pas renseigné l'identifiant de l'utilisateur");
+                    $response=array(
+                        'status'=> 0,
+                        'status_message'=>"Erreur : vous n'avez pas renseigné l'identifiant de l'utilisateur"
+                    );
+                    sendJSON($response);
                 }
             break;
-            default : throw new Exception ("La demande n'est pas valide, vérifiez l'url");
+            default : 
+                $response=array(
+                    'status'=> 0,
+                    'status_message'=>"Erreur : url non valide"
+                );
+                sendJSON($response);
         }
     break;
     case 'POST':
@@ -42,7 +55,12 @@ switch($request_method){
             case "utilisateurs" : 
                 addUser($_POST);
             break;
-            default : throw new Exception ("La demande n'est pas valide, vérifiez l'url");
+            default : 
+                $response=array(
+                    'status'=> 0,
+                    'status_message'=>"Erreur : url non valide"
+                );
+                sendJSON($response);
         }
     break;
     case 'PUT':
@@ -52,9 +70,9 @@ switch($request_method){
                     parse_str(file_get_contents('php://input'), $_PUT);
                     updateTicket($_PUT,($url[1]));
                 } else {
-                $response=array(
-                        'status'=> 0,
-                        'status_message'=>"Erreur : vous n'avez pas renseigné le numéro du ticket à modifier";
+                    $response=array(
+                            'status'=> 0,
+                            'status_message'=>"Erreur : vous n'avez pas renseigné le numéro du ticket à modifier"
                     );
                     sendJSON($response);
                 }
@@ -64,9 +82,9 @@ switch($request_method){
                     parse_str(file_get_contents('php://input'), $_PUT);
                     updateUser($_PUT,($url[1]));
                 } else {
-                $response=array(
-                        'status'=> 0,
-                        'status_message'=>"Erreur : vous n'avez pas renseigné le numéro du utilisateur à modifier";
+                    $response=array(
+                            'status'=> 0,
+                            'status_message'=>"Erreur : vous n'avez pas renseigné le numéro de l'utilisateur à modifier"
                     );
                     sendJSON($response);
                 }
@@ -79,14 +97,22 @@ switch($request_method){
                 if(!empty($url[1])){
                     delete('ticket',$url[1]);
                 } else {
-                throw new Exception ("Vous n'avez pas renseigné le numéro du ticket à supprimer");
+                    $response=array(
+                        'status'=> 0,
+                        'status_message'=>"Erreur : vous n'avez pas renseigné le numéro du ticket à supprimer"
+                    );
+                    sendJSON($response);
                 }
             break;
             case "utilisateur" : 
                 if(!empty($url[1])){
                     delete('utilisateur',$url[1]);
                 } else {
-                throw new Exception ("Vous n'avez pas renseigné l'identifiant de l'utilisateur");
+                    $response=array(
+                        'status'=> 0,
+                        'status_message'=>"Erreur : vous n'avez pas renseigné l'identifiant de l'utilisateur à supprimer"
+                    );
+                    sendJSON($response);
                 }
             break;
         }

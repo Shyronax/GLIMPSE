@@ -26,6 +26,7 @@ function login($login,$mdp){
             // genere JWT
             $_SESSION["login"]=$result["pseudo"];
             $_SESSION["id"] = $result["id_utilisateur"];
+            header("Location:index.php");
         }
         else {
             // erreur : mot de passe incorrect
