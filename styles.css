@@ -117,6 +117,7 @@ a {
     background-color: var(--color-primary);
     text-transform: uppercase;
     display: flex;
+    align-items: center;
     gap: 0.5rem;
 }
 
