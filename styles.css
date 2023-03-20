@@ -193,7 +193,7 @@ main {
     background-color: var(--color-primary-background);
 }
 
-.logo {
+.nav__logo {
     display: flex;
     gap: 1rem;
 }
@@ -204,10 +204,10 @@ main {
     width: 50%;
 }
 
-.list {
+.nav__menu {
     list-style: none;
     display: flex;
-    gap: 3.75rem;
+    gap: 3.75rem; 
 }
 
 /* ----------------------------- *
