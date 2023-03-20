@@ -95,6 +95,7 @@ h1 {
 /* link */
 a {
     color: var(--color-light);
+    text-decoration: none;
 }
 .link-back {
     font-size: 2rem;
