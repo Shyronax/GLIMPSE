@@ -52,6 +52,9 @@ if (isset($_GET["page"])) {
         case "mentions":
             include "view/view-mentions.php";
             break;
+        case "faq":
+            include "view/view-faq.php";
+            break;
         case "sitemap":
             include "view/view-sitemap.php";
             break;
