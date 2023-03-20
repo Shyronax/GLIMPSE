@@ -26,10 +26,10 @@
                     <h1 class="hero__title">Les Pueblos</h1>
                     <p class="caption">Découvrez l'histoire fascinante et la culture vibrante des Pueblos à travers notre exposition interactive.</p>
                 </div>
-                <div class="btn btn--primary">
+                <a href="controller.php?page=booking1" class="btn btn--primary">
                     <p class="text--bold">Acheter mon billet</p>
                     <i class="fa-solid fa-arrow-right btn__icon"></i>
-                </div>
+                </a>
             </div>
         </div>
         <div class="card">
@@ -47,10 +47,10 @@
                         <p>Épisode de la série <span class="text--italic">« Mille Cultures, une Origine »</span>, l'exposition “Les Pueblos” a pour objectif de <span class="text--highlight">démystifier les origines amérindiennes</span>.</p>
                         <p>Contenus audiovisuels, dispositif interactif, poteries et autres objets sacrés seront l'occasion de vous plonger dans une <span class="text--highlight">ambiance immersive</span>, afin de découvrir l'univers des peuples Pueblos.</p>
                     </div>
-                    <div class="btn btn--primary">
+                    <a href="controller.php?page=exhibition" class="btn btn--primary">
                         <p class="text--bold">En savoir plus</p>
                         <i class="fa-solid fa-arrow-right btn__icon"></i>
-                    </div>
+                    </a>
                 </div>
             </div>
         </div>
@@ -84,10 +84,10 @@
                             <p>de 8h à 18h du lundi au vendredi</p>
                         </div>
                     </div>
-                    <div class="btn btn--primary">
+                    <a href="controller.php?page=visit" class="btn btn--primary">
                         <p class="text--bold">Préparer ma visite</p>
                         <i class="fa-solid fa-arrow-right btn__icon"></i>
-                    </div>
+                    </a>
                 </div>
             </div>
         </div>
