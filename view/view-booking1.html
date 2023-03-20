@@ -45,11 +45,27 @@
                     <div class="form__container-date">
                         <div class="form__field">
                             <label for="date" class="form__label">Date</label>
-                            <input type="date" name='date' class="form__input" required>
+                            <input type="date" name='date' value="2023-03-20" class="form__input" required>
                         </div>
                         <div class="form__field">
                             <label for="time" class="form__label">Heure</label>
-                            <input type="time" name='time' class="form__input" required>
+
+                            <input list="times" type="time" name="time" min="08:00" max="17:00" value="10:00" step="3600" class="form__input" required>
+
+                            <datalist id="times">
+                                <option value="08:00:00">
+                                <option value="09:00:00">
+                                <option value="10:00:00">
+                                <option value="11:00:00">
+                                <option value="12:00:00">
+                                <option value="13:00:00">
+                                <option value="14:00:00">
+                                <option value="15:00:00">
+                                <option value="16:00:00">
+                                <option value="17:00:00">
+                            </datalist>
+
+
                         </div>
                     </div>
                     <div class="form__container-ticket">
