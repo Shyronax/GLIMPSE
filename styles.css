@@ -494,5 +494,7 @@ main {
 .footer__utility {
     display: flex;
     justify-content: space-between;
+    padding: 1rem;
+    border-top: solid 1px var(--color-light);
 }
 
