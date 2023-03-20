@@ -1,38 +1,15 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <?php 
+        include "src/element/head.html";
+    ?>
     <title>Réservation - Mille Cultures, Une Origine</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Megrim&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
-    <script src="../script.js" defer></script>
 </head>
 <body>
-    <nav class="nav">
-        <div class="logo">
-            <img src="../src/img/logo.png" alt="" class="logo__img">
-            <p class="logo__text">Mille cultures, une origine</p>
-        </div>
-        <div class="flex">
-            <ul class="list">
-                <li class="text text--semi-bold">L'exposition</li>
-                <li class="text text--semi-bold">Visiter</li>
-                <li class="text text--semi-bold">Notre histoire</li>
-            </ul>
-            <div class="flex">
-                <div class="btn btn--tertiary">Se connecter</div>
-                <div class="btn btn--primary">
-                    <p class="text--bold">Réserver</p>
-                    <img src="../src/img/arrow-right.svg" alt="" class="btn__icon">
-                </div>
-            </div>
-        </div>
-    </nav>
+    <?php 
+        include "src/element/nav.html";
+    ?>
     <main>
         <div class="container container--small container--center">
             <a href=""><i class="fa-solid fa-arrow-left link-back"></i></a>
@@ -61,5 +38,8 @@
             <a href="" class="btn btn--secondary">Confirmer</a>    
         </div>
     </main>
+    <?php 
+        include "src/element/footer.html";
+    ?>
 </body>
 </html> 
