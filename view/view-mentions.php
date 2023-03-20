@@ -172,7 +172,7 @@
                 </div>
             </div>
             <div class="section">
-                <h2 class="section__title">Contenu intégré d'autres sites web</h2>
+                <h2 class="section__title">Autorisation du droit à l'image pour les vidéos et images</h2>
                 <div class="section__container-text">
                     <p class="section__text">Chaque personne dont l'image apparaît sur le site certifie l'autorisation du droit à l'image. Nous respectons ce droit et nous ne publions aucune vidéo ou image mettant en scène une personne sans son consentement.</p>
                 </div>
@@ -187,6 +187,7 @@
                         <li class="sub-section__list-item"></li>
                     </ul>
                 </div>
+                
                 <div class="sub-section">
                     <h3 class="sub-section__title">Vidéos</h3>
                     <ul class="sub-section__list">
