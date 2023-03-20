@@ -502,3 +502,7 @@ main {
     font-weight: 500;
 }
 
+.footer__utility-link {
+    text-decoration: none;
+}
+
