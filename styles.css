@@ -491,7 +491,7 @@ main {
     border-radius: 100%;
 }
 
-.footer__copyright {
+.footer__utility {
     display: flex;
     justify-content: space-between;
 }
