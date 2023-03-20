@@ -482,11 +482,13 @@ main {
     font-weight: 700;
 }
 
+.footer__social-media {
+    display: flex;
+    gap: 0.5rem;
+}
+
 .footer__copyright {
     display: flex;
     justify-content: space-between;
 }
 
-.footer__social-media {
-    display: flex;
-}
