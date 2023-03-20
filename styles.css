@@ -270,6 +270,11 @@ main {
     flex-direction: column;
 }
 
+.card-gallery__group--row {
+    display: flex;
+    flex-direction: row;
+}
+
 /* ----------------------------- *
  *         BOOKING CARD          *
  * ----------------------------- */
