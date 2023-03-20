@@ -498,3 +498,7 @@ main {
     border-top: solid 1px var(--color-light);
 }
 
+.footer__utility-copy {
+    font-weight: 500;
+}
+
