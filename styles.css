@@ -463,6 +463,10 @@ main {
     gap: 0.5rem;
 }
 
+.footer__link-list-link {
+    text-decoration: none;
+}
+
 .footer__copyright {
     display: flex;
     justify-content: space-between;
