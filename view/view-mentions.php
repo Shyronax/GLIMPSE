@@ -140,7 +140,7 @@
                     <p class="sub-section__text">L'ensemble des médias et contenus présents sur ce site web et créés en interne par ses concepteurs et son éditeur, tels que les textes, les images, les vidéos, les sons, les logos ou graphiques, ainsi que leur mise en page, leur organisation et leur présentation, sont la propriété exclusive de l’éditeur ou de ses partenaires, et sont protégés par les lois relatives à la propriété intellectuelle en vigueur.</p>
 
                     <p class="sub-section__text">Toute reproduction, représentation, modification, diffusion, adaptation, traduction, transfert ou exploitation de quelque manière que ce soit, sous quelque forme que ce soit, de tout ou partie de ces contenus, sans notre autorisation, est interdite.</p>
-
+                    <br>
                     <h4 class="sub-section__subtitle">Contenu provenant de sources tierces</h4>
                     <p class="sub-section__text">Certains médias tels que des images, des vidéos ou des sons utilisés sur ce site web peuvent provenir de différentes sources extérieures. Nous nous efforçons d'utiliser des médias libres de droits ou ayant une licence d'utilisation appropriée, conformément aux lois relatives à la propriété intellectuelle.</p>
 
@@ -157,9 +157,32 @@
                     <p class="sub-section__text">L’IUT de Marne-la-Vallée ne sera en aucun cas responsable de tout dommage, y compris les dommages indirects, consécutifs ou spéciaux, découlant de l'utilisation ou de l'impossibilité d'utiliser le site de réservation de tickets pour les expositions “Mille Cultures, une Origine”. L’IUT de Marne-la-Vallée ne garantit pas que le site sera disponible sans interruption ou sans erreur.</p>
                 </div>
                 <div class="sub-section">
-                    <span id="cgu"></span>
+                    <span id="autre"></span>
                     <h3 class="sub-section__title">Modification des CGU</h3>
                     <p class="sub-section__text">L’IUT de Marne-la-Vallée se réserve le droit de modifier ces CGU à tout moment et sans préavis. Les modifications entreront en vigueur dès leur publication sur le site. Il est recommandé aux utilisateurs de consulter régulièrement ces CGU pour prendre connaissance de toute mise à jour.</p>
+                </div>
+            </div>
+            <div class="section">
+                <h2 class="section__title">Contenu intégré d'autres sites web</h2>
+                <div class="section__container-text">
+                <span id="autorisation"></span>
+                    <p class="section__text">Il se peut que notre site web intègre du contenu provenant de sites web tiers tels que des vidéos, des images, des articles, etc. Le contenu intégré provenant d'autres sites web se comporte exactement de la même manière que si le visiteur avait visité l'autre site web. </p>
+                    <p class="sub-section__text">Ces sites web tiers peuvent collecter des données sur vous, utiliser des cookies, intégrer un suivi tiers supplémentaire et surveiller votre interaction avec le contenu intégré, y compris le suivi de votre interaction avec le contenu intégré si vous avez un compte et êtes connecté à ce site web.</p>
+                    <p class="sub-section__text">Nous ne contrôlons pas la collecte de données ou les pratiques de confidentialité de ces sites tiers et nous ne sommes pas responsables de leurs politiques ou de leurs pratiques. Nous vous recommandons de lire attentivement les politiques de confidentialité des sites web tiers avant de fournir des informations à ces sites ou d'interagir avec leur contenu intégré.</p>
+                </div>
+            </div>
+            <div class="section">
+                <h2 class="section__title">Contenu intégré d'autres sites web</h2>
+                <div class="section__container-text">
+                <span id="media"></span>
+                    <p class="section__text">Chaque personne dont l'image apparaît sur le site certifie l’autorisation du droit à l’image. Nous respectons ce droit et nous ne publions aucune vidéo ou image mettant en scène une personne sans son consentement.</p>
+                </div>
+            </div>
+            <div class="section">
+                <h2 class="section__title">Sources des médias (images & vidéos)</h2>
+                <div class="section__container-text">
+                <span id="autorisation"></span>
+                    <p class="section__text">Chaque personne dont l'image apparaît sur le site certifie l’autorisation du droit à l’image. Nous respectons ce droit et nous ne publions aucune vidéo ou image mettant en scène une personne sans son consentement.</p>
                 </div>
             </div>
         </div>
