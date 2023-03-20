@@ -5,6 +5,11 @@
   font-family: "DM Sans", sans-serif;
 }
 
+p {
+  padding: 0;
+  margin: 0;
+}
+
 .main {
   display: flex;
   min-height: 100vh;
@@ -50,7 +55,9 @@ body {
   right: 2%;
   top: 2%;
   display: flex;
-  border-radius: 1%;
+  padding: 1em;
+  border-radius: 0.4rem;
+  font-weight: 700;
 }
 .button,
 .button__element {
