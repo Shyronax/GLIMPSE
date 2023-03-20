@@ -11,26 +11,9 @@
     <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
-    <nav class="nav">
-        <a href="" class="nav__logo-link">
-            <img src="../src/img/logo.png" alt="" class="nav__logo-img">
-            <p class="nav__logo-name">Mille cultures, une origine</p>
-        </a>
-        <div class="nav__group">
-            <ul class="nav__menu">
-                <li class="nav__menu-item"><a href="" class="nav__menu-item-link">L'exposition</a></li>
-                <li class="nav__menu-item"><a href="" class="nav__menu-item-link">Visiter</a></li>
-                <li class="nav__menu-item"><a href="" class="nav__menu-item-link">Notre histoire</a></li>
-            </ul>
-            <div class="nav__buttons">
-                <div class="btn btn--tertiary">Se connecter</div>
-                <div class="btn btn--primary">
-                    <p class="text--bold">Réserver</p>
-                    <img src="../src/img/arrow-right.svg" alt="" class="btn__icon">
-                </div>
-            </div>
-        </div>
-    </nav>
+    <?php 
+        include "src/element/nav.html";
+    ?>
     <main>
         <div class="card hero">
             <div class="card__header card__header--sm">
