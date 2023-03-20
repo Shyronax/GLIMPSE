@@ -28,7 +28,7 @@
                 </div>
                 <div class="btn btn--primary">
                     <p class="text--bold">Acheter mon billet</p>
-                    <img src="/src/img/arrow-right.svg" alt="" class="btn__icon">
+                    <i class="fa-solid fa-arrow-right btn__icon"></i>
                 </div>
             </div>
         </div>
@@ -49,7 +49,7 @@
                     </div>
                     <div class="btn btn--primary">
                         <p class="text--bold">En savoir plus</p>
-                        <img src="src/img/arrow-right.svg" alt="" class="btn__icon">
+                        <i class="fa-solid fa-arrow-right btn__icon"></i>
                     </div>
                 </div>
             </div>
@@ -86,7 +86,7 @@
                     </div>
                     <div class="btn btn--primary">
                         <p class="text--bold">Préparer ma visite</p>
-                        <img src="src/img/arrow-right.svg" alt="" class="btn__icon">
+                        <i class="fa-solid fa-arrow-right btn__icon"></i>
                     </div>
                 </div>
             </div>
