@@ -198,7 +198,7 @@ main {
     gap: 1rem;
 }
 
-.logo__text {
+.nav__logo-name {
     font-family: var(--title);
     -webkit-text-stroke: 0.6px var(--color-light);
     width: 50%;
