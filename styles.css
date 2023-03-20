@@ -221,6 +221,8 @@ main {
 
 .nav__menu-item-link {
     text-decoration: none;
+    color: var(--color-light);
+    font-weight: 600;
 }
 
 .nav__buttons {
