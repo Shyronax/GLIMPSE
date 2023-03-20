@@ -20,8 +20,19 @@ function login($login,$mdp){
     $stmt->bindParam(':login',$login , PDO::PARAM_STR);
     $stmt->execute();
     $result=$stmt->fetch(PDO::FETCH_ASSOC);
-    return $result;
-        
+
+    if ($result){
+        if(password_verify($_POST['mdp'], $result["mdp"])){
+            // genere JWT
+            $_SESSION["login"]=$result["pseudo"];
+            $_SESSION["id"] = $result["id_utilisateur"];
+        }
+        else {
+            // erreur : mot de passe incorrect
+        }
+    } else {
+        // erreur : login incorrect
+    }    
 };
 
 function getAll($table){
