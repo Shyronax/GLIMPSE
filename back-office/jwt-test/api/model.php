@@ -1,4 +1,5 @@
 <?php
+session_start();
 function dbConnexion(){
     require('db.php');
     return $db;
@@ -9,6 +10,19 @@ function sendJSON($data){
     header('Content-Type: application/json');
     echo json_encode($data, JSON_PRETTY_PRINT);
 }
+
+function login($login,$mdp){
+    $db=dbConnect();
+    $db->query('SET NAMES utf8');
+    $requete="SELECT * FROM utilisateurs WHERE email=:login";
+
+    $stmt=$db->prepare($requete);
+    $stmt->bindParam(':login',$login , PDO::PARAM_STR);
+    $stmt->execute();
+    $result=$stmt->fetch(PDO::FETCH_ASSOC);
+    return $result;
+        
+};
 
 function getAll($table){
     $db=dbConnexion();
@@ -55,8 +69,11 @@ function addUSer($data){
 
     $stmt= $db->prepare($query);
     $stmt->bindParam(':pseudo',$data["pseudo"], PDO::PARAM_STR); 
-    $stmt->bindParam(':mdp',$data["mdp"], PDO::PARAM_STR); 
     $stmt->bindParam(':email',$data["email"], PDO::PARAM_STR); 
+
+    $hash= password_hash($mdp, PASSWORD_DEFAULT);
+    $stmt->bindParam(':mdp', $hash , PDO::PARAM_STR); 
+    $stmt->execute();
 
     if($stmt->execute()){
         $response=array(
@@ -73,7 +90,7 @@ function addUSer($data){
 }
 
 function updateTicket($data,$id){
-		$db=dbConnexion();
+	$db=dbConnexion();
     $query="UPDATE ticket SET jour_ticket=:jour, heure_ticket=:heure, ext_utilisateur=:utilisateur WHERE id_ticket=:id";
 
     $stmt= $db->prepare($query);

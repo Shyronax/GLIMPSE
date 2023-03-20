@@ -45,6 +45,7 @@ switch($request_method){
                 } else {
                     // erreur : login incorrect
                 }
+            break;
             case "tickets" : 
                 addTicket($_POST);
             break;
@@ -61,10 +62,9 @@ switch($request_method){
                 parse_str(file_get_contents('php://input'), $_PUT);
                 updateTicket($_PUT,($url[1]));
             } else {
-               throw new Exception ("Vous n'avez pas renseigné le numéro du ticket à modifier");
                $response=array(
                     'status'=> 0,
-                    'status_message'=>"Erreur : vous n'avez pas renseigné le numéro du utilisateur à modifier";
+                    'status_message'=>"Erreur : vous n'avez pas renseigné le numéro du ticket à modifier";
                 );
                 sendJSON($response);
             }
