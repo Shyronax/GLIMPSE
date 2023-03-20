@@ -14,6 +14,24 @@ if (isset($_GET["page"])) {
             // $_SESSION["url"]='http://'.$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
             include "view/view-home.php";
             break;
+        case "exhibition":
+            include "view/view-exhibition.php";
+            break;
+        case "visit":
+            include "view/view-visit.php";
+            break;
+        case "about":
+            include "view/view-about.php";
+            break;
+        case "inscription":
+            include "view/view-inscription.php";
+            break;
+        case "connection":
+            include "view/view-connection.php";
+            break;
+        case "account":
+            include "view/view-account.php";
+            break;
         case "booking1":
             // $_SESSION["url"]='http://'.$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
             include "view/view-booking1.php";
@@ -30,17 +48,18 @@ if (isset($_GET["page"])) {
             // $_SESSION["url"]='http://'.$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
             include "view/view-booking4.php";
             break;
-        case "inscription":
-            include "view/view-inscription.php";
+
+        case "mentions":
+            include "view/view-mentions.php";
             break;
-        case "connection":
-            include "view/view-connection.php";
+        case "sitemap":
+            include "view/view-sitemap.php";
             break;
-        case "account":
-            include "view/view-account.php";
+        case "error403":
+            include "view/view-error403.php";
             break;
-        case "about":
-            include "view/view-about.php";
+        case "error404":
+            include "view/view-error404.php";
             break;
     }
 };
