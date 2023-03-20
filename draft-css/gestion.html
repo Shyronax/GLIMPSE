@@ -5,17 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="poggers.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
     <title>CSS pur du truc</title>
   </head>
   <body>
-    <div class="Button__container">
-      <button class="Button">Deconnexion</button>
-    </div>
     <main class="main">
       <section class="nav">
         <h1 class="nav__title">Administration</h1>
         <nav class="nav__container">
-          <ul class="nav__item-container">
+          <ul class="nav__item--container">
             <li class="nav__item nav__item--active">
               <img src="../reactback/public/img/house.svg" />
               <a class="nav__link" href="">Tableau de Bord</a>
@@ -34,8 +37,8 @@
       </section>
 
       <section class="gestion">
-        <div class="title__container">
-          <h1 class="tittle">Gestion des comptes</h1>
+        <div class="title">
+          <h1 class="title__element">Gestion des comptes</h1>
           <p class="subtitle">voici machin</p>
         </div>
         <div class="gestion__stats">
@@ -49,31 +52,61 @@
               </tr>
             </thead>
             <tbody>
-              <tr>
+              <tr class="table__cell">
                 <td class="table__user">1</td>
                 <td class="table__user">renédu76</td>
                 <td class="table__user">rene76@mail.com</td>
                 <td>
-                  <button class="action__update"></button>
-                  <button class="action__delete"></button>
+                  <button class="action__update">
+                    <img
+                      src="../reactback/public/img/modify.svg"
+                      alt="modifier"
+                    />
+                  </button>
+                  <button class="action__delete">
+                    <img
+                      src="../reactback/public/img/delete.svg"
+                      alt="supprimer"
+                    />
+                  </button>
                 </td>
               </tr>
-              <tr>
+              <tr class="table__cell">
                 <td>1</td>
                 <td>renédu76</td>
                 <td>rene76@mail.com</td>
                 <td>
-                  <button class="action__update"></button>
-                  <button class="action__delete"></button>
+                  <button class="action__update">
+                    <img
+                      src="../reactback/public/img/modify.svg"
+                      alt="modifier"
+                    />
+                  </button>
+                  <button class="action__delete">
+                    <img
+                      src="../reactback/public/img/delete.svg"
+                      alt="supprimer"
+                    />
+                  </button>
                 </td>
               </tr>
-              <tr>
+              <tr class="table__cell">
                 <td>1</td>
                 <td>renédu76</td>
                 <td>rene76@mail.com</td>
                 <td>
-                  <button class="action__update"></button>
-                  <button class="action__delete"></button>
+                  <button class="action__update">
+                    <img
+                      src="../reactback/public/img/modify.svg"
+                      alt="modifier"
+                    />
+                  </button>
+                  <button class="action__delete">
+                    <img
+                      src="../reactback/public/img/delete.svg"
+                      alt="supprimer"
+                    />
+                  </button>
                 </td>
               </tr>
             </tbody>
@@ -84,6 +117,10 @@
           </div>
         </div>
       </section>
+      <div class="button">
+        <button class="button__element"><p>Deconnexion</p></button>
+        <img src="../reactback/public/img/arrow.svg" alt="déconnexion" />
+      </div>
     </main>
   </body>
 </html>
