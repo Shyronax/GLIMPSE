@@ -506,5 +506,6 @@ main {
 
 .footer__utility-link {
     text-decoration: none;
+    color: var(--color-light);
 }
 
