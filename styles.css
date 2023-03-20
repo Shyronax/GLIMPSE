@@ -261,6 +261,10 @@ main {
     color: var(--color-dark);
 }
 
+.card-gallery {
+    display: flex;
+}
+
 /* ----------------------------- *
  *         BOOKING CARD          *
  * ----------------------------- */
