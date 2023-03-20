@@ -93,10 +93,6 @@ h1 {
 }
 
 /* link */
-a {
-    color: var(--color-dark);
-}
-
 .link-back {
     font-size: 2rem;
     position: absolute;
