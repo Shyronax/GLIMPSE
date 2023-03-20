@@ -40,8 +40,36 @@
                 <h1 class="container__title">Billetterie</h1>
                 <p class="container__subtitle">Choix de réservation (1/4)</p>
             </div>
-            <p class="container__text text--center">Veuillez choisir une date de visite pour l'exposition.
-                L'exposition commence le 26 mars et se termine le 26 juillet. Le bâtiment où se trouve l'exposition n'est ouvert au public que du lundi au vendredi de 8h30 à 18h30.</p>
+            <form action="" class="form" method="post">
+                <div class="form__container">
+                    <div class="form__container-date">
+                        <div class="form__field">
+                            <label for="date" class="form__label">Date</label>
+                            <input type="date" name='date' class="form__input" required>
+                        </div>
+                        <div class="form__field">
+                            <label for="time" class="form__label">Heure</label>
+                            <input type="time" name='time' class="form__input" required>
+                        </div>
+                    </div>
+                    <div class="form__container-ticket">
+                        <h2 class="form__container-ticket-title">Places</h2>
+                        <div class="form__field">
+                            <label for="price1" class="form__label">Plein tarif (5€)</label>
+                            <input type="number" name='price1' class="form__input" min="0" max="10" value="0" required>
+                        </div>
+                        <div class="form__field">
+                            <label for="price2" class="form__label">Moins de 26 ans (2€)</label>
+                            <input type="number" name='price2' class="form__input" min="0" max="10" value="0" required>
+                        </div>
+                        <div class="form__field">
+                            <label for="price3" class="form__label">Enfant de - 10ans (gratuit)</label>
+                            <input type="number" name='price3' class="form__input" min="0" max="10" value="0" required>
+                        </div>
+                    </div>
+                </div>
+                <input type="submit" class="btn btn--secondary" value="Confirmer">
+            </form>
             <a href="" class="btn btn--secondary">Confirmer</a>    
         </div>
     </main>
