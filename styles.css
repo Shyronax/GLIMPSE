@@ -210,6 +210,12 @@ main {
     gap: 3.75rem; 
 }
 
+.nav__buttons {
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+}
+
 /* ----------------------------- *
  *              CARD             *
  * ----------------------------- */
