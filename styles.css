@@ -193,13 +193,11 @@ main {
     background-color: var(--color-primary-background);
 }
 
-.nav__logo {
-    display: flex;
-    gap: 1rem;
-}
-
 .nav__logo-link {
     text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
 }
 
 .nav__logo-name {
