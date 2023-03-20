@@ -1,5 +1,50 @@
-.nav{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.main {
+  display: flex;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  justify-self: flex-start;
+}
+
+.Button__container {
+  display: flex;
+  justify-content: right;
+}
+
+.Button {
+  background-color: #365cbd;
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+}
+.title__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.gestion {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  justify-self: right;
+  flex-wrap: wrap;
+  gap: 5em;
+  background-color: #f4f5fb;
+}
+
+.gestion__stats {
+  display: flex;
 }
