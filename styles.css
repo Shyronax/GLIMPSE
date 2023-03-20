@@ -441,7 +441,7 @@ main {
     gap: 5rem;
 }
 
-.footer__title {
+.footer__link-list-title {
     font-size: 1.25rem;
     color: var(--color-primary);
 }
