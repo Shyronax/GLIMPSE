@@ -478,6 +478,10 @@ main {
     gap: 0.5rem;
 }
 
+.footer__link-list-header {
+    font-weight: 700;
+}
+
 .footer__copyright {
     display: flex;
     justify-content: space-between;
