@@ -219,6 +219,10 @@ main {
     gap: 3.75rem; 
 }
 
+.nav__menu-item-link {
+    text-decoration: none;
+}
+
 .nav__buttons {
     display: flex;
     align-items: center;
