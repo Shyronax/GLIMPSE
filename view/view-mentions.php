@@ -53,12 +53,113 @@
             <div class="section">
                 <h2 class="section__title">Hébergement</h2>
                 <div class="section__container-text">
+                <span id="dpo"></span>
                     <p class="section__text">Hostinger <br>
                     Hostinger International Ltd (Hostinger International Ltd. private limited company) <br>
                     61, rue Lordou Vironos <br>
                     6023 Larnaca, Chypre (”Hostinger”) </p>
                     <a href="mailto:compliance@hostinger.com" class="section__link">compliance@hostinger.com</a> <br>
                     <a href="https://www.hostinger.fr/" class="section__link">hostinger.fr</a>
+                </div>
+            </div>
+            <div class="section">
+                <h2 class="section__title">DPO - Collecte de données</h2>
+                <div class="section__container-text">
+                    <span id="data"></span>
+                    <p class="section__text">Le DPO (Data Protection Officer) peut exercer sur les données recueillies le droit de modification, d'accès, de suppression, d'oubli ainsi que de portabilité. </p>
+                    <p>Les données confiées sont strictement utilisées dans le cadre du fonctionnement de notre site. Pour toute question, contacter le DPO : <br>
+                    Valérie LAPEYRE <br>
+                    2, rue Albert Einstein <br>
+                    77420 Champs-sur-Marne, France </p>
+                    <a href="mailto:valerie.lapeyre@edu.univ-eiffel.fr" class="section__link">valerie.lapeyre@edu.univ-eiffel.fr</a> <br>
+                </div>
+            </div>
+            <div class="section">
+                <h2 class="section__title">Politique de gestion des données personnelles</h2>
+                <p class="section__text">La protection de vos données personnelles est une priorité. Nous nous engageons à respecter la vie privée de nos utilisateurs et à protéger les informations qu'ils nous confient. Cette politique de gestion des données personnelles décrit comment nous collectons, utilisons, stockons et partageons vos données personnelles.</p>
+                <div class="sub-section">
+                    <h3 class="sub-section__title">Collecte de données personnelles</h3>
+                    <p class="sub-section__text">Nous pouvons collecter des données personnelles vous concernant lorsque vous utilisez notre site web. Cela peut inclure des informations telles que votre nom, votre prénom, votre âge, votre adresse email et vos informations bancaires que vous nous fournissez lors de la réservation ou la création de compte sur le site.</p>
+                </div>
+                <div class="sub-section">
+                    <h3 class="sub-section__title">Utilisation des données personnelles</h3>
+                    <p class="sub-section__text">Les données personnelles collectées par le site sont uniquement utilisées pour réaliser les tâches nécessaires au bon fonctionnement de ce dernier. Ces données ne sont pas vendues, échangées ou louées à des tiers. </p>
+                </div>
+                <div class="sub-section">
+                    <h3 class="sub-section__title">Stockage des données personnelles</h3>
+                    <p class="sub-section__text">Nous stockons vos données personnelles aussi longtemps que nécessaire pour remplir les objectifs pour lesquels elles ont été collectées.</p>
+                </div>
+                <div class="sub-section">
+                    <h3 class="sub-section__title">Partage des données personnelles</h3>
+                    <p class="sub-section__text">Nous ne partageons et ne vendons pas vos données personnelles à des tiers. Nous pouvons partager vos données personnelles avec des prestataires de services tiers nécessaires au bon fonctionnement de ce site web comme son hébergeur. Nous exigeons de ces tiers qu'ils respectent la vie privée et la sécurité de vos données personnelles.</p>
+                </div>
+                <div class="sub-section">
+                    <h3 class="sub-section__title">Droits des utilisateurs</h3>
+                    <p class="sub-section__text">Vous avez le droit de demander l'accès, la rectification, la suppression et la portabilité de vos données personnelles. Vous avez également le droit de vous opposer au traitement de vos données personnelles pour des raisons légitimes. Si vous avez des questions ou des préoccupations concernant la gestion de vos données personnelles, veuillez contacter le DPO : <a href="mailto:valerie.lapeyre@edu.univ-eiffel.fr" class="section__link">valerie.lapeyre@edu.univ-eiffel.fr</a>.</p>
+                </div>
+                <div class="sub-section">
+                    <span id="cgu"></span>
+                    <h3 class="sub-section__title">Modification de la politique de gestion des données personnelles</h3>
+                    <p class="sub-section__text">Nous pouvons modifier cette politique de gestion des données personnelles de temps en temps. Toute modification sera affichée sur cette page avec une date de mise à jour.</p>
+                </div>
+            </div>
+            <div class="section">
+                <h2 class="section__title">Conditions Générales d’Utilisation (CGU)</h2>
+                <p class="section__text">Les présentes conditions générales d'utilisation (CGU) régissent l'utilisation du site de réservation de tickets pour les expositions “Milles Cultures, une Origine”. En accédant et en utilisant ce site, vous acceptez ces CGU dans leur intégralité.</p>
+                <div class="sub-section">
+                    <h3 class="sub-section__title">Description des services</h3>
+                    <p class="sub-section__text">Le site de réservation de tickets pour le musée [nom du musée] permet aux utilisateurs de réserver des tickets pour les expositions du musée en ligne. Le site peut également offrir des fonctionnalités supplémentaires pour les utilisateurs inscrits.</p>
+                </div>
+                <div class="sub-section">
+                    <h3 class="sub-section__title">Création d’un compte utilisateur</h3>
+                    <p class="sub-section__text">La création d'un compte utilisateur est facultative et n'est pas nécessaire pour effectuer une réservation. Cependant, si vous choisissez de créer un compte utilisateur, vous devez fournir un login non-utilisé par un autre utilisateur, une adresse e-mail valide et un mot de passe sécurisé. Vous êtes entièrement responsable de la confidentialité de votre mot de passe, de votre compte et ses données. Vous êtes également entièrement responsable de toutes les activités qui se produisent sous votre compte. </p>
+
+                    <p class="sub-section__text">Une fois les données entrées et que l’utilisateur ait validé, un email de confirmation lui est envoyé avec un lien de confirmation sur lequel l’utilisateur doit cliquer pour compléter et finir son inscription.</p>
+
+                    <p class="sub-section__text">Lors de la connexion à son espace personnel, l’utilisateur devra entrer son login ou son adresse email ainsi que son mot de passe.</p>
+
+                    <p class="sub-section__text">La création d’un compte utilisateur vous permettra de remplir automatiquement vos données lors d’une réservation, vous pourrez choisir d’entrer des données différentes.</p>
+                </div>
+                <div class="sub-section">
+                    <h3 class="sub-section__title">Réservation de tickets</h3>
+                    <p class="sub-section__text">Pour réserver des tickets pour une exposition, vous devez sélectionner la date l’heure de visite, ainsi que le nombre de tickets par catégories (plein tarifs, moins de 26 ans, enfants de moins de 10 ans). Vous devez ensuite remplir une adresse email de réservation avec confirmation de l’adresse (remplies automatiquement dans le cas d’une connexion à un compte).</p>
+
+                    <p class="sub-section__text">Une fois le récapitulatif visionné, le paiement se fait en ligne par carte bancaire.</p>
+
+                    <p class="sub-section__text">La réservation de tickets est obligatoire pour visiter une exposition.</p>
+                </div>
+                <div class="sub-section">
+                    <h3 class="sub-section__title">Utilisation du ticket, modification, annulation et remboursement</h3>
+                    <p class="sub-section__text">La vente de billets pour un musée ou de prestations liées à celui-ci est assimilée à une vente de services de loisirs et, conformément aux articles L 221-28° et L 121-21-8-12° du Code de la consommation, n’ouvre aucun droit au délai de rétractation. <span class="text--bold">Ainsi, les billets ne sont échangeables, ni modifiables, ni remboursables dans le cas où nos établissements sont ouverts au public.</span>
+                    <p class="sub-section__text"><span class="text--bold">Il est donc impossible d’échanger vos billets.</span></p>
+                    <p class="sub-section__text">Le billet d’entrée est horodaté et ne vous permet pas de vous rendre au musée un autre jour ou le même jour sur un autre créneau horaire.</p>
+                </div>
+                <div class="sub-section">
+                    <h3 class="sub-section__title">Propriété intellectuelle (médias, contenus…)</h3>
+                    <h4 class="sub-section__subtitle">Contenu créé en interne</h4>
+                    <p class="sub-section__text">L'ensemble des médias et contenus présents sur ce site web et créés en interne par ses concepteurs et son éditeur, tels que les textes, les images, les vidéos, les sons, les logos ou graphiques, ainsi que leur mise en page, leur organisation et leur présentation, sont la propriété exclusive de l’éditeur ou de ses partenaires, et sont protégés par les lois relatives à la propriété intellectuelle en vigueur.</p>
+
+                    <p class="sub-section__text">Toute reproduction, représentation, modification, diffusion, adaptation, traduction, transfert ou exploitation de quelque manière que ce soit, sous quelque forme que ce soit, de tout ou partie de ces contenus, sans notre autorisation, est interdite.</p>
+
+                    <h4 class="sub-section__subtitle">Contenu provenant de sources tierces</h4>
+                    <p class="sub-section__text">Certains médias tels que des images, des vidéos ou des sons utilisés sur ce site web peuvent provenir de différentes sources extérieures. Nous nous efforçons d'utiliser des médias libres de droits ou ayant une licence d'utilisation appropriée, conformément aux lois relatives à la propriété intellectuelle.</p>
+
+                    <p class="sub-section__text">Ci-dessous, nous listons les sources de tous les médias provenant de sources tierces utilisés sur notre site web :</p>
+                    <ul class="sub-section__list">
+                        <li class="sub-section__list-item">Banques d'images et de vidéos : nous utilisons parfois des médias provenant de banques d'images et de vidéos telles que [nom de la banque d'images ou de vidéos].</li>
+                        <li class="sub-section__list-item">Sites web de partage de médias : nous pouvons également utiliser des médias provenant de sites web de partage de médias tels que [nom du site de partage de médias].</li>
+                        <li class="sub-section__list-item">Médias créés par des tiers : enfin, certains médias peuvent être créés par des tiers, tels que des photographes, des artistes ou des vidéastes, et être utilisés avec leur permission.</li>
+                    </ul>
+                    
+                </div>
+                <div class="sub-section">
+                    <h3 class="sub-section__title">Limitation de responsabilité</h3>
+                    <p class="sub-section__text">L’IUT de Marne-la-Vallée ne sera en aucun cas responsable de tout dommage, y compris les dommages indirects, consécutifs ou spéciaux, découlant de l'utilisation ou de l'impossibilité d'utiliser le site de réservation de tickets pour les expositions “Mille Cultures, une Origine”. L’IUT de Marne-la-Vallée ne garantit pas que le site sera disponible sans interruption ou sans erreur.</p>
+                </div>
+                <div class="sub-section">
+                    <span id="cgu"></span>
+                    <h3 class="sub-section__title">Modification des CGU</h3>
+                    <p class="sub-section__text">L’IUT de Marne-la-Vallée se réserve le droit de modifier ces CGU à tout moment et sans préavis. Les modifications entreront en vigueur dès leur publication sur le site. Il est recommandé aux utilisateurs de consulter régulièrement ces CGU pour prendre connaissance de toute mise à jour.</p>
                 </div>
             </div>
         </div>
