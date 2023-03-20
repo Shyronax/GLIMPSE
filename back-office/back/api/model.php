@@ -22,18 +22,24 @@ function login($login,$mdp){
     $result=$stmt->fetch(PDO::FETCH_ASSOC);
 
     if ($result){
-        if(password_verify($_POST['mdp'], $result["mdp"])){
-            // genere JWT
-            $_SESSION["login"]=$result["pseudo"];
-            $_SESSION["id"] = $result["id_utilisateur"];
-            header("Location:index.php");
-        }
-        else {
-            // erreur : mot de passe incorrect
+        if(password_verify($mdp, $result["mdp"])){
+            $response=array(
+                'status'=> 1,
+                'status_message'=>'Connexion réussie.'
+            );
+        } else {
+            $response=array(
+                'status'=> 0,
+                'status_message'=>'Mauvais login/mot de passe.'
+            );
         }
     } else {
-        // erreur : login incorrect
-    }    
+        $response=array(
+                'status'=> 0,
+                'status_message'=>'Mauvais login/mot de passe.'
+            );
+    }
+    sendJSON($response);
 };
 
 function getAll($table){

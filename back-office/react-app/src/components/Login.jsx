@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Button } from "./buttons/Button";
 
 export const Login = () => {
 	const [pseudo, setPseudo] = useState("");
@@ -6,31 +7,35 @@ export const Login = () => {
 
 	const handleSubmit = async (event) => {
 		event.preventDefault();
-		try {
-			const response = await fetch(
-				"http://localhost/github/glimpse/back-office/jwt-test/api/login",
-				{
-					method: "POST",
-					headers: {
-						"Content-Type": "application/json",
-					},
-					body: JSON.stringify({
-						pseudo,
-						mdp,
-					}),
+		fetch("http://localhost/github/glimpse/back-office/back/api/auth", {
+			method: "POST",
+			headers: {
+				"Content-Type": "application/json",
+				"Allow-Control-Allow-Origin": "*", // CORS
+			},
+			body: JSON.stringify({
+				pseudo,
+				mdp,
+			}),
+			mode: "no-cors",
+		})
+			.then((response) => response.json())
+			.then((data) => {
+				if (data.status == 1) {
+					console.log("ok");
+				} else {
+					console.log("pa bon");
 				}
-			);
-			const data = await response.json();
-			console.log(data);
-		} catch (error) {
-			console.error(error);
-		}
+			})
+			.catch((error) => {
+				console.log(error);
+			});
 	};
 
 	return (
 		<form onSubmit={handleSubmit}>
 			<label>
-				pseudo:
+				login:
 				<input
 					type="text"
 					value={pseudo}
@@ -45,7 +50,7 @@ export const Login = () => {
 					onChange={(event) => setMdp(event.target.value)}
 				/>
 			</label>
-			<button type="submit">Submit</button>
+			<Button text="Se connecter" type="submit" />
 		</form>
 	);
 };

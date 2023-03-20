@@ -1,3 +1,10 @@
+import { Utilisateurs } from "../components/utilisateurs";
+
 export const Accounts = () => {
-	return <h1>accounts page</h1>;
+	return (
+		<div>
+			<h1>Gestion des comptes</h1>
+			<Utilisateurs />
+		</div>
+	);
 };
