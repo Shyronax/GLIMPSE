@@ -91,66 +91,8 @@
             </div>
         </div>
     </main>
-    <footer class="footer">
-        <div class="footer__link-section">
-            <div class="footer__link-list">
-                <h1 class="footer__link-list-title">Infos pratiques</h1>
-                <ul class="footer__link-list-group list--none">
-                    <li class="footer__link-list-text"><a href="" class="footer__link-list-link">Préparez votre visite</a></li>
-                    <li class="footer__link-list-text"><a href="" class="footer__link-list-link">Règlement intérieur</a></li>
-                    <li class="footer__link-list-text"><a href="" class="footer__link-list-link">FAQ</a></li>
-                </ul>
-            </div>
-            <div class="footer__link-list">
-                <h1 class="footer__link-list-title">Contact</h1>
-                <ul class="footer__link-list-group list--none">
-                    <li class="footer__link-list-text">Téléphone : <a href="" class="footer__link-list-link">+33 (0)1 60 95 85 90</a></li>
-                    <li class="footer__link-list-text">Email : <a href="mailto:mmi-dir.iut@univ-eiffel.fr" class="footer__link-list-link">mmi-dir.iut@univ-eiffel.fr</a></li>
-                    <li class="footer__link-list-text">Adresse : <a href="" class="footer__link-list-link">2, rue Albert Einstein <br> 77420 Champs-sur-Marne</a></li>
-                </ul>
-            </div>
-            <div class="footer__link-list">
-                <h1 class="footer__link-list-title">Réseaux sociaux</h1>
-                <div class="footer__link-list-section">
-                    <div class="footer__link-list-col">
-                        <h2 class="footer__link-list-header">L'exposition</h2>
-                        <div class="footer__social-media">
-                            <img src="" alt="" class="footer__social-media-img">
-                            <p><a href="" class="footer__link-list-link">@milleculturesuneorigine</a></p>
-                        </div>
-                        <div class="footer__social-media">
-                            <img src="" alt="" class="footer__social-media-img">
-                            <p><a href="" class="footer__link-list-link">@milleculturesuneorigine</a></p>
-                        </div>
-                        <div class="footer__social-media">
-                            <img src="" alt="" class="footer__social-media-img">
-                            <p><a href="" class="footer__link-list-link">@milleculturesuneorigine</a></p>
-                        </div>
-                    </div>
-                    <div class="footer__link-list-col">
-                        <h2 class="footer__link-list-header">Le lieu</h2>
-                        <div class="footer__social-media">
-                            <img src="" alt="" class="footer__social-media-img">
-                            <p><a href="" class="footer__link-list-link">@mmi_champs</a></p>
-                        </div>
-                        <div class="footer__social-media">
-                            <img src="" alt="" class="footer__social-media-img">
-                            <p><a href="" class="footer__link-list-link">@iutmarnelavallee</a></p>
-                        </div>
-                        <div class="footer__social-media">
-                            <img src="" alt="" class="footer__social-media-img">
-                            <p><a href="" class="footer__link-list-link">IUT de Marne-la-Vallée</a></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="footer__utility">
-            <p class="footer__utility-copy">© 2023 - Glimpse</p>
-            <a href="" class="footer__utility-link">Mentions légales</a>
-            <a href="" class="footer__utility-link">Agence Glimpse</a>
-            <a href="" class="footer__utility-link">Plan du site</a>
-        </div>
-    </footer>
+    <?php 
+        include "src/element/footer.html";
+    ?>
 </body>
 </html> 
