@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Megrim&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <?php 
@@ -27,7 +27,7 @@
                 </div>
                 <div class="btn btn--primary">
                     <p class="text--bold">Acheter mon billet</p>
-                    <img src="../src/img/arrow-right.svg" alt="" class="btn__icon">
+                    <img src="/src/img/arrow-right.svg" alt="" class="btn__icon">
                 </div>
             </div>
         </div>
@@ -48,19 +48,19 @@
                     </div>
                     <div class="btn btn--primary">
                         <p class="text--bold">En savoir plus</p>
-                        <img src="../src/img/arrow-right.svg" alt="" class="btn__icon">
+                        <img src="src/img/arrow-right.svg" alt="" class="btn__icon">
                     </div>
                 </div>
             </div>
         </div>
         <div class="card-gallery">
             <div class="card-gallery__group--column">
-                <img src="../src/img/group-pueblos.jpg" alt="">
-                <img src="../src/img/landscape.jpg" alt="">
+                <img src="src/img/group-pueblos.jpg" alt="">
+                <img src="src/img/landscape.jpg" alt="">
             </div>
             <div class="card-gallery__group--row">
-                <img src="../src/img/drawing.jpg" alt="">
-                <img src="../src/img/pueblos.jpg" alt="">
+                <img src="src/img/drawing.jpg" alt="">
+                <img src="src/img/pueblos.jpg" alt="">
             </div>
         </div>
         <div class="card">
@@ -85,7 +85,7 @@
                     </div>
                     <div class="btn btn--primary">
                         <p class="text--bold">Préparer ma visite</p>
-                        <img src="../src/img/arrow-right.svg" alt="" class="btn__icon">
+                        <img src="src/img/arrow-right.svg" alt="" class="btn__icon">
                     </div>
                 </div>
             </div>

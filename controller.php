@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-require "model_blog.php";
+// require "model_blog.php";
 
 if (isset($_SESSION["login"])) {
     verifyAdmin($_SESSION["login"]);
