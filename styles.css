@@ -441,6 +441,11 @@ main {
     gap: 5rem;
 }
 
+.footer__link-section {
+    display: flex;
+    justify-content: space-between;
+}
+
 .footer__link-list-title {
     font-size: 1.25rem;
     color: var(--color-primary);
