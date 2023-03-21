@@ -98,8 +98,7 @@ h1 {
 /* link */
 a, a:hover, a:visited {
     color: var(--color-light);
-    /* text-decoration: none; */
-    /* text-decoration: underline dashed; */
+    text-decoration: none;
 }
 
 .link-back {
