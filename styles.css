@@ -96,18 +96,10 @@ h1 {
 }
 
 /* link */
-a {
+a, a:hover, a:visited {
     color: var(--color-light);
     /* text-decoration: none; */
     /* text-decoration: underline dashed; */
-}
-
-a:hover {
-    color: var(--color-link-hover);
-}
-
-a:visited {
-    color: var(--color-link-visited);
 }
 
 .link-back {
