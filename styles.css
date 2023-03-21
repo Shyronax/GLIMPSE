@@ -32,6 +32,9 @@ body {
   /* --color-light-hover: #ffffff; */
   --color-error: #DE330D;
   /* --color-danger-hover: #991b1b; */
+  --color-link: #420F10;
+  --color-link-hover: #75251A;
+  --color-link-visited: #425A4C;
 
   --title: 'Megrim', cursive;
 }
@@ -95,8 +98,14 @@ h1 {
 /* link */
 a {
     color: var(--color-light);
-    text-decoration: none;
+    /* text-decoration: none; */
+    /* text-decoration: underline dashed; */
 }
+
+a:visited {
+    color: var();
+}
+
 .link-back {
     font-size: 2rem;
     position: absolute;
