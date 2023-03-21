@@ -102,8 +102,12 @@ a {
     /* text-decoration: underline dashed; */
 }
 
+a:hover {
+    color: var(--color-link-hover);
+}
+
 a:visited {
-    color: var();
+    color: var(--color-link-visited);
 }
 
 .link-back {
