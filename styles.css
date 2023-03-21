@@ -101,6 +101,7 @@ a {
     font-size: 2rem;
     position: absolute;
     left: 10vh;
+    color: var(--color-dark);
 }
 
 /* button */
