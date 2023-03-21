@@ -12,7 +12,7 @@
     ?>
     <main class="main">
         <div class="main__banner">
-            <img src="" alt="" class="main__banner-img">
+            <img src="src/img/img-hero.jpg" alt="" class="main__banner-img">
         </div>
         <div class="main__header">
             <h1 class="main__title">L'exposition</h1>
