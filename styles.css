@@ -175,8 +175,12 @@ main {
     width: 85vw;
     display: flex;
     flex-direction: column;
+    padding-top: 12vh;
+}
+
+.main {
     gap: 3.75rem;
-    padding: 12vh 0;
+    padding-bottom: 12vh;
 }
 
 /* ----------------------------- *
