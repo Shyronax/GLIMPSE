@@ -18,7 +18,7 @@
             </div>
             <p class="container__text text--center">Veuillez choisir une date de visite pour l'exposition.</p>
             <p class="container__text text--center">L'exposition commence le <span class="text--bold">26 mars</span> et se termine le <span class="text--bold">26 juillet</span>. Le bâtiment où se trouve l'exposition est ouvert au public du <span class="text--bold">lundi au vendredi</span> de <span class="text--bold">8h00 à 18h00</span>.</p>
-            <p class="container__text text--center">Vous ne pouvez réserver que <span class="text--bold">10 places au maximum</span> par commande. Si vous souhaitez davantage de place pour un groupe, veuillez nous contacter par mail (<a href="mailto:milleculturesuneorigine@gmail.com">milleculturesuneorigine@gmail.com</a>) ou par téléphone (<a href="">+33 (0)1 60 95 85 90</a>).</p>
+            <p class="container__text text--center">Vous ne pouvez réserver que <span class="text--bold">10 places au maximum</span> par commande. Si vous souhaitez davantage de place pour un groupe, veuillez nous contacter par mail (<a href="mailto:milleculturesuneorigine@gmail.com" class="container__link">milleculturesuneorigine@gmail.com</a>) ou par téléphone (<a href="tel:0160958585" class="container__link">+33 (0)1 60 95 85 85</a>).</p>
             <form action="" class="form" method="post">
                 <div class="form__container">
                     <div class="form__container-date">
