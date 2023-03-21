@@ -12,7 +12,7 @@
     ?>
     <main>
         <div class="container container--small container--center">
-            <a href=""><i class="fa-solid fa-arrow-left link-back"></i></a>
+            <a href="controller.php?page=booking1"><i class="fa-solid fa-arrow-left link-back"></i></a>
             <div>
                 <h1 class="container__title">Billetterie</h1>
                 <p class="container__subtitle">Informations personnelles (2/4)</p>
