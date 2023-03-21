@@ -63,9 +63,8 @@
                         </div>
                     </div>
                 </div>
-                <input type="submit" class="btn btn--secondary" value="Confirmer">
             </form>
-            <a href="" class="btn btn--secondary">Confirmer</a>    
+            <a href="controller.php?page=booking2" class="btn btn--secondary">Confirmer</a>    
         </div>
     </main>
     <?php 

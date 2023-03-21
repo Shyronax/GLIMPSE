@@ -35,7 +35,7 @@
                 </div>
             </form>
             <p class="container__text text--center">Si vous avez un compte, <a href="" class="container__link text--bold">connectez-vous</a> et passez cette étape ! Si vous n'en avez pas et que vous le souhaitez, <a href="" class="container__link text--bold">inscrivez-vous</a>.</p>
-            <a href="" class="btn btn--secondary">Confirmer</a>    
+            <a href="controller.php?page=booking3" class="btn btn--secondary">Confirmer</a>    
         </div>
     </main>
     <?php 

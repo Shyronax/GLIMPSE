@@ -29,7 +29,7 @@
                     <i><span class="text--bold">Total :</span> 12€</i>
                 </ul>
             </div>  
-            <a href="" class="btn btn--secondary">Finaliser ma réservation</a>    
+            <a href="controller.php?page=booking4" class="btn btn--secondary">Finaliser ma réservation</a>    
         </div>
     </main>
     <?php 
