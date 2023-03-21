@@ -10,7 +10,7 @@
     <?php 
         include "src/element/nav.html";
     ?>
-    <main class="main">
+    <main>
         <div class="main__banner">
             <img src="src/img/img-hero.jpg" alt="" class="main__banner-img">
         </div>
