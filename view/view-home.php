@@ -10,7 +10,7 @@
     <?php 
         include "src/element/nav.html";
     ?>
-    <main>
+    <main class="main">
         <div class="card hero">
             <div class="card__header card__header--sm">
                 <p class="text--semi-bold">Du 31 mars au 25 juin 2023</p>
