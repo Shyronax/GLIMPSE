@@ -13,7 +13,7 @@ p {
 .main {
   display: flex;
   min-height: 100vh;
-  gap: 4em;
+  gap: 2em;
 }
 
 body {
@@ -29,6 +29,29 @@ body {
   justify-self: flex-start;
   background-color: #f4f5fb;
   padding: 2em;
+  align-items: center;
+}
+
+.nav__title {
+  margin-bottom: 2em;
+}
+
+.nav__item {
+  padding: 1em;
+}
+
+.nav__item--active {
+  background-color: #e9ecf5;
+  border-radius: 10px;
+}
+
+.nav__link {
+  color: #303639;
+  text-decoration: none;
+}
+
+.nav__link:visited {
+  color: #303639;
 }
 
 .nav__item--container {
@@ -39,6 +62,7 @@ body {
   display: flex;
   margin: 0;
 }
+
 .title {
   display: flex;
   flex-direction: column;
@@ -123,7 +147,7 @@ td:has(> .actions) {
 
 .gestion__stats {
   display: flex;
-  gap: 5em;
+  gap: 1em;
 }
 
 .table__cell {
@@ -142,9 +166,14 @@ td:has(> .actions) {
   background-color: #f4f5fb;
   height: 13vh;
   padding: 1em;
-  border-radius: 1rem;
+  border-radius: 10px;
 }
 
 .info__number {
   margin: 0;
+  font-size: 3em;
+}
+
+.info__text {
+  font-size: 1.1rem;
 }
