@@ -1,34 +1,33 @@
-import React, { useState } from "react";
+import { useState, useContext } from "react";
+import { AuthContext } from "../context/AuthContext";
 import { Button } from "./buttons/Button";
 
 export const Login = () => {
 	const [pseudo, setPseudo] = useState("");
 	const [mdp, setMdp] = useState("");
+	const authContext = useContext(AuthContext);
 
-	const handleSubmit = async (event) => {
-		event.preventDefault();
+	const handleSubmit = async (e) => {
+		e.preventDefault();
 		fetch("http://localhost/github/glimpse/back-office/back/api/auth", {
 			method: "POST",
 			headers: {
 				"Content-Type": "application/json",
-				"Allow-Control-Allow-Origin": "*", // CORS
 			},
 			body: JSON.stringify({
 				pseudo,
 				mdp,
 			}),
-			mode: "no-cors",
 		})
 			.then((response) => response.json())
 			.then((data) => {
 				if (data.status == 1) {
+					//faire le JWT ici
+					authContext.login();
 					console.log("ok");
 				} else {
 					console.log("pa bon");
 				}
-			})
-			.catch((error) => {
-				console.log(error);
 			});
 	};
 

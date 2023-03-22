@@ -1,38 +1,23 @@
-import React, { createContext, useState, useEffect } from "react";
+import { createContext, useState } from "react";
 
 export const AuthContext = createContext();
 
-export const AuthProvider = ({ login, mdp, children }) => {
+export const AuthProvider = ({ children }) => {
 	const [isAuthenticated, setIsAuthenticated] = useState(false);
 
-	useEffect(() => {
-		// Envoie une requête pour s'authentifier auprès de l'API
-		fetch("http://localhost/glimpse/back-office/back/api/auth", {
-			method: "POST",
-			headers: {
-				"Content-Type": "application/json",
-				"Access-Control-Allow-Origin": "*",
-			},
-			mode: "no-cors",
-			body: JSON.stringify({
-				login: { login },
-				mdp: { mdp },
-			}),
-		})
-			.then((response) => response.json())
-			.then((data) => {
-				// Vérifie si la réponse de l'API indique que l'authentification a réussi
-				if (data.status === 1) {
-					setIsAuthenticated(true);
-				}
-			})
-			.catch((error) => {
-				console.error("Error authenticating:", error);
-			});
-	}, []);
+	const login = () => {
+		// Effectuez une demande POST pour vérifier les informations d'identification de l'utilisateur
+		// Si l'utilisateur est authentifié, définissez isAuthenticated sur true
+		setIsAuthenticated(true);
+	};
+
+	const logout = () => {
+		// Définissez isAuthenticated sur false lors de la déconnexion de l'utilisateur
+		setIsAuthenticated(false);
+	};
 
 	return (
-		<AuthContext.Provider value={{ isAuthenticated }}>
+		<AuthContext.Provider value={{ isAuthenticated, login, logout }}>
 			{children}
 		</AuthContext.Provider>
 	);

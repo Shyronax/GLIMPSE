@@ -1,20 +1,23 @@
 <?php
 session_start();
+header('Access-Control-Allow-Origin: *');
+header('Access-Control-Allow-Credentials: true');
+header('Access-Control-Allow-Headers: Origin, Content-Type, X-Auth-Token , Authorization');
+
 function dbConnexion(){
     require('db.php');
     return $db;
 }
 
 function sendJSON($data){
-    header('Access-Control-Allow-Origin: *');
     header('Content-Type: application/json');
-    echo json_encode($data, JSON_PRETTY_PRINT);
+    echo json_encode($data);
 }
 
 function login($login,$mdp){
-    $db=dbConnect();
+    $db=dbConnexion();
     $db->query('SET NAMES utf8');
-    $requete="SELECT * FROM utilisateurs WHERE email=:login";
+    $requete="SELECT * FROM utilisateur WHERE pseudo_utilisateur=:login";
 
     $stmt=$db->prepare($requete);
     $stmt->bindParam(':login',$login , PDO::PARAM_STR);
@@ -22,7 +25,7 @@ function login($login,$mdp){
     $result=$stmt->fetch(PDO::FETCH_ASSOC);
 
     if ($result){
-        if(password_verify($mdp, $result["mdp"])){
+        if(password_verify($mdp, $result["mdp_utilisateur"])){
             $response=array(
                 'status'=> 1,
                 'status_message'=>'Connexion réussie.'
