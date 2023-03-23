@@ -12,7 +12,7 @@
     ?>
     <main>
         <div class="container">
-            <h1 class="container__title">Bienvenue Ponito !</h1>
+            <h1 class="container__title">Mot de passe oublié</h1>
             <p class="container__text">*Champs obligatoire</p>
             <p class="container__text">Renseigner une adresse email et validez pour recevoir un lien de réinitialisation du mot de passe.</p>
             <form action="" class="form" method="post">
