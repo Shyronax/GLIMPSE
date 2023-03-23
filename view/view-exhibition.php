@@ -32,7 +32,7 @@
                     </div>
                     <p class="section__text text--bold"></p>
                     <p class="section__text"></p>
-                    <img src="" alt="">
+                    <img src="src/img/plan-expo-fr.png" alt="">
                 </div>
                 <div class="section">
                     <div class="section__header">
