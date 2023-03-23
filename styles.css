@@ -478,6 +478,10 @@ main {
     color: var(--color-dark);
 }
 
+.section__list-item-link {
+    text-decoration: none;
+}
+
 /* ----------------------------- *
  *              FORM             *
  * ----------------------------- */
