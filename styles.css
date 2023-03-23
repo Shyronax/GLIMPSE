@@ -114,7 +114,6 @@ a, a:hover, a:visited {
     width: fit-content;
     height: fit-content;
     cursor: pointer;
-    text-decoration: none;
 }
 
 .btn--primary {
