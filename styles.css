@@ -525,6 +525,10 @@ main {
     font-weight: 400;
 }
 
+.footer__link-list-link:hover {
+    text-decoration: underline;
+}
+
 .footer__link-list-section {
     display: flex;
     gap: 2rem;
