@@ -475,7 +475,7 @@ main {
 }
 
 .section__list-item {
-    line-height: 2.5;
+    line-height: 2;
 }
 
 .sub-section__list-item-link, .section__list-item-link, .section__link {
