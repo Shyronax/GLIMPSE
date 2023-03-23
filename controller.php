@@ -57,6 +57,10 @@ if (isset($_GET["page"])) {
             // $_SESSION["url"]='http://'.$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
             include "view/view-booking4.php";
             break;
+        case "booking5":
+            // $_SESSION["url"]='http://'.$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
+            include "view/view-booking5.php";
+            break;
 
         case "mentions":
             include "view/view-mentions.php";
