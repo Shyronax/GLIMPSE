@@ -133,6 +133,7 @@ h1 {
 
 .btn--tertiary {
     background-color: #86463D;
+    color: var(--color-light);
 }
 
 /* list */
