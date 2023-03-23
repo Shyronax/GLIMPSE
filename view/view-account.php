@@ -25,7 +25,7 @@
                 </div>
             </div>
             <div class="section">
-                <!-- <table class="table">
+                <table class="table">
                     <caption class="table__caption">Mes réservations</caption>
                     <thead class="table__header">
                         <tr class="table__row">
@@ -52,7 +52,7 @@
                             <td>10€</td>
                         </tr>
                     </tbody>
-                </table> -->
+                </table>
                 <h2 class="section__title">Mes réservations</h2>
                 <div class="booking-card">
                     <h3 class="booking-card__title">Réservation #001</h3>
