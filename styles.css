@@ -458,6 +458,10 @@ main {
     gap: 0.5rem;
 }
 
+.section-gallery__col-img {
+    width: 12rem;
+}
+
 .section__list-item-link, .section__link {
     color: var(--color-dark);
 }
