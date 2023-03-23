@@ -541,6 +541,9 @@ main {
     align-items: center;
     gap: 0.5rem;
     text-decoration: none;
+}
+
+.footer__social-media-text {
     color: var(--color-light);
 }
 
