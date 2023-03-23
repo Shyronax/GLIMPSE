@@ -19,6 +19,12 @@
             <h1 class="main__title">Notre histoire</h1>
         </div>
         <div class="container flex--start">
+        <nav aria-label="Breadcrumb" class="breadcrumb">
+            <ul class="breadcrumb__list">
+                <li class="breadcrumb__list-item"><a href="controller.php?page=home" class="breadcrumb__list-item-link">Accueil</a></li>
+                <li class="breadcrumb__list-item"><span aria-current="page">Notre histoire</span></li>
+            </ul>
+        </nav>
             <div class="main-container">
                 <div class="section">
                     <div class="section__header">

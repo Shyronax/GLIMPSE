@@ -250,6 +250,33 @@ main {
 }
 
 /* ----------------------------- *
+ *          BREADCRUMB           *
+ * ----------------------------- */
+
+ .breadcrumb {
+    padding: 0 .5rem;
+}
+
+.breadcrumb__list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+    
+.breadcrumb__list-item:not(:last-child)::after {
+    display: inline-block;
+    margin: 0 .25rem;
+    content: ">";
+}
+
+.breadcrumb__list-item-link {
+    color: var(--color-primary-text);
+}
+
+/* ----------------------------- *
  *           CHAT BOT            *
  * ----------------------------- */
 
