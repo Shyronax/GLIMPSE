@@ -405,6 +405,10 @@ main {
     padding: 3rem 20rem;
 }
 
+.container--row {
+    flex-direction: row;
+}
+
 .container__title {
     color: var(--color-primary-text);
 }
