@@ -273,7 +273,11 @@ main {
 }
 
 .breadcrumb__list-item-link {
-    color: var(--color-primary-text);
+    color: var(--color-link);
+}
+
+.breadcrumb__list-item-link:hover {
+    color: var(--color-link-hover);
 }
 
 /* ----------------------------- *
@@ -457,7 +461,11 @@ main {
 }
 
 .container__link {
-    color: var(--color-primary-text);
+    color: var(--color-link);
+}
+
+.container__link:hover {
+    color: var(--color-link-hover);
 }
 
 .main-container {
@@ -537,6 +545,14 @@ main {
     color: var(--color-dark);
 }
 
+.sub-section__list-item-link:hover, .section__list-item-link:hover, .section__link:hover {
+    color: var(--color-link-hover);
+}
+
+.sub-section__list-item-link:visited, .section__list-item-link:visited, .section__link:visited {
+    color: var(--color-link-visited);
+}
+
 .section__list-item-link {
     text-decoration: none;
 }
@@ -597,7 +613,11 @@ main {
 .form__link {
     text-decoration: none;
     font-weight: 500;
-    color: var(--color-primary-text);
+    color: var(--color-link);
+}
+
+.form__link:hover {
+    color: var(--color-link-hover);
 }
 
 .input__icon {
