@@ -10,6 +10,7 @@
     <?php 
         include "src/element/nav.html";
     ?>
+    <img src="src/img/drawing/icon-children.png" alt="" class="chatbot-icon">
     <main>
         <div class="main__banner">
             <img src="src/img/img-hero.jpg" alt="" class="main__banner-img">
