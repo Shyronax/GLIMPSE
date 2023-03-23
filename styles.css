@@ -449,7 +449,7 @@ main {
 
 .section-gallery__row {
     display: flex;
-    justify-content: space-between;
+    gap: 2rem;
 }
 
 .section-gallery__col {
