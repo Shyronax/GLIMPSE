@@ -515,9 +515,14 @@ main {
     gap: 0.5rem;
 }
 
+.footer__link-list-text {
+    font-weight: 600;
+}
+
 .footer__link-list-link {
     text-decoration: none;
     color: var(--color-light);
+    font-weight: 400;
 }
 
 .footer__link-list-section {
