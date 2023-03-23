@@ -44,6 +44,7 @@
             </div>
             <div class="deco-container">
                 <img src="src/img/drawing/symbols-sphere.png" alt="">
+                <img src="src/img/drawing/symbols-cup.png" alt="">
             </div>
         </div>
     </main>
