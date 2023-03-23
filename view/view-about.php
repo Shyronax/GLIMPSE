@@ -68,7 +68,7 @@
                             <div class="section-gallery__col">
                                 <img src="" alt="" class="section-gallery__col-img">
                                 <p class="section-gallery__col-name">Timothé BUREAU</p>
-                                <p class="section-gallery__col-text">Chef de projet, graphiste, </p>
+                                <p class="section-gallery__col-text">Chef de projet, directeur artistique, illustrateur</p>
                             </div>
                         </div>
                     </div>
