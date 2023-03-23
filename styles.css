@@ -511,6 +511,10 @@ main {
     gap: 1.5rem;
 }
 
+.form__container--center {
+    align-items: center;
+}
+
 .form__container-date, .form__container-ticket {
     display: flex;
     flex-direction: column;
@@ -521,6 +525,7 @@ main {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
+    width: 100%;
 }
 
 .form__input {
