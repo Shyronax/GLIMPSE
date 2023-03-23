@@ -478,7 +478,7 @@ main {
     line-height: 2.5;
 }
 
-.section__list-item-link, .section__link {
+.sub-section__list-item-link, .section__list-item-link, .section__link {
     color: var(--color-dark);
 }
 
