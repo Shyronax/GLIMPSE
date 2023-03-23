@@ -12,7 +12,6 @@
     ?>
     <main>
         <div class="container container--medium container--center">
-            <a href="controller.php?page=booking4"><i class="fa-solid fa-arrow-left link-back"></i></a>
             <div>
                 <h1 class="container__title">Confirmation de la réservation</h1>
             </div>
