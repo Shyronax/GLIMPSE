@@ -474,6 +474,11 @@ main {
     font-weight: 600;
 }
 
+.section__buttons {
+    display: flex;
+    gap: 2rem;
+}
+
 .section__list-item {
     line-height: 2;
 }

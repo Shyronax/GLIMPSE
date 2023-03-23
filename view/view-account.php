@@ -19,7 +19,10 @@
                     <p class="section__text">Login : ddzd</p>
                     <p class="section__text">Adresse mail : dnjzdn</p>
                 </div>
-                <a href="" class="btn btn--secondary">Modifier</a>
+                <div class="section__buttons">
+                    <a href="" class="btn btn--secondary">Modifier</a>
+                    <a href="" class="btn btn--secondary">Supprimer mon compte</a>
+                </div>
             </div>
             <div class="section">
                 <!-- <table class="table">
