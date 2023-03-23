@@ -184,6 +184,10 @@ main {
     background-color: var(--color-tertiary-background);
 }
 
+.main__title {
+    font-family: var(--title);
+}
+
 .main-container {
     width: 60%;
     display: flex;
