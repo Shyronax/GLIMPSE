@@ -38,6 +38,9 @@ if (isset($_GET["page"])) {
         case "account":
             include "view/view-account.php";
             break;
+        case "changedata":
+            include "view/view-changedata.php";
+            break;
         case "pwdreinit":
             include "view/view-pwdreinit.php";
             break;
