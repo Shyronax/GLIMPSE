@@ -183,6 +183,11 @@ main {
     height: 40vh;
 }
 
+.main__banner-img {
+    object-fit: cover;
+    width: 100%;
+}
+
 .main__header {
     padding: 2.5rem 6rem;
     background-color: var(--color-tertiary-background);
