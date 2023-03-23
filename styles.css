@@ -431,6 +431,11 @@ main {
     width: 100%;
 }
 
+.section__header {
+    border-bottom: var(--color-primary) 1rem solid;
+    padding: 1rem 0;
+}
+
 .section__title {
     font-size: 2rem;
     font-weight: 700;
