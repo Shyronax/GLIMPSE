@@ -96,10 +96,6 @@ h1 {
 }
 
 /* link */
-a, a:hover, a:visited {
-    text-decoration: none;
-}
-
 .link-back {
     font-size: 2rem;
     position: absolute;
