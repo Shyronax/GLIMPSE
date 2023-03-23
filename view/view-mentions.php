@@ -4,7 +4,7 @@
     <?php 
         include "src/element/head.html";
     ?>
-    <title>Mon compte - Mille Cultures, Une Origine</title>
+    <title>Mentions Légales - Mille Cultures, Une Origine</title>
 </head>
 <body>
     <?php 
