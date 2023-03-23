@@ -179,6 +179,11 @@ main {
     padding-bottom: 12vh;
 }
 
+.main__header {
+    padding: 2.5rem 6rem;
+    background-color: var(--color-tertiary-background);
+}
+
 .main-container {
     width: 60%;
     display: flex;
