@@ -29,6 +29,9 @@ if (isset($_GET["page"])) {
         case "connection":
             include "view/view-connection.php";
             break;
+        case "pass":
+            include "view/view-pwd.php";
+            break;
         case "account":
             include "view/view-account.php";
             break;
