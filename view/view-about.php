@@ -12,7 +12,7 @@
     ?>
     <main>
         <div class="main__banner">
-            <img src="src/img/banner-visit.jpg" alt="" class="main__banner-img">
+            <img src="src/img/banner-about.jpg" alt="" class="main__banner-img">
         </div>
         <div class="main__header">
             <h1 class="main__title">Notre histoire</h1>
