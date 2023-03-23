@@ -29,14 +29,17 @@ if (isset($_GET["page"])) {
         case "connection":
             include "view/view-connection.php";
             break;
-        case "pass":
-            include "view/view-pwd.php";
+        case "pwdforgot":
+            include "view/view-pwdforgot.php";
             break;
         case "mailconf":
             include "view/view-mailconf.php";
             break;
         case "account":
             include "view/view-account.php";
+            break;
+        case "pwdreinit":
+            include "view/view-pwdreinit.php";
             break;
         case "booking1":
             // $_SESSION["url"]='http://'.$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
