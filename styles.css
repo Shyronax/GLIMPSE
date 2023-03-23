@@ -189,7 +189,7 @@ main {
 }
 
 .main__header {
-    padding: 2.5rem 6rem;
+    padding: 2rem 6rem;
     background-color: var(--color-tertiary-background);
 }
 
