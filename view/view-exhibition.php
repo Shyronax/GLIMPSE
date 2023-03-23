@@ -19,6 +19,12 @@
             <h1 class="main__title">L'exposition</h1>
         </div>
         <div class="container container--row flex--start">
+        <nav aria-label="Breadcrumb" class="breadcrumb">
+            <ul class="breadcrumb__list">
+                <li class="breadcrumb__list-item"><a href="controller.php?page=home" class="breadcrumb__list-item-link">Accueil</a></li>
+                <li class="breadcrumb__list-item"><span aria-current="page">Exposition</span></li>
+            </ul>
+        </nav>
             <div class="main-container">
                 <div class="section">
                     <p class="section__text text--bold">Épisode de la série « Mille Cultures, une Origine », l'exposition “Les Pueblos” a pour objectif de <span class="text--highlight">démystifier les origines amérindiennes</span>.</p>
