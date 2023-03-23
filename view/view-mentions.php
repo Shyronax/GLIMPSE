@@ -183,18 +183,18 @@
                 <div class="sub-section">
                     <h3 class="sub-section__title">Images</h3>
                     <ul class="sub-section__list">
-                        <li class="sub-section__list-item"></li>
-                        <li class="sub-section__list-item"></li>
-                        <li class="sub-section__list-item"></li>
+                        <li class="sub-section__list-item"><a href="https://www.crystalinks.com/anasazi.html" class="sub-section__list-item-link ">Anasazi</a></li>
+                        <li class="sub-section__list-item"><a href="" class="sub-section__list-item-link "></a></li>
+                        <li class="sub-section__list-item"><a href="" class="sub-section__list-item-link "></a></li>
                     </ul>
                 </div>
                 
                 <div class="sub-section">
                     <h3 class="sub-section__title">Vidéos</h3>
                     <ul class="sub-section__list">
-                        <li class="sub-section__list-item"></li>
-                        <li class="sub-section__list-item"></li>
-                        <li class="sub-section__list-item"></li>
+                        <li class="sub-section__list-item"><a href="" class="sub-section__list-item-link "></a></li>
+                        <li class="sub-section__list-item"><a href="" class="sub-section__list-item-link "></a></li>
+                        <li class="sub-section__list-item"><a href="" class="sub-section__list-item-link "></a></li>
                     </ul>
                 </div>
             </div>
