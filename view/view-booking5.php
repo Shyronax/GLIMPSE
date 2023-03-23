@@ -14,7 +14,7 @@
         <div class="container container--medium container--center">
             <a href="controller.php?page=booking4"><i class="fa-solid fa-arrow-left link-back"></i></a>
             <div>
-                <h1 class="container__title">Billetterie</h1>
+                <h1 class="container__title">Confirmation de la réservation</h1>
             </div>
             <p class="container__text text--center">Votre <span class="text--bold">réservation</span> a bien été <span class="text--bold">enregistrée</span> ! <br>
             Votre billet vous a été envoyé à cette adresse <span class="text--bold">monemail@gmail.com</span>. <br>
