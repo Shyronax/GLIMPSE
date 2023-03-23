@@ -25,7 +25,7 @@
                     </div>
                     <p class="section__text">L'exposition “Mille Cultures, une Origine - Les Pueblos” a débuté son parcours en janvier 2023, date à laquelle le département BUT MMI de l'IUT de Marne-la-Vallée (Université Gustave Eiffel - Champs-sur-Marne) a commandé l'exposition à l'agence glimpse, un groupe de 7 étudiants MMI de deuxième année.</p>
 
-                    <p class="section__text">Pour plus d'infos sur l'agence, visitez le site de glimpse sur glimpse.fr.</p>
+                    <p class="section__text">Pour plus d'infos sur l'agence, visitez le site de glimpse sur <a href="glimpse.but-mmi-champs.fr" class="section__link">glimpse.fr</a>.</p>
                 </div>
                 <div class="section">
                     <div class="section__header">
