@@ -30,8 +30,7 @@
                     <div class="section__header">
                         <h2 class="section__title">Plan du parcours</h2>
                     </div>
-                    <p class="section__text text--bold"></p>
-                    <p class="section__text"></p>
+                    <p class="section__text">Vous trouverez ci-dessous le plan du parcours de l'exposition qui n'attend que vous !</p>
                     <img src="src/img/plan-expo-fr.png" alt="">
                 </div>
                 <div class="section">
