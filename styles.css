@@ -452,6 +452,12 @@ main {
     justify-content: space-between;
 }
 
+.section-gallery__col {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
 .section__list-item-link, .section__link {
     color: var(--color-dark);
 }
