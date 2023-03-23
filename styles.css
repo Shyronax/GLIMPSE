@@ -543,8 +543,12 @@ main {
     text-decoration: none;
 }
 
-.footer__social-media-text {
+.footer__social-media-link {
     color: var(--color-light);
+}
+
+.footer__social-media-link:hover {
+    text-decoration: underline;
 }
 
 .footer__social-media-logo {
