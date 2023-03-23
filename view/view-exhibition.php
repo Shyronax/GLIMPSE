@@ -17,7 +17,7 @@
         <div class="main__header">
             <h1 class="main__title">L'exposition</h1>
         </div>
-        <div class="container flex--start">
+        <div class="container container--row flex--start">
             <div class="main-container">
                 <div class="section">
                     <p class="section__text text--bold">Épisode de la série « Mille Cultures, une Origine », l'exposition “Les Pueblos” a pour objectif de <span class="text--highlight">démystifier les origines amérindiennes</span>.</p>
@@ -41,6 +41,9 @@
                     <p class="section__text"></p>
                     <video src=""></video>
                 </div>
+            </div>
+            <div class="deco-container">
+                <img src="src/img/drawing/symbols-sphere.png" alt="">
             </div>
         </div>
     </main>
