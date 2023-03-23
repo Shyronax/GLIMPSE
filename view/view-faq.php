@@ -77,11 +77,11 @@
             <div class="section">
                 <h2 class="section__title">Billets et tarifs</h2>
                 <div class="sub-section">
-                    <h3 class="sub-section__title">Quels sont les prix d’un billet ?</h3>
+                    <h3 class="sub-section__title">Quels sont les prix d'un billet ?</h3>
                     <p class="sub-section__text">Nous pouvons collecter des données personnelles vous concernant lorsque vous utilisez notre site web. Cela peut inclure des informations telles que votre nom, votre prénom, votre âge, votre adresse email et vos informations bancaires que vous nous fournissez lors de la réservation ou la création de compte sur le site.</p>
                 </div>
                 <div class="sub-section">
-                    <h3 class="sub-section__title">Comment bénéficier d’un tarif réduit ?</h3>
+                    <h3 class="sub-section__title">Comment bénéficier d'un tarif réduit ?</h3>
                     <p class="sub-section__text">Les données personnelles collectées par le site sont uniquement utilisées pour réaliser les tâches nécessaires au bon fonctionnement de ce dernier. Ces données ne sont pas vendues, échangées ou louées à des tiers. </p>
                 </div>
                 <div class="sub-section">
@@ -112,7 +112,7 @@
                     <p class="sub-section__text">Pour réserver des tickets pour une exposition, vous devez sélectionner la date l'heure de visite, ainsi que le nombre de tickets par catégories (plein tarifs, moins de 26 ans, enfants de moins de 10 ans). Vous devez ensuite remplir une adresse email de réservation avec confirmation de l'adresse (remplies automatiquement dans le cas d'une connexion à un compte).</p>
                 </div>
                 <div class="sub-section">
-                    <h3 class="sub-section__title">Combien de temps faut-il pour visiter l’exposition ?</h3>
+                    <h3 class="sub-section__title">Combien de temps faut-il pour visiter l'exposition ?</h3>
                     <p class="sub-section__text">La vente de billets pour un musée ou de prestations liées à celui-ci est assimilée à une vente de services de loisirs et, conformément aux articles L 221-28° et L 121-21-8-12° du Code de la consommation, n'ouvre aucun droit au délai de rétractation. <span class="text--bold">Ainsi, les billets ne sont échangeables, ni modifiables, ni remboursables dans le cas où nos établissements sont ouverts au public.</span>
                 </div>
                 <div class="sub-section">
@@ -139,7 +139,7 @@
                     <p class="sub-section__text">La création d'un compte utilisateur est facultative et n'est pas nécessaire pour effectuer une réservation. Cependant, si vous choisissez de créer un compte utilisateur, vous devez fournir un login non-utilisé par un autre utilisateur, une adresse e-mail valide et un mot de passe sécurisé. Vous êtes entièrement responsable de la confidentialité de votre mot de passe, de votre compte et ses données. Vous êtes également entièrement responsable de toutes les activités qui se produisent sous votre compte. </p>
                 </div>
                 <div class="sub-section">
-                    <h3 class="sub-section__title">Les poussettes sont-elles acceptées dans l’établissement ?</h3>
+                    <h3 class="sub-section__title">Les poussettes sont-elles acceptées dans l'établissement ?</h3>
                     <p class="sub-section__text">Pour réserver des tickets pour une exposition, vous devez sélectionner la date l'heure de visite, ainsi que le nombre de tickets par catégories (plein tarifs, moins de 26 ans, enfants de moins de 10 ans). Vous devez ensuite remplir une adresse email de réservation avec confirmation de l'adresse (remplies automatiquement dans le cas d'une connexion à un compte).</p>
                 </div>
             </div>
