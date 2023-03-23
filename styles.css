@@ -462,6 +462,10 @@ main {
     width: 12rem;
 }
 
+.section-gallery__col-name {
+    font-weight: 600;
+}
+
 .section__list-item-link, .section__link {
     color: var(--color-dark);
 }
