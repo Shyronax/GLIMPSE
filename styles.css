@@ -428,6 +428,15 @@ main {
     padding-left: 3rem;
 }
 
+.deco-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 275vh;
+    width: 100%;
+}
+
 /* ----------------------------- *
  *           SECTION             *
  * ----------------------------- */
