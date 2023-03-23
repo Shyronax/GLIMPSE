@@ -34,39 +34,39 @@
                     <div class="section-gallery">
                         <div class="section-gallery__row">
                             <div class="section-gallery__col">
-                                <img src="" alt="" class="section-gallery__col-img">
+                                <img src="src/img/member/valerie-lapeyre.jpg" alt="" class="section-gallery__col-img">
                                 <p class="section-gallery__col-name">Valérie LAPEYRE</p>
                                 <p class="section-gallery__col-text">Développeuse back</p>
                             </div>
                             <div class="section-gallery__col">
-                                <img src="" alt="" class="section-gallery__col-img">
+                                <img src="src/img/member/clara-many.jpg" alt="" class="section-gallery__col-img">
                                 <p class="section-gallery__col-name">Clara MANY</p>
                                 <p class="section-gallery__col-text">Cheffe de projet, développeuse front-end, & UX designer</p>
                             </div>
                             <div class="section-gallery__col">
-                                <img src="" alt="" class="section-gallery__col-img">
+                                <img src="src/img/member/samuel-enriquez.jpg" alt="" class="section-gallery__col-img">
                                 <p class="section-gallery__col-name">Samuel ENRIQUEZ-SARANO</p>
                                 <p class="section-gallery__col-text">Développeur front-end & UX designer</p>
                             </div>
                             <div class="section-gallery__col">
-                                <img src="" alt="" class="section-gallery__col-img">
+                                <img src="src/img/member/oscar-poisson.jpg" alt="" class="section-gallery__col-img">
                                 <p class="section-gallery__col-name">Oscar POISSON</p>
                                 <p class="section-gallery__col-text">Développeur full-stack</p>
                             </div>
                         </div>
                         <div class="section-gallery__row">
                             <div class="section-gallery__col">
-                                <img src="" alt="" class="section-gallery__col-img">
+                                <img src="src/img/member/yanis-choucha.jpg" alt="" class="section-gallery__col-img">
                                 <p class="section-gallery__col-name">Yanis CHOUCHA</p>
                                 <p class="section-gallery__col-text">Graphiste, vidéaste & sound designer</p>
                             </div>
                             <div class="section-gallery__col">
-                                <img src="" alt="" class="section-gallery__col-img">
+                                <img src="src/img/member/samuel-miguel.jpg" alt="" class="section-gallery__col-img">
                                 <p class="section-gallery__col-name">Samuel MIGUEL</p>
                                 <p class="section-gallery__col-text">Graphiste, UI designer & vidéaste</p>
                             </div>
                             <div class="section-gallery__col">
-                                <img src="" alt="" class="section-gallery__col-img">
+                                <img src="src/img/member/timothe-bureau.jpg" alt="" class="section-gallery__col-img">
                                 <p class="section-gallery__col-name">Timothé BUREAU</p>
                                 <p class="section-gallery__col-text">Chef de projet, directeur artistique, illustrateur</p>
                             </div>
