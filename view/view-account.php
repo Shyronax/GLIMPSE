@@ -22,6 +22,34 @@
                 <a href="" class="btn btn--secondary">Modifier</a>
             </div>
             <div class="section">
+                <!-- <table class="table">
+                    <caption class="table__caption">Mes réservations</caption>
+                    <thead class="table__header">
+                        <tr class="table__row">
+                            <th scope="col">Référence</th>
+                            <th scope="col">Date</th>
+                            <th scope="col">Heure</th>
+                            <th scope="col">Nombre de billet</th>
+                            <th scope="col">Prix total</th>
+                        </tr>
+                    </thead>
+                    <tbody class="table__body">
+                        <tr>
+                            <th scope="row">#001</th>
+                            <td>31/03/2023</td>
+                            <td>10h00</td>
+                            <td>2</td>
+                            <td>10€</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">#002</th>
+                            <td>31/03/2023</td>
+                            <td>10h00</td>
+                            <td>2</td>
+                            <td>10€</td>
+                        </tr>
+                    </tbody>
+                </table> -->
                 <h2 class="section__title">Mes réservations</h2>
                 <div class="booking-card">
                     <h3 class="booking-card__title">Réservation #001</h3>
