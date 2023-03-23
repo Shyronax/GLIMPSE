@@ -62,6 +62,9 @@
                     </div>
                 </div>
             </div>
+            <div class="deco-container">
+                <img src="src/img/drawing/symbols-direction.png" alt="">
+            </div>
         </div>
     </main>
     <?php 
