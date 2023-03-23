@@ -28,7 +28,8 @@ function login($login,$mdp){
         if(password_verify($mdp, $result["mdp_utilisateur"])){
             $response=array(
                 'status'=> 1,
-                'status_message'=>'Connexion réussie.'
+                'status_message'=>'Connexion réussie.',
+                'status_user'=>$result['id_utilisateur']
             );
         } else {
             $response=array(

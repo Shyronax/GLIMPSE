@@ -7,9 +7,8 @@ export const Login = () => {
 	const [mdp, setMdp] = useState("");
 	const authContext = useContext(AuthContext);
 
-	const date = new Date();
-	const mois = date.toISOString().slice(5, 7);
-	console.log(mois);
+	const dateActuelle = new Date();
+	// const moisActuel = dateActuelle.toISOString().slice(5, 7);
 
 	const handleSubmit = async (e) => {
 		e.preventDefault();
@@ -25,7 +24,7 @@ export const Login = () => {
 		})
 			.then((response) => response.json())
 			.then((data) => {
-				if (data.status == 1) {
+				if (data.status_user == 1) {
 					//faire le JWT ici
 					authContext.login();
 					console.log("ok");
