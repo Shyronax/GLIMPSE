@@ -4,7 +4,7 @@
     <?php 
         include "src/element/head.html";
     ?>
-    <title>Mon compte - Mille Cultures, Une Origine</title>
+    <title>Mot de passe oublié - Mille Cultures, Une Origine</title>
 </head>
 <body>
     <?php 
