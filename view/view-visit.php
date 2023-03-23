@@ -17,7 +17,7 @@
         <div class="main__header">
             <h1 class="main__title">Visiter</h1>
         </div>
-        <div class="container flex--start">
+        <div class="container container--row flex--start">
             <div class="main-container">
                 <div class="section">
                     <div class="section__header">
