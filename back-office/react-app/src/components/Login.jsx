@@ -7,6 +7,10 @@ export const Login = () => {
 	const [mdp, setMdp] = useState("");
 	const authContext = useContext(AuthContext);
 
+	const date = new Date();
+	const mois = date.toISOString().slice(5, 7);
+	console.log(mois);
+
 	const handleSubmit = async (e) => {
 		e.preventDefault();
 		fetch("http://localhost/github/glimpse/back-office/back/api/auth", {
