@@ -447,6 +447,11 @@ main {
     gap: 1.5rem;
 }
 
+.section-gallery__row {
+    display: flex;
+    justify-content: space-between;
+}
+
 .section__list-item-link, .section__link {
     color: var(--color-dark);
 }
