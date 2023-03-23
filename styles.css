@@ -179,6 +179,10 @@ main {
     padding-bottom: 12vh;
 }
 
+.main__banner {
+    height: 40vh;
+}
+
 .main__header {
     padding: 2.5rem 6rem;
     background-color: var(--color-tertiary-background);
