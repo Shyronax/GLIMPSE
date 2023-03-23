@@ -28,7 +28,7 @@
                     <i><span class="text--bold">Total :</span> 12€</i>
                 </ul>
             </div>  
-            <p class="container__text">Votre billet vous a été envoyé à cette adresse <span class="text--bold">monemail@gmail.com</span>. <br>
+            <p class="container__text text--center">Votre billet vous a été envoyé à cette adresse <span class="text--bold">monemail@gmail.com</span>. <br>
             Vous pouvez également télécharger votre billet en cliquant sur le bouton ci-dessous.</p>
             <a href="" class="btn btn--secondary">Télécharger mon billet en PDF</a>   
             <a href="controller.php?page=home" class="container__link">Retourner à l'accueil</a>
