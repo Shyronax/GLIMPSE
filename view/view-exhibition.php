@@ -3,6 +3,7 @@
 <head>
     <?php 
         include "src/element/head.html";
+        include "src/element/chatbot.html";
     ?>
     <title>Exposition - Mille Cultures, Une Origine</title>
 </head>

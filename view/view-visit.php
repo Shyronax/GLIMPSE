@@ -9,6 +9,7 @@
 <body>
     <?php 
         include "src/element/nav.html";
+        include "src/element/chatbot.html";
     ?>
     <main>
         <div class="main__banner">

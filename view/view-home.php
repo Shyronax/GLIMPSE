@@ -9,6 +9,7 @@
 <body>
     <?php 
         include "src/element/nav.html";
+        include "src/element/chatbot.html";
     ?>
     <main class="main">
         <div class="card hero">
