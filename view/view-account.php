@@ -16,8 +16,8 @@
             <div class="section">
                 <h2 class="section__title">Informations personnelles</h2>
                 <div>
-                    <p class="section__text">Login : ddzd</p>
-                    <p class="section__text">Adresse mail : dnjzdn</p>
+                    <p class="section__text"><span class="text--bold">Login</span> : ddzd</p>
+                    <p class="section__text"><span class="text--bold">Adresse mail</span> : dnjzdn</p>
                 </div>
                 <div class="section__buttons">
                     <a href="" class="btn btn--secondary">Modifier</a>
