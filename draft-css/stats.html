@@ -1,48 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="poggers.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
     <title>CSS pur du truc</title>
-</head>
-<body>
-    <main>
-        <button class="Button">Deconnexion</button>
-        <section class="nav">
-            <h1 class="nav__title">Administration</h1>
-                <nav class="nav__container">
-                    <ul class="nav__item-container">
-                        <li class="nav__item nav__item--active"><img src="./img/house.svg">
-                            <a class="nav__link" href="">Tableau de Bord</a></li>
-                        <li class="nav__item"><img src="./img/profile.svg">
-                            <a class="nav__link" href="">Gestion des comptes</a></li>
-                        <li class="nav__item"><img src="./img/settings.svg">
-                            <a class="nav__link" href="">Paramètres</a></li>
-                    </ul>
-                </nav>
-        </section>
-        <section class="stats">
-            <h1 class="title">Bonjour Admin</h1>
-            <p class="subtext">voici machin</p>
-            <canvas class="stats__canvas"></canvas>
-            <div class="info">
-                <h2 class="info__number">250</h2>
-                <p class="info__text">reservations totales</p>
-            </div>
-            <div class="info">
-                <h2 class="info__number">250</h2>
-                <p class="info__text">reservations année</p>
-            </div>
-            <div class="info">
-                <h2 class="info__number">250</h2>
-                <p class="info__text">reservations semaine</p>
-            </div>
-            <div class="info">
-                <h2 class="info__number">250</h2>
-                <p class="info__text">reservations jour</p>
-            </div>
-        </section>
+  </head>
+  <body>
+    <main class="main">
+      <section class="nav">
+        <h1 class="nav__title">administration</h1>
+        <nav class="nav__container">
+          <ul class="nav__item--container">
+            <li class="nav__item">
+              <img src="../reactback/public/img/house.svg" />
+              <a class="nav__link" href="">Tableau de Bord</a>
+            </li>
+            <li class="nav__item nav__item--active">
+              <img src="../reactback/public/img/active-profile.svg" />
+
+              <a class="nav__link" href="">Gestion des comptes</a>
+            </li>
+            <li class="nav__item">
+              <img src="../reactback/public/img/settings.svg" />
+              <a class="nav__link" href="">Paramètres</a>
+            </li>
+          </ul>
+        </nav>
+      </section>
+      <section class="stats">
+        <h1 class="title">Bonjour Admin</h1>
+        <p class="subtext">voici machin</p>
+        <canvas class="stats__canvas"></canvas>
+        <div class="info">
+          <h2 class="info__number">250</h2>
+          <p class="info__text">reservations totales</p>
+        </div>
+        <div class="info">
+          <h2 class="info__number">250</h2>
+          <p class="info__text">reservations année</p>
+        </div>
+        <div class="info">
+          <h2 class="info__number">250</h2>
+          <p class="info__text">reservations semaine</p>
+        </div>
+        <div class="info">
+          <h2 class="info__number">250</h2>
+          <p class="info__text">reservations jour</p>
+        </div>
+      </section>
+      <div class="button">
+        <button class="button__element"><p>Déconnexion</p></button>
+        <img src="../reactback/public/img/arrow.svg" alt="déconnexion" />
+      </div>
     </main>
-</body>
+  </body>
 </html>

@@ -69,6 +69,32 @@ body {
   font-size: 2em;
 }
 
+/*  AUTHENTIFICATION  */
+
+.admin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
+}
+
+.admin__title {
+  max-width: 70%;
+}
+
+.admin__text {
+  color: #365cbd;
+}
+
+.auth {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f4f5fb;
+  width: 100vw;
+}
+
 .blue {
   color: blue;
 }
