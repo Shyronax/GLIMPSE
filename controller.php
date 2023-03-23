@@ -32,6 +32,9 @@ if (isset($_GET["page"])) {
         case "pass":
             include "view/view-pwd.php";
             break;
+        case "mailconf":
+            include "view/view-mailconf.php";
+            break;
         case "account":
             include "view/view-account.php";
             break;
