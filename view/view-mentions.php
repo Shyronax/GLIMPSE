@@ -192,9 +192,7 @@
                 <div class="sub-section">
                     <h3 class="sub-section__title">Vidéos</h3>
                     <ul class="sub-section__list">
-                        <li class="sub-section__list-item"><a href="" class="sub-section__list-item-link "></a></li>
-                        <li class="sub-section__list-item"><a href="" class="sub-section__list-item-link "></a></li>
-                        <li class="sub-section__list-item"><a href="" class="sub-section__list-item-link "></a></li>
+                        <li class="sub-section__list-item"><a href="glimpse.but-mmi-champs.fr" class="sub-section__list-item-link ">Glimpse</a></li>
                     </ul>
                 </div>
             </div>
