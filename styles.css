@@ -581,6 +581,11 @@ main {
     color: var(--color-light);
 }
 
+.footer__utility-link:hover {
+    text-decoration: underline;
+}
+
+
 .flex--start {
     align-items: start;
     justify-content: start;
