@@ -29,7 +29,8 @@
                     <i><span class="text--bold">Total :</span> 12€</i>
                 </ul>
             </div>  
-            <p class="container__text text--center">Vous recevrez d'ici quelques minutes, votre billet à l'adresse mail que vous avez renseigné et vous pourrez également le télécharger en PDF.</p>
+            <p class="container__text text--center">Vous recevrez d'ici quelques minutes, votre billet à l'adresse mail que vous avez renseigné. <br>
+            Vous pourrez également le télécharger en PDF.</p>
             <a href="controller.php?page=booking4" class="btn btn--secondary">Finaliser ma réservation</a>    
         </div>
     </main>
