@@ -30,7 +30,7 @@
                 </ul>
             </div>  
             <p class="container__text text--center">Vous recevrez d'ici quelques minutes, votre billet à l'adresse mail que vous avez renseigné. <br>
-            Vous pourrez également le télécharger en PDF.</p>
+            Vous pourrez également le télécharger en PDF à la fin de votre réservation.</p>
             <a href="controller.php?page=booking4" class="btn btn--secondary">Finaliser ma réservation</a>    
         </div>
     </main>
