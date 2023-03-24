@@ -42,10 +42,9 @@ $url = explode("/", filter_var($_GET['action'],FILTER_SANITIZE_URL));
             }
         break;
         case 'POST':
-            // Récupération du corps de la requête
-            $body = file_get_contents('php://input');
+            
             // Décodage du corps de la requête JSON
-            $data = json_decode($body, true);
+            $data = json_decode(file_get_contents('php://input'), true);
             
             switch($url[0]){
                 case "auth":
@@ -80,8 +79,8 @@ $url = explode("/", filter_var($_GET['action'],FILTER_SANITIZE_URL));
             switch($url[0]){
                 case "ticket" : 
                     if(!empty($url[1])){
-                        parse_str(file_get_contents('php://input'), $_PUT);
-                        updateTicket($_PUT,($url[1]));
+                        $_PUT = json_decode(file_get_contents('php://input'), true);
+                        updateUser($_PUT,($url[1]));
                     } else {
                         $response=array(
                                 'status'=> 0,
@@ -92,7 +91,7 @@ $url = explode("/", filter_var($_GET['action'],FILTER_SANITIZE_URL));
                 break;
                 case "utilisateur" : 
                     if(!empty($url[1])){
-                        parse_str(file_get_contents('php://input'), $_PUT);
+                        $_PUT = json_decode(file_get_contents('php://input'), true);
                         updateUser($_PUT,($url[1]));
                     } else {
                         $response=array(

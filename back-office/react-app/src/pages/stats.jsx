@@ -1,6 +1,7 @@
 import { Graphique } from "../components/Graphique";
 import { Info } from "../components/info/Info";
 import { useEffect, useState } from "react";
+import "./stats.css";
 
 export const Stats = () => {
 	// Récupérer les données de réservations par l'API
@@ -28,15 +29,21 @@ export const Stats = () => {
 
 	return (
 		<div>
-			<h1>Bonjour admin,</h1>
-			<p>
-				Voici les <strong>statistiques de fréquentation</strong> de
-				l'exposition.
-			</p>
-			<Graphique data={data} />
-			<Info number={nbTicketsTotal} text={"Réservations totales"} />
-			<Info number={nbTicketsCeMois} text={"Réservations ce mois-ci"} />
-			<Info number={nbTicketsCeJour} text={"Réservations aujourd'hui"} />
+			<div className="intro">
+				<h1>Bonjour admin,</h1>
+				<p>
+					Voici les <strong>statistiques de fréquentation</strong> de
+					l'exposition.
+				</p>
+			</div>
+			<div className="content">
+				<Graphique data={data} />
+				<div className="infos">
+					<Info number={nbTicketsTotal} text={"Réservations totales"} />
+					<Info number={nbTicketsCeMois} text={"Réservations ce mois-ci"} />
+					<Info number={nbTicketsCeJour} text={"Réservations aujourd'hui"} />
+				</div>
+			</div>
 		</div>
 	);
 };

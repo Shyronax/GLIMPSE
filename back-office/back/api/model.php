@@ -3,6 +3,7 @@ session_start();
 header('Access-Control-Allow-Origin: *');
 header('Access-Control-Allow-Credentials: true');
 header('Access-Control-Allow-Headers: Origin, Content-Type, X-Auth-Token , Authorization');
+header('Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS');
 
 function dbConnexion(){
     require('db.php');
@@ -138,11 +139,10 @@ function updateTicket($data,$id){
 
 function updateUser($data,$id){
 		$db=dbConnexion();
-    $query="UPDATE utilisateur SET pseudo_utilisateur=:pseudo, mdp_utilisateur=:mdp, email_utilisateur=:email WHERE id_utilisateur=:id";
+    $query="UPDATE utilisateur SET pseudo_utilisateur=:pseudo, email_utilisateur=:email WHERE id_utilisateur=:id";
 
     $stmt= $db->prepare($query);
     $stmt->bindParam(':pseudo',$data["pseudo"], PDO::PARAM_STR); 
-    $stmt->bindParam(':mdp',$data["mdp"], PDO::PARAM_STR); 
     $stmt->bindParam(':email',$data["email"], PDO::PARAM_STR);
     $stmt->bindParam(':id',$id, PDO::PARAM_INT); 
 
@@ -150,7 +150,8 @@ function updateUser($data,$id){
     if($stmt->execute()){
         $response=array(
             'status'=> 1,
-            'status_message'=>'Compte modifié avec succès.'
+            'status_message'=>'Compte modifié avec succès.',
+            'yo' => $data
         );
     } else {
         $response=array(
@@ -160,6 +161,33 @@ function updateUser($data,$id){
     }
     sendJSON($response);
 }
+
+function updateAdmin($data, $id){
+    $db=dbConnexion();
+    $query="UPDATE utilisateur SET pseudo_utilisateur=:pseudo, email_utilisateur=:email WHERE id_utilisateur=:id";
+
+    $stmt= $db->prepare($query);
+    $stmt->bindParam(':pseudo',$data["pseudo"], PDO::PARAM_STR); 
+    $stmt->bindParam(':email',$data["email"], PDO::PARAM_STR); 
+
+    $hash= password_hash($mdp, PASSWORD_DEFAULT);
+    $stmt->bindParam(':mdp', $hash , PDO::PARAM_STR); 
+    $stmt->execute();
+
+    if($stmt->execute()){
+        $response=array(
+            'status'=> 1,
+            'status_message'=>'Compte créé avec succes.'
+        );
+    } else {
+        $response=array(
+            'status'=> 0,
+            'status_message'=>'Erreur : compte non créé.'
+        );
+    }
+    sendJSON($response);
+}
+
 
 function delete($table,$id){
 	$db=dbConnexion();

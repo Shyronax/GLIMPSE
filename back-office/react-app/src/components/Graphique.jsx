@@ -7,10 +7,17 @@ import {
 	LinearScale,
 	CategoryScale,
 	Tooltip,
-	Legend,
+	Title,
 } from "chart.js";
 
-ChartJS.register(LineElement, PointElement, LinearScale, CategoryScale);
+ChartJS.register(
+	LineElement,
+	PointElement,
+	LinearScale,
+	CategoryScale,
+	Title,
+	Tooltip
+);
 
 // Graphique de fréquentation (nombre de tickets par jour) du mois en cours
 export const Graphique = ({ data }) => {
@@ -30,6 +37,9 @@ export const Graphique = ({ data }) => {
 	];
 
 	const dateActuelle = new Date();
+
+	// Récupérer le mois en cours (format texte)
+	const moisActuelTxt = tabMois[dateActuelle.getMonth()];
 
 	// Avoir les jours d'un mois (axe des ordonnées du graphique)
 	const getJoursDuMois = (mois, annee) => {
@@ -70,6 +80,7 @@ export const Graphique = ({ data }) => {
 				borderColor: "#365CBD",
 				backgroundColor: "#365CBD",
 				tension: 0.2,
+				pointRadius: 1.8,
 			},
 		],
 	};
@@ -77,26 +88,47 @@ export const Graphique = ({ data }) => {
 	const options = {
 		responsive: true,
 		plugins: {
-			legend: {
-				position: "top",
-			},
 			title: {
 				display: true,
-				text: "Statistiques de fréquentation",
+				text:
+					"Statistiques de fréquentation du mois de " +
+					moisActuelTxt +
+					" " +
+					dateActuelle.getFullYear(),
 			},
 		},
 		scales: {
+			x: {
+				title: {
+					text: "Jours",
+					display: true,
+				},
+			},
 			y: {
 				min: 0,
+				suggestedMax: 3,
 				ticks: {
 					stepSize: 1,
 				},
+				title: {
+					text: "Nombre de réservations",
+					display: true,
+				},
 			},
+		},
+		tooltip: {
+			enabled: true,
 		},
 	};
 
 	return (
 		<div className="graph">
+			{/* <div className="graph__mois">
+				<h3>
+					{moisActuelTxt} {dateActuelle.getFullYear()}
+				</h3>
+			</div> */}
+
 			<Line data={dataTickets} options={options}></Line>
 		</div>
 	);

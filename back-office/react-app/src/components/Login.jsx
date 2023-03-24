@@ -7,9 +7,6 @@ export const Login = () => {
 	const [mdp, setMdp] = useState("");
 	const authContext = useContext(AuthContext);
 
-	const dateActuelle = new Date();
-	// const moisActuel = dateActuelle.toISOString().slice(5, 7);
-
 	const handleSubmit = async (e) => {
 		e.preventDefault();
 		fetch("http://localhost/github/glimpse/back-office/back/api/auth", {
@@ -52,7 +49,7 @@ export const Login = () => {
 					onChange={(event) => setMdp(event.target.value)}
 				/>
 			</label>
-			<Button text="Se connecter" type="submit" />
+			<Button type="submit">Se connecter</Button>
 		</form>
 	);
 };

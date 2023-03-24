@@ -1,5 +1,15 @@
 .graph {
 	background-color: #f4f5fb;
-	padding: 2em;
+	padding: 3em 4em;
 	border-radius: 1em;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+}
+
+h3 {
+	font-weight: 500;
+	padding: 0;
+	margin: 0;
+	color: black;
 }

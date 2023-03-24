@@ -1,0 +1,9 @@
+.content {
+	display: flex;
+	gap: 3em;
+	padding: 3em;
+}
+
+.graph {
+	min-width: 70%;
+}
