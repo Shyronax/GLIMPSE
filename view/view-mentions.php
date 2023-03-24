@@ -21,7 +21,7 @@
                     <li class="section__list-item"><a href="#hebergement" class="section__list-item-link">Hébergement</a></li>
                     <li class="section__list-item"><a href="#dpo" class="section__list-item-link">DPO - Collecte de données</a></li>
                     <li class="section__list-item"><a href="#data" class="section__list-item-link">Politique de gestion des données personnelles</a></li>
-                    <li class="section__list-item"><a href="#cgu" class="section__list-item-link">Conditions Générales d''Utilisation (CGU)</a></li>
+                    <li class="section__list-item"><a href="#cgu" class="section__list-item-link">Conditions Générales d'Utilisation (CGU)</a></li>
                     <span id="edition"></span>
                     <li class="section__list-item"><a href="#autre" class="section__list-item-link">Contenu intégré d'autres sites web</a></li>
                     <li class="section__list-item"><a href="#autorisation" class="section__list-item-link">Autorisation du droit à l'image pour les vidéos et images</a></li>
