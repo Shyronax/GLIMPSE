@@ -31,8 +31,14 @@
             <div class="section">
                 <h2 class="section__title">Billets et tarifs</h2>
                 <div class="sub-section">
-                    <h3 class="sub-section__title">Quels sont les prix d'un billet ?</h3>
-                    <p class="sub-section__text"></p>
+                    <h3 class="sub-section__title">Quel est le prix d'un billet ?</h3>
+                    <p class="sub-section__text">Ils existent différents tarifs en fonction de l'âge.</p>
+                    <ul class="sub-section__list">
+                        <li class="sub-section__list-item">Plein tarif : 5€</li>
+                        <li class="sub-section__list-item">Moins de 26 ans : 2€</li>
+                        <li class="sub-section__list-item">Enfant de moins de 10 ans : gratuit</li>
+                    </ul>
+                    <p class="sub-section__text">Un justificatif (carte d'identité, permis de conduire, passeport) vous serez demandé à l'entrée de l'exposition pour les tarifs réduits.</p>
                 </div>
                 <div class="sub-section">
                     <h3 class="sub-section__title">Comment bénéficier d'un tarif réduit ?</h3>
