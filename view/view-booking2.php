@@ -14,7 +14,7 @@
         <div class="container container--small container--center">
             <a href="controller.php?page=booking1"><i class="fa-solid fa-arrow-left link-back"></i></a>
             <div>
-                <h1 class="container__title">Billetterie</h1>
+                <h1 class="container__title text--center">Billetterie</h1>
                 <p class="container__subtitle">Informations personnelles (2/4)</p>
             </div>
             <p class="container__text text--center">Veuillez saisir vos informations personnelles afin qu'on puisse vous envoyez une confirmation de votre réservation et vérifier qu'il s'agisse bien de vous.</p>
