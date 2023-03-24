@@ -21,8 +21,8 @@
             <form action="" class="form">
                 <div class="form__container">
                     <div class="form__field">
-                        <label for="pseudo" class="form__label">Login*</label>
-                        <input type="text" name='pseudo' class="form__input" required>
+                        <label for="name" class="form__label">Nom*</label>
+                        <input type="text" name='name' class="form__input" required>
                     </div>
                     <div class="form__field">
                         <label for="mail" class="form__label">Email*</label>
