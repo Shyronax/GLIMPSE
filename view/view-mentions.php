@@ -132,7 +132,16 @@
                     <h3 class="sub-section__title">Utilisation du ticket, modification, annulation et remboursement</h3>
                     <p class="sub-section__text">La vente de billets pour un musée ou de prestations liées à celui-ci est assimilée à une vente de services de loisirs et, conformément aux articles L 221-28° et L 121-21-8-12° du Code de la consommation, n'ouvre aucun droit au délai de rétractation. <span class="text--bold">Ainsi, les billets ne sont échangeables, ni modifiables, ni remboursables dans le cas où nos établissements sont ouverts au public.</span>
                     <p class="sub-section__text"><span class="text--bold">Il est donc impossible d'échanger vos billets.</span></p>
+                    <p class="sub-section__text">Si, et seulement si, l'exposition est annulée, vous pouvez être remboursé.</p>
                     <p class="sub-section__text">Le billet d'entrée est horodaté et ne vous permet pas de vous rendre au musée un autre jour ou le même jour sur un autre créneau horaire.</p>
+                </div>
+                <div class="sub-section">
+                    <h3 class="sub-section__title">Service Après Vente (SAV)</h3>
+                    <p class="sub-section__text">Si vous avez besoin de changer la date ou l'heure de votre visite, vous devez nous contacter à l'avance pour voir s'il est possible de le faire. Les changements ne sont pas garantis et sont soumis à la disponibilité.</p>
+
+                    <p class="sub-section__text">Si vous n'avez pas reçu votre billet, contactez-nous pour qu'on vous le renvoie.</p>
+
+                    <p class="sub-section__text">Si vous avez des réclamations concernant votre visite à l'exposition, vous devez les adresser directement à l'organisateur de l'exposition. Le service après-vente pour la vente de billets ne traite pas les réclamations liées à l'expérience de visite.</p>
                 </div>
                 <div class="sub-section">
                     <h3 class="sub-section__title">Propriété intellectuelle (médias, contenus…)</h3>
