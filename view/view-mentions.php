@@ -156,7 +156,7 @@
                 </div>
                 <div class="sub-section">
                     <h3 class="sub-section__title">Réclamation</h3>
-                    <h4 class="sub-section__subtitle">Mode de dépôt des réclamations</h4>
+                    <h4 class="sub-section__subtitle">Mode de dépôt</h4>
                     <p class="sub-section__text">Vous pouvez dépôser une réclamation à travers plusieurs moyens :</p>
                     <ul class="sub-section__list">
                         <li class="sub-section__list-item">Par mail, vous pouvez nous envoyer votre réclamation à cette adresse mail : <a href="mailto:milleculturesuneorigine@gmail.com" class="sub-section__list-item-link">milleculturesuneorigine@gmail.com</a>.</li>
@@ -164,7 +164,7 @@
                         <li class="sub-section__list-item">En personne, il est possible de déposer une réclamation en personne auprès du personnel de l'exposition.</li>
                     </ul>
                     <br>
-                    <h4 class="sub-section__subtitle">Procédure de traitement des réclamations</h4>
+                    <h4 class="sub-section__subtitle">Procédure de traitement</h4>
                     <p class="sub-section__text">Vous trouverez ci-dessous les étapes du traitement des réclamations</p>
                     <ul class="sub-section__list">
                         <li class="sub-section__list-item">Confirmation de réception : une fois que vous avez déposé votre réclamation, vous devriez recevoir une confirmation de réception.</li>
