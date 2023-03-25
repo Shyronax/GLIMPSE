@@ -2,14 +2,17 @@ import { useNavigate } from "react-router-dom";
 import { Button } from "./buttons/Button";
 import { useState, useEffect } from "react";
 
-export const UtilisateurDetail = ({ dataGET, goBack }) => {
+export const UserDetails = ({ dataGET, goBack }) => {
 	const navigate = useNavigate();
 
 	// Déclaration des variables d'état
 	const [pseudo, setPseudo] = useState("");
 	const [email, setEmail] = useState("");
 	const [mdp, setMdp] = useState("");
-	const [status_message, setStatus_message] = useState("");
+	const [mdpConfirm, setMdpConfirm] = useState("");
+	const [status, setStatus] = useState({});
+
+	const isMdpTheSame = mdp === mdpConfirm;
 
 	// Afficher les données de l'utilisateur
 	useEffect(() => {
@@ -20,36 +23,48 @@ export const UtilisateurDetail = ({ dataGET, goBack }) => {
 	// Fonction de soumission du formulaire
 	const handleSubmit = async (e) => {
 		e.preventDefault();
+		if (isMdpTheSame) {
+			const body = {
+				pseudo,
+				email,
+			};
 
-		const body = {
-			pseudo,
-			email,
-		};
-
-		if (dataGET.id_utilisateur == 1) {
-			body.mdp = mdp;
-		}
-
-		fetch(
-			"http://localhost/github/glimpse/back-office/back/api/utilisateur/" +
-				dataGET.id_utilisateur,
-			{
-				method: "PUT",
-				headers: {
-					"Content-Type": "application/json",
-				},
-				body: JSON.stringify(body),
+			if (dataGET.id_utilisateur == 1 && mdp) {
+				body.mdp = mdp;
 			}
-		)
-			.then((response) => response.json())
-			.then((data) => {
-				setStatus_message(data.status_message);
-			});
+
+			fetch(
+				"http://localhost/github/glimpse/back-office/back/api/utilisateur/" +
+					dataGET.id_utilisateur,
+				{
+					method: "PUT",
+					headers: {
+						"Content-Type": "application/json",
+					},
+					body: JSON.stringify(body),
+				}
+			)
+				.then((response) => response.json())
+				.then((data) => {
+					setStatus({
+						nb: data.status,
+						message: data.status_message,
+					});
+				});
+		}
 	};
 
 	return (
 		<form onSubmit={handleSubmit}>
-			{status_message && <p>{status_message}</p>}
+			{status.nb ? (
+				<div>
+					<p className={status.nb == 1 ? "success" : "error"}>
+						{status.message}
+					</p>
+				</div>
+			) : (
+				<div style={{ height: "1rem" }}></div>
+			)}
 			<label>
 				login:
 				<input
@@ -74,6 +89,18 @@ export const UtilisateurDetail = ({ dataGET, goBack }) => {
 						value={mdp}
 						onChange={(event) => setMdp(event.target.value)}
 					/>
+					confirmation:
+					<input
+						{...(!isMdpTheSame && { className: "error" })}
+						type="password"
+						value={mdpConfirm}
+						onChange={(event) => setMdpConfirm(event.target.value)}
+					/>
+					<div>
+						{!isMdpTheSame && (
+							<p className="error">Les mots de passe ne sont pas identiques.</p>
+						)}
+					</div>
 				</label>
 			)}
 			{goBack && <a onClick={() => navigate(-1)}>Retour</a>}

@@ -42,7 +42,6 @@ $url = explode("/", filter_var($_GET['action'],FILTER_SANITIZE_URL));
             }
         break;
         case 'POST':
-            
             // Décodage du corps de la requête JSON
             $data = json_decode(file_get_contents('php://input'), true);
             
@@ -62,10 +61,24 @@ $url = explode("/", filter_var($_GET['action'],FILTER_SANITIZE_URL));
                     }
                 break;
                 case "tickets" : 
-                    addTicket($_POST);
+                    addTicket($data);
                 break;
                 case "utilisateurs" : 
-                    addUser($_POST);
+                    if(searchUser($data['pseudo'],'pseudo_utilisateur')){
+                        $response=array(
+                            'status'=> 0,
+                            'status_message'=>"Erreur : le pseudo ". $data['pseudo'] ." est déjà pris."
+                        );
+                        sendJSON($response);
+                    } else if(searchUser($data['email'],'email_utilisateur')){
+                        $response=array(
+                            'status'=> 0,
+                            'status_message'=>"Erreur : l'email ". $data['email'] ." est déjà pris."
+                        );
+                        sendJSON($response);
+                    } else {
+                        addUser($data);
+                    }
                 break;
                 default : 
                     $response=array(
@@ -92,7 +105,11 @@ $url = explode("/", filter_var($_GET['action'],FILTER_SANITIZE_URL));
                 case "utilisateur" : 
                     if(!empty($url[1])){
                         $_PUT = json_decode(file_get_contents('php://input'), true);
-                        updateUser($_PUT,($url[1]));
+                        if(isset($_PUT["mdp"]) && $url[1] == 1) {
+                            updateAdmin($_PUT);
+                            } else {
+                                updateUser($_PUT,($url[1]));
+                        }
                     } else {
                         $response=array(
                                 'status'=> 0,

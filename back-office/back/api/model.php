@@ -11,7 +11,7 @@ function dbConnexion(){
 }
 
 function sendJSON($data){
-    header('Content-Type: application/json');
+    header('Content-Type: application/json, Charset=UTF-8');
     echo json_encode($data);
 }
 
@@ -94,7 +94,7 @@ function addUSer($data){
     $stmt->bindParam(':pseudo',$data["pseudo"], PDO::PARAM_STR); 
     $stmt->bindParam(':email',$data["email"], PDO::PARAM_STR); 
 
-    $hash= password_hash($mdp, PASSWORD_DEFAULT);
+    $hash= password_hash($data["mdp"], PASSWORD_DEFAULT);
     $stmt->bindParam(':mdp', $hash , PDO::PARAM_STR); 
     $stmt->execute();
 
@@ -161,9 +161,9 @@ function updateUser($data,$id){
     sendJSON($response);
 }
 
-function updateAdmin($data, $id){
+function updateAdmin($data){
     $db=dbConnexion();
-    $query="UPDATE utilisateur SET pseudo_utilisateur=:pseudo, email_utilisateur=:email, mdp_utilisateur=:mdp WHERE id_utilisateur=:id";
+    $query="UPDATE utilisateur SET pseudo_utilisateur=:pseudo, email_utilisateur=:email, mdp_utilisateur=:mdp WHERE id_utilisateur=1";
 
     $stmt= $db->prepare($query);
     $stmt->bindParam(':pseudo',$data["pseudo"], PDO::PARAM_STR); 
@@ -176,12 +176,12 @@ function updateAdmin($data, $id){
     if($stmt->execute()){
         $response=array(
             'status'=> 1,
-            'status_message'=>'Compte créé avec succes.'
+            'status_message'=>'Compte administrateur modifié avec succès.'
         );
     } else {
         $response=array(
             'status'=> 0,
-            'status_message'=>'Erreur : compte non créé.'
+            'status_message'=>'Compte administrateur non modifié.'
         );
     }
     sendJSON($response);
@@ -207,4 +207,12 @@ function delete($table,$id){
         );
     }
     sendJSON($response);
+}
+
+function searchUser($tosearch, $column){
+    $db=dbConnexion();
+    $query="SELECT * FROM utilisateur WHERE $column='$tosearch'";
+    $stmt=$db->query($query);
+    $result=$stmt->fetch(PDO::FETCH_ASSOC);
+    return($result);
 }

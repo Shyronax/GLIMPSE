@@ -1,4 +1,4 @@
-import { Graphique } from "../components/Graphique";
+import { Chart } from "../components/Chart";
 import { Info } from "../components/info/Info";
 import { useEffect, useState } from "react";
 import "./stats.css";
@@ -37,7 +37,7 @@ export const Stats = () => {
 				</p>
 			</div>
 			<div className="content">
-				<Graphique data={data} />
+				<Chart data={data} />
 				<div className="infos">
 					<Info
 						number={nbTicketsTotal}

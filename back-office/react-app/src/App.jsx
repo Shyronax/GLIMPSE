@@ -6,6 +6,7 @@ import { Accounts } from "./pages/Accounts";
 import { Settings } from "./pages/Settings";
 import { Stats } from "./pages/Stats";
 import { Profile } from "./pages/Profile";
+import { AddUser } from "./pages/AddUser";
 import { Button } from "./components/buttons/Button";
 import { Login } from "./components/Login";
 import { Nav } from "./components/nav/Nav";
@@ -23,6 +24,7 @@ function App() {
 				<Route path="/" element={<Stats />} />
 				<Route path="/parametres" element={<Settings />} />
 				<Route path="/comptes" element={<Accounts />} />
+				<Route path="/comptes/ajouter" element={<AddUser goBack />} />
 				<Route path="/compte/:id" element={<Profile />} />
 			</Routes>
 		</Router>

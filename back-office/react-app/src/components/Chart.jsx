@@ -1,4 +1,4 @@
-import "./Graphique.css";
+import "./Chart.css";
 import { Line } from "react-chartjs-2";
 import {
 	Chart as ChartJS,
@@ -20,7 +20,7 @@ ChartJS.register(
 );
 
 // Graphique de fréquentation (nombre de tickets par jour) du mois en cours
-export const Graphique = ({ data }) => {
+export const Chart = ({ data }) => {
 	const tabMois = [
 		"Janvier",
 		"Février",
@@ -69,8 +69,6 @@ export const Graphique = ({ data }) => {
 		});
 		return nbTickets;
 	});
-
-	console.log(chartNbTickets);
 
 	const dataTickets = {
 		labels: joursDuMoisActuel,

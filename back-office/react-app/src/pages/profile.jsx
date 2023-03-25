@@ -1,6 +1,6 @@
 import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
-import { UtilisateurDetail } from "../components/UtilisateurDetail";
+import { UserDetails } from "../components/UserDetails";
 
 export const Profile = () => {
 	const { id } = useParams();
@@ -15,5 +15,5 @@ export const Profile = () => {
 			.then((data) => setData(data));
 	}, []);
 
-	return <UtilisateurDetail dataGET={data} goBack />;
+	return <UserDetails dataGET={data} goBack />;
 };

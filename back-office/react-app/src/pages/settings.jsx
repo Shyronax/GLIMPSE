@@ -1,4 +1,4 @@
-import { UtilisateurDetail } from "../components/UtilisateurDetail";
+import { UserDetails } from "../components/UserDetails";
 import { useEffect, useState } from "react";
 
 export const Settings = () => {
@@ -14,7 +14,7 @@ export const Settings = () => {
 		<div>
 			<h1>Paramètres</h1>
 			<p>Modifier les données du compte administrateur.</p>
-			<UtilisateurDetail dataGET={data} />
+			<UserDetails dataGET={data} />
 		</div>
 	);
 };

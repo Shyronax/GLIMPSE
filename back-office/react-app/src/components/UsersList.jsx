@@ -1,27 +1,8 @@
 import { useNavigate } from "react-router-dom";
 import { Button } from "./buttons/Button";
 
-export const Utilisateurs = ({ dataGET }) => {
+export const UsersList = ({ dataGET, handleDelete }) => {
 	const navigate = useNavigate();
-
-	const deleteUser = (id, pseudo) => {
-		const confirmed = window.confirm(
-			`Êtes-vous sûr de vouloir supprimer l'utilisateur ${pseudo} ?`
-		);
-		if (confirmed) {
-			fetch(
-				"http://localhost/github/glimpse/back-office/back/api/utilisateur/" +
-					id,
-				{
-					method: "DELETE",
-				}
-			)
-				.then((response) => response.json())
-				.then((data) => {
-					alert(data.status_message);
-				});
-		}
-	};
 	return (
 		<table>
 			<thead>
@@ -46,14 +27,16 @@ export const Utilisateurs = ({ dataGET }) => {
 							>
 								Modifier
 							</Button>
-							<Button
-								type={"button"}
-								onClick={() =>
-									deleteUser(d.id_utilisateur, d.pseudo_utilisateur)
-								}
-							>
-								Supprimer
-							</Button>
+							{d.id_utilisateur != 1 && (
+								<Button
+									type={"button"}
+									onClick={() =>
+										handleDelete(d.id_utilisateur, d.pseudo_utilisateur)
+									}
+								>
+									Supprimer
+								</Button>
+							)}
 						</td>
 					</tr>
 				))}
