@@ -144,6 +144,17 @@
                     <p class="sub-section__text">Si vous avez des réclamations concernant votre visite à l'exposition, vous devez les adresser directement à l'organisateur de l'exposition. Le service après-vente pour la vente de billets ne traite pas les réclamations liées à l'expérience de visite.</p>
                 </div>
                 <div class="sub-section">
+                    <h3 class="sub-section__title">Recours en cas de litige</h3>
+                    <p class="sub-section__text">En cas de litige entre l'utilisateur et le fournisseur de service concernant l'achat de billets pour une exposition, les parties doivent chercher à résoudre le litige de manière amiable. Les parties doivent discuter des problèmes et chercher une solution qui satisfait toutes les parties.</p>
+
+                    <p class="sub-section__text">Si une solution amiable ne peut pas être trouvée, les parties peuvent recourir à une médiation ou à un arbitrage pour résoudre le litige. Les parties conviennent de choisir un tiers impartial pour les aider à trouver une solution mutuellement satisfaisante.</p>
+
+                    <p class="sub-section__text">En cas de recours judiciaire, le tribunal compétent pour résoudre le litige est celui du lieu de résidence de l'utilisateur. La loi applicable pour résoudre le litige est la loi du lieu de résidence de l'utilisateur.</p>
+
+                    <p class="sub-section__text">Les réclamations doivent être déposées dans les 30 jours suivant l'achat de billets. Les réclamations doivent être adressées par mail à l'adresse suivante : <a href="mailto:milleculturesuneorigine@gmail.com" class="section__link">milleculturesuneorigine@gmail.com</a>.</p>
+                    <p class="sub-section__text">La responsabilité du fournisseur de service en cas de litige est limitée au montant payé par l'utilisateur pour l'achat de billets. En aucun cas, le fournisseur de service ne peut être tenu responsable de dommages indirects ou consécutifs, y compris les pertes de bénéfices, les pertes d'exploitation ou les pertes de données.</p>
+                </div>
+                <div class="sub-section">
                     <h3 class="sub-section__title">Propriété intellectuelle (médias, contenus…)</h3>
                     <h4 class="sub-section__subtitle">Contenu créé en interne</h4>
                     <p class="sub-section__text">L'ensemble des médias et contenus présents sur ce site web et créés en interne par ses concepteurs et son éditeur, tels que les textes, les images, les vidéos, les sons, les logos ou graphiques, ainsi que leur mise en page, leur organisation et leur présentation, sont la propriété exclusive de l'éditeur ou de ses partenaires, et sont protégés par les lois relatives à la propriété intellectuelle en vigueur.</p>
