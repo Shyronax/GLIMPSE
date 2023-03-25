@@ -132,7 +132,7 @@
                     <h3 class="sub-section__title">Utilisation du ticket, modification, annulation et remboursement</h3>
                     <p class="sub-section__text">La vente de billets pour un musée ou de prestations liées à celui-ci est assimilée à une vente de services de loisirs et, conformément aux articles L 221-28° et L 121-21-8-12° du Code de la consommation, n'ouvre aucun droit au délai de rétractation. <span class="text--bold">Ainsi, les billets ne sont échangeables, ni modifiables, ni remboursables dans le cas où nos établissements sont ouverts au public.</span>
                     <p class="sub-section__text"><span class="text--bold">Il est donc impossible d'échanger vos billets.</span></p>
-                    <p class="sub-section__text">Si, et seulement si, l'exposition est annulée, vous pouvez être remboursé.</p>
+                    <p class="sub-section__text">Si, et seulement si, l'exposition est annulée, vous pouvez être remboursé.e.</p>
                     <p class="sub-section__text">Le billet d'entrée est horodaté et ne vous permet pas de vous rendre au musée un autre jour ou le même jour sur un autre créneau horaire.</p>
                 </div>
                 <div class="sub-section">
@@ -153,6 +153,26 @@
 
                     <p class="sub-section__text">Les réclamations doivent être déposées dans les 30 jours suivant l'achat de billets. Les réclamations doivent être adressées par mail à l'adresse suivante : <a href="mailto:milleculturesuneorigine@gmail.com" class="section__link">milleculturesuneorigine@gmail.com</a>.</p>
                     <p class="sub-section__text">La responsabilité du fournisseur de service en cas de litige est limitée au montant payé par l'utilisateur pour l'achat de billets. En aucun cas, le fournisseur de service ne peut être tenu responsable de dommages indirects ou consécutifs, y compris les pertes de bénéfices, les pertes d'exploitation ou les pertes de données.</p>
+                </div>
+                <div class="sub-section">
+                    <h3 class="sub-section__title">Réclamation</h3>
+                    <h4 class="sub-section__subtitle">Mode de dépôt des réclamations</h4>
+                    <p class="sub-section__text">Vous pouvez dépôser une réclamation à travers plusieurs moyens :</p>
+                    <ul class="sub-section__list">
+                        <li class="sub-section__list-item">Par mail, vous pouvez nous envoyer votre réclamation à cette adresse mail : <a href="mailto:milleculturesuneorigine@gmail.com" class="sub-section__list-item-link">milleculturesuneorigine@gmail.com</a>.</li>
+                        <li class="sub-section__list-item">Par téléphone, vous pouvez nous appeler au <a href="tel:0160958585" class="sub-section__list-item-link">01 60 95 85 85</a> </li>
+                        <li class="sub-section__list-item">En personne, il est possible de déposer une réclamation en personne auprès du personnel de l'exposition.</li>
+                    </ul>
+                    <br>
+                    <h4 class="sub-section__subtitle">Procédure de traitement des réclamations</h4>
+                    <p class="sub-section__text">Vous trouverez ci-dessous les étapes du traitement des réclamations</p>
+                    <ul class="sub-section__list">
+                        <li class="sub-section__list-item">Confirmation de réception : une fois que vous avez déposé votre réclamation, vous devriez recevoir une confirmation de réception.</li>
+                        <li class="sub-section__list-item">Examen de la réclamation : votre réclamation sera examiné et nous essayerons de comprendre le problème que vous rencontrez.</li>
+                        <li class="sub-section__list-item">Proposition d'une solution : nous vous proposerons ensuite une solution pour résoudre votre problème. Cela peut inclure un remboursement, un échange de billets ou une autre forme de compensation. Le remboursement ou un échange de billet ne s'applique qu'en cas d'annulation de l'exposition durant votre créneau horaire</li>
+                        <li class="sub-section__list-item">Acceptation de la solution : si la solution proposée est acceptable pour vous, vous pouvez accepter la solution proposée.</li>
+                        <li class="sub-section__list-item">Refus de la solution : si la solution proposée ne répond pas à vos attentes, vous pouvez demander une révision de la solution ou envisager d'autres options telles que la médiation ou l'arbitrage.</li>
+                    </ul>
                 </div>
                 <div class="sub-section">
                     <h3 class="sub-section__title">Propriété intellectuelle (médias, contenus…)</h3>
