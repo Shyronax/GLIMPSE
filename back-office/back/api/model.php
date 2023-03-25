@@ -146,7 +146,6 @@ function updateUser($data,$id){
     $stmt->bindParam(':email',$data["email"], PDO::PARAM_STR);
     $stmt->bindParam(':id',$id, PDO::PARAM_INT); 
 
-
     if($stmt->execute()){
         $response=array(
             'status'=> 1,
@@ -164,13 +163,13 @@ function updateUser($data,$id){
 
 function updateAdmin($data, $id){
     $db=dbConnexion();
-    $query="UPDATE utilisateur SET pseudo_utilisateur=:pseudo, email_utilisateur=:email WHERE id_utilisateur=:id";
+    $query="UPDATE utilisateur SET pseudo_utilisateur=:pseudo, email_utilisateur=:email, mdp_utilisateur=:mdp WHERE id_utilisateur=:id";
 
     $stmt= $db->prepare($query);
     $stmt->bindParam(':pseudo',$data["pseudo"], PDO::PARAM_STR); 
     $stmt->bindParam(':email',$data["email"], PDO::PARAM_STR); 
 
-    $hash= password_hash($mdp, PASSWORD_DEFAULT);
+    $hash= password_hash($data["mdp"], PASSWORD_DEFAULT);
     $stmt->bindParam(':mdp', $hash , PDO::PARAM_STR); 
     $stmt->execute();
 

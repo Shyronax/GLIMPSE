@@ -39,9 +39,30 @@ export const Stats = () => {
 			<div className="content">
 				<Graphique data={data} />
 				<div className="infos">
-					<Info number={nbTicketsTotal} text={"Réservations totales"} />
-					<Info number={nbTicketsCeMois} text={"Réservations ce mois-ci"} />
-					<Info number={nbTicketsCeJour} text={"Réservations aujourd'hui"} />
+					<Info
+						number={nbTicketsTotal}
+						text={
+							nbTicketsTotal > 1
+								? "Réservations au total"
+								: "Réservation au total"
+						}
+					/>
+					<Info
+						number={nbTicketsCeMois}
+						text={
+							nbTicketsCeMois > 1
+								? "Réservations ce mois-ci"
+								: "Réservation ce mois-ci"
+						}
+					/>
+					<Info
+						number={nbTicketsCeJour}
+						text={
+							nbTicketsCeJour > 1
+								? "Réservations aujourd'hui"
+								: "Réservation aujourd'hui"
+						}
+					/>
 				</div>
 			</div>
 		</div>

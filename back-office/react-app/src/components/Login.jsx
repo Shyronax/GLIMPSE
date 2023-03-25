@@ -5,6 +5,7 @@ import { Button } from "./buttons/Button";
 export const Login = () => {
 	const [pseudo, setPseudo] = useState("");
 	const [mdp, setMdp] = useState("");
+	const [status_message, setStatus_message] = useState("");
 	const authContext = useContext(AuthContext);
 
 	const handleSubmit = async (e) => {
@@ -24,15 +25,15 @@ export const Login = () => {
 				if (data.status_user == 1) {
 					//faire le JWT ici
 					authContext.login();
-					console.log("ok");
 				} else {
-					console.log("pa bon");
+					setStatus_message(data.status_message);
 				}
 			});
 	};
 
 	return (
 		<form onSubmit={handleSubmit}>
+			{status_message && <p>{status_message}</p>}
 			<label>
 				login:
 				<input
