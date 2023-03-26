@@ -14,11 +14,15 @@
         <div class="container">
             <h1 class="container__title">S'incrire</h1>
             <p class="container__text">*Champs obligatoires</p>
-            <form action="" class="form" method="post">
+            <form action="inscriptionClient.php" class="form" method="post">
                 <div class="form__container">
                     <div class="form__field">
-                        <label for="pseudo" class="form__label">Login*</label>
-                        <input type="text" name='pseudo' class="form__input" required>
+                        <label for="nom" class="form__label">Nom*</label>
+                        <input type="text" name='nom' class="form__input" required>
+                    </div>
+                    <div class="form__field">
+                        <label for="prenom" class="form__label">Prénom*</label>
+                        <input type="text" name='prenom' class="form__input" required>
                     </div>
                     <div class="form__field">
                         <label for="mail" class="form__label">Email*</label>

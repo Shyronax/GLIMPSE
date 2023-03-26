@@ -14,11 +14,11 @@
         <div class="container">
             <h1 class="container__title">Se connecter</h1>
             <p class="container__text">*Champs obligatoires</p>
-            <form action="" class="form" method="post">
+            <form action="connexionClient.php" class="form" method="post">
                 <div class="form__container">
                     <div class="form__field">
-                        <label for="pseudo" class="form__label">Login / Email*</label>
-                        <input type="text" name='pseudo 'class="form__input" required>
+                        <label for="mail" class="form__label">Login / Email*</label>
+                        <input type="text" name='mail'class="form__input" required>
                     </div>
                     <div class="form__field">
                         <label for="mdp" class="form__label">Mot de passe*</label>
