@@ -8,9 +8,7 @@ export const Profile = () => {
 	let [data, setData] = useState([]);
 
 	useEffect(() => {
-		fetch(
-			"http://localhost/github/glimpse/back-office/back/api/utilisateur/" + id
-		)
+		fetch("/github/glimpse/back-office/back/api/utilisateur/" + id)
 			.then((response) => response.json())
 			.then((data) => setData(data));
 	}, []);

@@ -2,13 +2,13 @@ import "./App.css";
 
 import { useContext } from "react";
 import { AuthContext } from "./context/AuthContext";
+import { Login } from "./pages/Login";
 import { Accounts } from "./pages/Accounts";
 import { Settings } from "./pages/Settings";
 import { Stats } from "./pages/Stats";
 import { Profile } from "./pages/Profile";
 import { AddUser } from "./pages/AddUser";
 import { Button } from "./components/buttons/Button";
-import { Login } from "./components/Login";
 import { Nav } from "./components/nav/Nav";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 

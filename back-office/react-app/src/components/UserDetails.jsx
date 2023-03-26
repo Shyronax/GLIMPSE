@@ -34,7 +34,7 @@ export const UserDetails = ({ dataGET, goBack }) => {
 			}
 
 			fetch(
-				"http://localhost/github/glimpse/back-office/back/api/utilisateur/" +
+				"/github/glimpse/back-office/back/api/utilisateur/" +
 					dataGET.id_utilisateur,
 				{
 					method: "PUT",

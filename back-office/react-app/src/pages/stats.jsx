@@ -8,7 +8,7 @@ export const Stats = () => {
 	let [data, setData] = useState([]);
 
 	useEffect(() => {
-		fetch("http://localhost/github/glimpse/back-office/back/api/tickets")
+		fetch("/github/glimpse/back-office/back/api/tickets")
 			.then((response) => response.json())
 			.then((data) => setData(data));
 	}, []);

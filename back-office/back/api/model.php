@@ -1,9 +1,8 @@
 <?php
-session_start();
 header('Access-Control-Allow-Origin: *');
 header('Access-Control-Allow-Credentials: true');
 header('Access-Control-Allow-Headers: Origin, Content-Type, X-Auth-Token , Authorization');
-header('Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS');
+header('Access-Control-Allow-Methods: GET, POST, PATCH, PUT, DELETE, OPTIONS');
 
 function dbConnexion(){
     require('db.php');
@@ -30,21 +29,53 @@ function login($login,$mdp){
             $response=array(
                 'status'=> 1,
                 'status_message'=>'Connexion réussie.',
-                'status_user'=>$result['id_utilisateur']
             );
+            sendJSON($response);
         } else {
             $response=array(
                 'status'=> 0,
                 'status_message'=>'Mauvais login/mot de passe.'
             );
+        sendJSON($response);
         }
     } else {
         $response=array(
                 'status'=> 0,
                 'status_message'=>'Mauvais login/mot de passe.'
             );
+        sendJSON($response);
     }
-    sendJSON($response);
+    
+};
+
+function loginAndJWT($login,$mdp){
+    $db=dbConnexion();
+    $db->query('SET NAMES utf8');
+    $requete="SELECT * FROM utilisateur WHERE pseudo_utilisateur=:login";
+
+    $stmt=$db->prepare($requete);
+    $stmt->bindParam(':login',$login , PDO::PARAM_STR);
+    $stmt->execute();
+    $result=$stmt->fetch(PDO::FETCH_ASSOC);
+
+    if ($result){
+        if(password_verify($mdp, $result["mdp_utilisateur"])){
+            return "ok";
+        } else {
+            $response=array(
+                'status'=> 0,
+                'status_message'=>'Mauvais login/mot de passe.'
+            );
+        sendJSON($response);
+        }
+    } else {
+        $response=array(
+                'status'=> 0,
+                'status_message'=>'Mauvais login/mot de passe.'
+            );
+        sendJSON($response);
+    }
+    
 };
 
 function getAll($table){

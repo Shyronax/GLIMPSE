@@ -1,31 +1,45 @@
 <?php
-require_once('vendor/autoload.php');
-use \Firebase\JWT\JWT; 
+require('api/db.php');
+require('api/model.php');
 
-// Paramètres pour le JWT
-$tokenId = base64_encode(random_bytes(32));
-$issuedAt = time();
-$notBefore = $issuedAt + 60;
-$expire = $issuedAt + 3600;
+if($_SERVER["REQUEST_METHOD"] === 'POST' || $_SERVER["REQUEST_METHOD"] === 'OPTIONS') {
+    // Décodage du corps de la requête JSON
+    $data = json_decode(file_get_contents('php://input'), true);
 
-$keyid = 'decoded';
+     // Vérification de l'existence des données
+     if(isset($data['pseudo']) && isset($data['mdp'])) {
+        $pseudo = $data['pseudo'];
+        $mdp = $data['mdp'];
 
-// Données à encoder dans le JWT (payload)
-$payload = [
-    'id' => '1234567890', // user id dans la bdd dont $_GET['id'] etc.
-    'pseudo' => 'John Doe', // pseudo de l'utilisateur
-    'iat' => $issuedAt, // date de création du token
-    'nbf' => $notBefore, // date de début de validité du token
-    'exp' => $expire, // date d'expiration du token
-];
+        if(loginAndJWT($pseudo, $mdp) === "ok") {
+            // Création du JWT
+            require('jwt/create.php');
 
-// Clé secrète pour signer le JWT (signature)
-$secretKey = 'admin';
+            // Envoi du JWT au client
+            setcookie('jwt', $jwt, $expire, '/', null, false, true);
 
-// Algorithme de signature
-$algorithm = 'HS256';
+            require('jwt/verify.php');
 
-// Encodage du JWT
-$jwt = JWT::encode($payload, $secretKey, $algorithm, $keyid);
-
-echo "JWT: " . $jwt;
+            if($jwtValide == 1) {
+                $response=array(
+                    'status'=> 1,
+                    'status_message'=>"Connexion réussie"
+                );
+            } else {
+                $response=array(
+                    'status'=> 0,
+                    'status_message'=>"Erreur : connexion échouée"
+                );
+            }
+            sendJSON($response);
+        }
+    } else {
+        $response=array(
+            'status'=> 0,
+            'status_message'=>"Erreur : vous n'avez pas renseigné le pseudo ou le mot de passe"
+        );
+        sendJSON($response);
+    }
+} else {
+    header('Location: http://localhost:5173/connexion');
+}

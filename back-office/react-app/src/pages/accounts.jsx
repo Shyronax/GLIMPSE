@@ -9,7 +9,7 @@ export const Accounts = () => {
 	let [data, setData] = useState([]);
 
 	useEffect(() => {
-		fetch("http://localhost/github/glimpse/back-office/back/api/utilisateurs")
+		fetch("/github/glimpse/back-office/back/api/utilisateurs")
 			.then((response) => response.json())
 			.then((data) => setData(data));
 	}, []);
@@ -19,13 +19,9 @@ export const Accounts = () => {
 			`Êtes-vous sûr de vouloir supprimer l'utilisateur ${pseudo} ? Cette action est irréversible.`
 		);
 		if (confirmed) {
-			fetch(
-				"http://localhost/github/glimpse/back-office/back/api/utilisateur/" +
-					id,
-				{
-					method: "DELETE",
-				}
-			)
+			fetch("/github/glimpse/back-office/back/api/utilisateur/" + id, {
+				method: "DELETE",
+			})
 				.then((response) => response.json())
 				.then((data) => {
 					setData((prevData) =>
