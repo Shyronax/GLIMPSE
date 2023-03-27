@@ -44,7 +44,7 @@
                         <p>Contenus audiovisuels, dispositif interactif, poteries et autres objets sacrés seront l'occasion de vous plonger dans une <span class="text--highlight">ambiance immersive</span>, afin de découvrir l'univers des peuples Pueblos.</p>
                     </div>
                     <a href="controller.php?page=exhibition" class="btn btn--primary">
-                        <p class="text--bold">En savoir plus</p>
+                        <p class="text--bold">Plus d'info' sur l'expo'</p>
                         <i class="fa-solid fa-arrow-right btn__icon"></i>
                     </a>
                 </div>
