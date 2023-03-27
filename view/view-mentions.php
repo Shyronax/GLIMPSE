@@ -136,6 +136,14 @@
                     <p class="sub-section__text">Le billet d'entrée est horodaté et ne vous permet pas de vous rendre au musée un autre jour ou le même jour sur un autre créneau horaire.</p>
                 </div>
                 <div class="sub-section">
+                    <h3 class="sub-section__title">Taxes sur le ticket</h3>
+                    <p class="sub-section__text">Veuillez noter que les taxes applicables sur les tickets d'exposition sont incluses dans le prix d'achat du billet. Cela signifie que le prix que vous payez pour le billet inclut toutes les taxes applicables.</p>
+
+                    <p class="sub-section__text">Notre exposition est soumise à une TVA (taxe sur la valeur ajoutée) de 20%.</p>
+
+                    <p class="sub-section__text">Si vous avez des questions concernant les taxes applicables sur les tickets, n'hésitez pas à nous contacter. Nous sommes à votre disposition pour répondre à toutes vos questions.</p>
+                </div>
+                <div class="sub-section">
                     <h3 class="sub-section__title">Service Après Vente (SAV)</h3>
                     <p class="sub-section__text">Si vous avez besoin de changer la date ou l'heure de votre visite, vous devez nous contacter à l'avance pour voir s'il est possible de le faire. Les changements ne sont pas garantis et sont soumis à la disponibilité.</p>
 
