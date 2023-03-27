@@ -760,11 +760,13 @@ main {
 
 .footer__utility-copy {
     font-weight: 500;
+    padding: 1rem;
 }
 
 .footer__utility-link {
     text-decoration: none;
     color: var(--color-light);
+    padding: 1rem;
 }
 
 .footer__utility-link:hover {
