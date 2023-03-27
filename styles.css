@@ -267,12 +267,18 @@ main {
     list-style: none;
     display: flex;
     gap: 3.75rem; 
+    margin: 0;
+}
+
+.nav__menu-item {
+    padding: 1rem 0.5rem;
 }
 
 .nav__menu-item-link {
     text-decoration: none;
     color: var(--color-light);
     font-weight: 600;
+    padding: 1rem 0.5rem;
 }
 
 .nav__buttons {
