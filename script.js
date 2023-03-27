@@ -17,3 +17,4 @@ iconConf.addEventListener('click', function () {
     passwordConf.setAttribute('type', type);
     this.classList.toggle('fa-eye-slash');
 });
+

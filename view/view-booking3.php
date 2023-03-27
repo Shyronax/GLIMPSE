@@ -1,3 +1,14 @@
+<?php
+$_SESSION['nom'] = $_POST['nom'];
+$_SESSION['prenom'] = $_POST['prenom'];
+$_SESSION['date'] = $_POST['date'];
+$_SESSION['heure'] = $_POST['heure'];
+$_SESSION['mail'] = $_POST['mail'];
+$_SESSION['price1'] = $_POST['price1'];
+$_SESSION['price2'] = $_POST['price2'];
+$_SESSION['price3'] = $_POST['price3'];
+?>
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -12,10 +23,10 @@
     ?>
     <main>
         <div class="container container--medium container--center">
-            <a href="controller.php?page=booking2"><i class="fa-solid fa-arrow-left link-back"></i></a>
+            <a href="controller.php?page=booking1"><i class="fa-solid fa-arrow-left link-back"></i></a>
             <div>
                 <h1 class="container__title">Billetterie</h1>
-                <p class="container__subtitle">Récapitulatif (3/4)</p>
+                <p class="container__subtitle">Récapitulatif (2/3)</p>
             </div>
             <p class="container__text text--center">Veuillez vérifier que votre réservation est correcte. <br>Sinon vous pouvez encore la modifier.</p>
             <div class="review-card">
@@ -24,7 +35,7 @@
                     <h2 class="review-card__title">Réservation</h2>
                 </div>
                 <ul class="list--none">
-                    <li><span class="text--bold">Date :</span> le 11 avril 2023 de 8h30 à 10h30</li>
+                    <li><span class="text--bold">Date :<?=$_SESSION['date']?><?=$_SESSION['heure']?></span> le 11 avril 2023 de 8h30 à 10h30</li>
                     <li><span class="text--bold">Nombre de places :</span> 5 places</li>
                     <i><span class="text--bold">Total :</span> 12€</i>
                 </ul>
