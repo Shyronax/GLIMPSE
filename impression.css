@@ -11,7 +11,7 @@ main {
 }
 
 /* éléments dispensables pour l'impression */
-.nav, .breadcrumb, .card-gallery, .main__banner, .deco-container, .chatbot-icon {
+.nav, .breadcrumb, .card-gallery, .main__banner, .deco-container, .chatbot-icon, .btn, .btn-primary, .footer__utility-link {
     display: none;
 }
 
