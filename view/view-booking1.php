@@ -30,9 +30,9 @@
                                 <input type="date" name='date' <?php if(isset($_SESSION['date'])){echo("value={$_SESSION['date']}");}?>  min="2023-03-26" max="2023-07-26"class="form__input" required>
                             </div>
                             <div class="form__field">
-                                <label for="time" class="form__label">Heure</label>
+                                <label for="heure" class="form__label">Heure</label>
 
-                                <input list="times" type="time" name="time" min="08:00" max="17:00" step="3600" class="form__input" required>
+                                <input list="times" type="time" name="heure" min="08:00" max="17:00" step="3600" class="form__input" required>
 
                                 <datalist id="times">
                                     <option value="08:00:00" <?php if(isset($_SESSION['heure'])){if($_SESSION['heure']="08:00"){echo("selected");}}?>>

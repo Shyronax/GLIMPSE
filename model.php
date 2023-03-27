@@ -16,7 +16,8 @@ function addClient($nom, $prenom, $email, $mdp){
     $result=$stmt->fetch(PDO::FETCH_ASSOC);
 
     if($result){
-        header("Location: controller.php?page=inscription");
+        return("déjà existant");
+        // header("Location: controller.php?page=inscription");
     } else {
         $query='INSERT INTO client (nom, prenom, email, pass) VALUES (:nom, :prenom, :email, :pass)';
         $hash=password_hash($mdp, PASSWORD_DEFAULT);
@@ -52,14 +53,14 @@ function loginClient($email, $mdp){
             $_SESSION['nom'] = $result['nom'];
             $_SESSION['prenom'] = $result['prenom'];
             $_SESSION['mail'] = $result['mail'];
-            echo("connecté");
+            return("connecté");
             // header("Location: controller.php?page=home");
         } else {
-            echo("pas connecté");
+            return("pas connecté");
             // header("Location: controller.php?page=connection");
         }
     } else {
-        echo("pas connecté");
+        return("pas connecté");
         // header("Location: controller.php?page=connection");
     }
 }
@@ -69,8 +70,8 @@ function addTicket($jour, $heure, $nom, $prenom, $mail, $tarif, $client=null){
     $query="INSERT INTO ticket (jour_ticket, heure_ticket, ext_utilisateur, nom, prenom, mail, tarif) VALUES (:jour_ticket, :heure_ticket, :ext_utilisateur, :nom, :prenom, :mail, :tarif)";
 
     $stmt=$db->prepare($query);
-    $stmt->bindParam(':jour_ticket', $jour, PDO::PARAM_DATE);
-    $stmt->bindParam(':heure_ticket', $heure, PDO::PARAM_STR);
+    $stmt->bindParam(':jour_ticket', $jour);
+    $stmt->bindParam(':heure_ticket', $heure);
     $stmt->bindParam(':ext_utilisateur', $client, PDO::PARAM_INT);
     $stmt->bindParam(':nom', $nom, PDO::PARAM_STR);
     $stmt->bindParam(':prenom', $prenom, PDO::PARAM_STR);

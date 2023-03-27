@@ -35,9 +35,9 @@ $_SESSION['price3'] = $_POST['price3'];
                     <h2 class="review-card__title">Réservation</h2>
                 </div>
                 <ul class="list--none">
-                    <li><span class="text--bold">Date :<?=$_SESSION['date']?><?=$_SESSION['heure']?></span> le 11 avril 2023 de 8h30 à 10h30</li>
-                    <li><span class="text--bold">Nombre de places :</span> 5 places</li>
-                    <i><span class="text--bold">Total :</span> 12€</i>
+                    <li><span class="text--bold">Date :</span> le <?=$_SESSION['date']?> à <?=$_SESSION['heure']?></li>
+                    <li><span class="text--bold">Nombre de places :</span> <?=$_SESSION['price1'] + $_SESSION['price2'] + $_SESSION['price3'] ?> places</li>
+                    <i><span class="text--bold">Total :</span> <?= 5 * $_SESSION['price1'] + 2 * $_SESSION['price2']?>€</i>
                 </ul>
             </div>  
             <p class="container__text text--center">Vous recevrez d'ici quelques minutes, votre billet à l'adresse mail que vous avez renseigné. <br>

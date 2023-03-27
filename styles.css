@@ -204,6 +204,7 @@ main {
     display: flex;
     flex-direction: column;
     padding-top: 12vh;
+    overflow: hidden;
 }
 
 .main {

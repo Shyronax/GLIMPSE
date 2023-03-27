@@ -20,7 +20,7 @@
             <p class="container__text text--bold text--center">Attention, avant de procéder à votre paiement, nous vous informons que les tickets ne sont ni remboursables, ni échangeables, ni modifiables.</p>
             <p class="container__text text--center">
             Le paiement s'effectue via carte bancaire.</p>
-            <a href="" class="btn btn--secondary">Réserver</a>    
+            <a href="reservation.php" class="btn btn--secondary">Réserver</a>    
         </div>
     </main>
     <?php 
