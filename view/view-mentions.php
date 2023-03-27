@@ -108,7 +108,7 @@
                 <p class="section__text">Les présentes conditions générales d'utilisation (CGU) régissent l'utilisation du site de réservation de tickets pour les expositions “Milles Cultures, une Origine”. En accédant et en utilisant ce site, vous acceptez ces CGU dans leur intégralité.</p>
                 <div class="sub-section">
                     <h3 class="sub-section__title">Description des services</h3>
-                    <p class="sub-section__text">Le site de réservation de tickets pour le musée [nom du musée] permet aux utilisateurs de réserver des tickets pour les expositions du musée en ligne. Le site peut également offrir des fonctionnalités supplémentaires pour les utilisateurs inscrits.</p>
+                    <p class="sub-section__text">Le site de réservation de tickets pour l'exposition permet aux utilisateurs de réserver des tickets pour l'exposition en ligne. Le site peut également offrir des fonctionnalités supplémentaires pour les utilisateurs inscrits.</p>
                 </div>
                 <div class="sub-section">
                     <h3 class="sub-section__title">Création d'un compte utilisateur</h3>
