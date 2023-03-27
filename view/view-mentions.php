@@ -108,7 +108,7 @@
                 <p class="section__text">Les présentes conditions générales d'utilisation (CGU) régissent l'utilisation du site de réservation de tickets pour les expositions “Milles Cultures, une Origine”. En accédant et en utilisant ce site, vous acceptez ces CGU dans leur intégralité.</p>
                 <div class="sub-section">
                     <h3 class="sub-section__title">Description des services</h3>
-                    <p class="sub-section__text">Le site de réservation de tickets pour le musée [nom du musée] permet aux utilisateurs de réserver des tickets pour les expositions du musée en ligne. Le site peut également offrir des fonctionnalités supplémentaires pour les utilisateurs inscrits.</p>
+                    <p class="sub-section__text">Le site de réservation de tickets pour l'exposition permet aux utilisateurs de réserver des tickets pour l'exposition en ligne. Le site peut également offrir des fonctionnalités supplémentaires pour les utilisateurs inscrits.</p>
                 </div>
                 <div class="sub-section">
                     <h3 class="sub-section__title">Création d'un compte utilisateur</h3>
@@ -134,6 +134,14 @@
                     <p class="sub-section__text"><span class="text--bold">Il est donc impossible d'échanger vos billets.</span></p>
                     <p class="sub-section__text">Si, et seulement si, l'exposition est annulée, vous pouvez être remboursé.e.</p>
                     <p class="sub-section__text">Le billet d'entrée est horodaté et ne vous permet pas de vous rendre au musée un autre jour ou le même jour sur un autre créneau horaire.</p>
+                </div>
+                <div class="sub-section">
+                    <h3 class="sub-section__title">Taxes sur le ticket</h3>
+                    <p class="sub-section__text">Veuillez noter que les taxes applicables sur les tickets d'exposition sont incluses dans le prix d'achat du billet. Cela signifie que le prix que vous payez pour le billet inclut toutes les taxes applicables.</p>
+
+                    <p class="sub-section__text">Notre exposition est soumise à une TVA (taxe sur la valeur ajoutée) de 20%.</p>
+
+                    <p class="sub-section__text">Si vous avez des questions concernant les taxes applicables sur les tickets, n'hésitez pas à nous contacter. Nous sommes à votre disposition pour répondre à toutes vos questions.</p>
                 </div>
                 <div class="sub-section">
                     <h3 class="sub-section__title">Service Après Vente (SAV)</h3>
