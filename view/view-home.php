@@ -34,9 +34,9 @@
             </div>
             <div class="card__main">
                 <div class="card__media">
-                    <video src="">
-
-                    </video>
+                <iframe class="card__video"
+                    src="https://www.youtube.com/watch?v=jI4fHHaQLu4">
+                </iframe>
                 </div>
                 <div class="card__info">
                     <div class="card__text">
