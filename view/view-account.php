@@ -32,7 +32,6 @@
                             <th scope="col">Date</th>
                             <th scope="col">Heure</th>
                             <th scope="col">Nombre de billet</th>
-                            <th scope="col">Prix total</th>
                         </tr>
                     </thead>
                     <tbody class="table__body">
@@ -42,31 +41,11 @@
                             <td><?=$ticket["jour_ticket"]?></td>
                             <td><?=$ticket["heure_ticket"]?></td>
                             <td><?=$ticket["nbplace_ticket"]?></td>
-                            <td>10€</td>
                         </tr>
                         <?php
                         } ?>
                     </tbody>
                 </table>
-                <h2 class="section__title">Mes réservations</h2>
-                <?php foreach($tickets as $ticket){?>
-                <div class="booking-card">
-                    <h3 class="booking-card__title">Réservation #<?=$ticket["id_ticket"]?></h3>
-                    <div>
-                        <p class="booking-card__text">Date : <?=$ticket["jour_ticket"]?></p>
-                        <p class="booking-card__text">Heure : <?=$ticket["heure_ticket"]?></p>
-                    </div>
-                    <div>
-                        <p class="booking-card__text">Détails de la réservation : </p>
-                        <ul class="booking-card__details">
-                            <li class="booking-card__text">1 ticket plein tarifs (5€)</li>
-                            <li class="booking-card__text">1 ticket moins de 26 ans (2€)</li>
-                            <li class="booking-card__text">1 ticket moins de 10 ans (gratuit)</li>
-                        </ul>
-                    </div>
-                </div>
-                <?php
-                } ?>
             </div>
             <a href="logout.php" class="btn btn--secondary">Se déconnecter</a>    
         </div>
