@@ -14,8 +14,13 @@
         <div class="container">
             <h1 class="container__title">Réinitialisation du mot de passe</h1>
             <p class="container__text">*Champs obligatoire</p>
+<<<<<<< Updated upstream
             <p class="container__text">Renseigner une adresse email et validez pour recevoir un lien de réinitialisation du mot de passe.</p>
             <form action="" class="form" method="post">
+=======
+            <p class="container__text">Renseigner votre adresse email et validez pour recevoir un lien de réinitialisation du mot de passe.</p>
+            <form action="resetPwdRequest.php" class="form" method="post">
+>>>>>>> Stashed changes
                 <div class="form__container form__container--center">
                     <div class="form__field">
                         <label for="mail" class="form__label">Email*</label>
