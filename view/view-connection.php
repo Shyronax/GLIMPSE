@@ -3,6 +3,7 @@
 <head>
     <?php 
         include "src/element/head.html";
+        $_SESSION['prev'] = $_GET['prev']
     ?>
     <title>Connexion - Mille Cultures, Une Origine</title>
 </head>

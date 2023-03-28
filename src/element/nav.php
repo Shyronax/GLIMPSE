@@ -14,7 +14,7 @@
             if(isset($_SESSION['id'])){
                 echo("<a href='controller.php?page=account' class='btn btn--tertiary'>Mon compte</a>");
             } else {
-                echo("<a href='controller.php?page=connection' class='btn btn--tertiary'>Se connecter</a>");
+                echo("<a href='controller.php?page=connection&prev=".$_GET['page']."' class='btn btn--tertiary'>Se connecter</a>");
             }
             ?>
             <a href="controller.php?page=booking1" class="btn btn--primary">
