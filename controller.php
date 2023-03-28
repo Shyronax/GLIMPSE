@@ -32,8 +32,19 @@ if (isset($_GET["page"])) {
         case "connection":
             include "view/view-connection.php";
             break;
-        case "pwdforgot":
-            include "view/view-pwdforgot.php";
+        case "pwdreinit":
+            include "view/view-pwdreinit.php";
+            break;
+        case "pwdchange":
+            $selector = $_GET["selector"];
+            $validator = $_GET["validator"];
+            if(empty($selector) || empty($validator)){
+                header("Location: index.php?page=pwdreinit");
+            } else {
+                if(ctype_xdigit($selector) !== false && ctype_xdigit($validator) !== false){
+                    include "view/view-pwdchange.php";
+                }
+            }
             break;
         case "mailconf":
             include "view/view-mailconf.php";
