@@ -506,6 +506,10 @@ main {
     color: var(--color-link-hover);
 }
 
+.container__link:visited {
+    color: var(--color-link-visited);
+}
+
 .main-container {
     width: 60%;
     display: flex;
