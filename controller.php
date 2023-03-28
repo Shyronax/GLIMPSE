@@ -1,5 +1,5 @@
 <?php
-session_start();
+require "model.php";
 
 // require "model_blog.php";
 
@@ -39,9 +39,12 @@ if (isset($_GET["page"])) {
             include "view/view-mailconf.php";
             break;
         case "account":
+            $client = getOneById($_SESSION["id"], "utilisateur");
+            $tickets = getClientTickets($_SESSION["id"]);
             include "view/view-account.php";
             break;
         case "changedata":
+            $client = getOneById($_SESSION["id"], "utilisateur");
             include "view/view-changedata.php";
             break;
         case "pwdreinit":
