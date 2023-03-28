@@ -13,23 +13,29 @@ if(isset($_POST['mail'])){
     // création du selector et token qui seront dans l'url
     $selector=bin2hex(random_bytes(8));
     $token=random_bytes(32);
-    $url="http://localhost/controller.php?page=pwdchangeform&selector=".$selector."&token=".bin2hex($token); 
 
-    // date actuelle au format Unix + 1800 sec = fin de valitidé du lien
+//----------------CHANGER L'URL AVANT DEPLOIEMENT SUR HOSTINGER !!!!-------------------------
+
+    $url="http://localhost/github/glimpse/controller.php?page=pwdchangeform&selector=".$selector."&token=".bin2hex($token); 
+
+//-------------------------------------------------------------------------------------------
+
+    // Date actuelle au format Unix + 1800 sec = fin de valitidé du lien
     $expires=date("U")+1800; // 30 minutes
 
-    // supprime toute entrée de ce mail dans table reinit_mdp avant d'en créer une
+    // Supprime toute entrée de ce mail dans table reinit_mdp avant d'en créer une
     deleteFromReinitMdp($_POST['mail']); // 
 
-    // créé le row (insère le token)
+    // Créé le row (insère le token)
     insertIntoReinitMdp($_POST['mail'], $selector, $token, $expires);
 
     // Config du mail à envoyer
-
-    // Paramètres SMTP Hostinger
     $mail = new PHPMailer(true);
+    $mail->CharSet="UTF-8";
     $mail->isSMTP();
     $mail->SMTPDebug = 2;
+
+    // Paramètres SMTP Hostinger
     $mail->Host = 'smtp.hostinger.fr';
     $mail->SMTPSecure = 'tls';
     $mail->Port = 587;

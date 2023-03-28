@@ -8,19 +8,19 @@
 </head>
 <body>
     <?php 
-        include "src/element/nav.html";
+        include "src/element/nav.php";
     ?>
     <main>
-        <?php
+        <div class="container">
+            <?php
         if(isset($_GET["err"]) && $_GET["err"] != ""){
             if($_GET["err"] == "emptypwd" ){
-                echo "<div class='error'>Veuillez remplir les champs obligatoires.</div>";
+                echo "<div class='form__message--error'>Veuillez remplir les champs obligatoires.</div>";
             } elseif($_GET["err"] == "pwdnotmatch"){
-                echo "<div class='error'>Les mots de passe ne correspondent pas.</div>";
+                echo "<div class='form__message--error'>Les mots de passe ne correspondent pas.</div>";
             }
         }
         ?>
-        <div class="container">
             <h1 class="container__title">Réinitialisation du mot de passe</h1>
             <p class="container__text">*Champs obligatoire</p>
             <p class="container__text">Renseigner votre nouveau mot de passe.</p>
@@ -42,7 +42,7 @@
                             <i class="far fa-eye input__icon" id="eyeIconConf"></i>
                         </div>
                     </div>
-                    <input type="submit" name="changepwd-submit" class="btn btn--secondary" value="Envoyer le lien"></input>
+                    <input type="submit" name="changepwd-submit" class="btn btn--secondary" value="Valider"></input>
                 </div>   
             </form>
         </div>

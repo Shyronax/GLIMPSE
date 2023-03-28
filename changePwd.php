@@ -7,13 +7,13 @@ if(isset($_POST['changepwd-submit'])){
     $pwdConf = $_POST['mdp-conf'];
     $date = date("U");
     
-    if($pwd = $pwdConf){
+    if($pwd === $pwdConf){
         require "model.php";
         reinitMdp($selector,$date,$token,$pwd);
     } elseif(empty($pwd) || empty($pwdConf)){
-        header("Location: index.php?page=pwdchangeform&selector=".$selector."&token=".$token."&err=emptypwd");
+        header("Location: controller.php?page=pwdchangeform&selector=".$selector."&token=".$token."&err=emptypwd");
     } else {
-        header("Location: index.php?page=pwdchangeform&selector=".$selector."&token=".$token."&err=pwdnotmatch");
+        header("Location: controller.php?page=pwdchangeform&selector=".$selector."&token=".$token."&err=pwdnotmatch");
         die();
     }
 

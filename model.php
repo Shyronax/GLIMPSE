@@ -140,41 +140,58 @@ function deleteFromReinitMdp($mail){
     $stmt->execute();
 }
 
+function insertIntoReinitMdp($mail, $selector, $token, $expire){
+    $db=dbConnect();
+    $query = ("INSERT INTO reinit_mdp VALUES (NULL,:mail,:selector,:token,:expire)");
+    $stmt=$db->prepare($query);
+    $token_hash = password_hash($token, PASSWORD_DEFAULT);
+    $stmt->bindParam(':mail', $mail , PDO::PARAM_STR);
+    $stmt->bindParam(':selector', $selector , PDO::PARAM_STR);
+    $stmt->bindParam(':token', $token_hash , PDO::PARAM_STR); 
+    $stmt->bindParam(':expire', $expire , PDO::PARAM_STR);
+    $stmt->execute();
+}
+
 function reinitMdp($selector,$date,$token,$mdp){
     $db=dbConnect();
-    $query=$db->prepare("SELECT * FROM reinit_mdp WHERE selector_reinit_mdp=:selector AND exp_reinit_mdp>=:exp");
+    $query=$db->prepare("SELECT * FROM reinit_mdp WHERE selector_reinit_mdp=:selector AND exp_reinit_mdp>=:mtn");
 
     $query->bindParam(':selector', $selector , PDO::PARAM_STR); 
-    $query->bindParam(':exp', $current_time , PDO::PARAM_STR); 
+    $query->bindParam(':mtn', $date , PDO::PARAM_STR); 
     $query->execute();
     $result=$query->fetch(PDO::FETCH_ASSOC);
 
     // S'il y a bien le selector, on vérifie le token hashé associé
     if($result){
         $token_bin = hex2bin($token);
-        $token_check = password_verify($token_bin, $result["token"]);
+        $token_check = password_verify($token_bin, $result["token_reinit_mdp"]);
 
         if($token_check === true){
-            $token_mail = $result["email"];
-            $query=$db->prepare("SELECT * FROM utilisateurs WHERE email_utilisateur=:email");
+            $token_mail = $result["email_reinit_mdp"];
+            $query=$db->prepare("SELECT * FROM utilisateur WHERE email_utilisateur=:email");
             $query->bindParam(':email', $token_mail , PDO::PARAM_STR);
             $query->execute();
             $result=$query->fetch(PDO::FETCH_ASSOC);
 
             // si l'email renseigné est bien dans la table des utilisateurs, réinitialiser le mdp
             if($result){
-                $mdp_hash = password_hash($mdp, PASSWORD_DEFAULT);
-                $query=$db->prepare("UPDATE utilisateurs SET mdp=:mdp WHERE login=:email");
+                $hash = password_hash($mdp, PASSWORD_DEFAULT);
+                $query=$db->prepare("UPDATE utilisateur SET mdp_utilisateur=:mdp WHERE email_utilisateur=:email");
                 $query->bindParam(':email', $token_mail, PDO::PARAM_STR);
-                $query->bindParam(':mdp', $mdp, PDO::PARAM_STR);
+                $query->bindParam(':mdp', $hash, PDO::PARAM_STR);
                 $query->execute();
-                echo"c'est bon !!";
+                header('Location: controller.php?page=connection&status=pwdchangesuccess');
+            } else {
+                // l'email renseigné n'est lié à aucun compte
+                header('Location: controller.php?page=pwdreinit&err=mail');
             }
         } else {
-            echo "erreur : tocken invalide";
+            // token invalide
+            header('Location: controller.php?page=pwdreinit&err=lien');
         }
     } else {
-        echo "erreur : lien invalide/expiré";
+        // selector invalide/lien expiré
+        header('Location: controller.php?page=pwdreinit&err=lien');
     }
 }
 

@@ -12,6 +12,15 @@
     ?>
     <main>
         <div class="container">
+        <?php
+            if (isset($_GET['err'])){
+                if ($_GET['err'] == 'mail'){
+                    echo("<div class='form__message--error'>L'adresse mail n'est liée à aucun compte. Veuillez renseigner une adresse mail liée à un compte existant ou inscrivez-vous !</div>");
+                } elseif($_GET['err'] == 'lien') {
+                    echo("<div class='form__message--error'>Le lien est invalide/expiré. Veuillez refaire une demande ci-dessous.</div>");
+                }
+            }
+            ?>
             <h1 class="container__title">Mot de passe oublié</h1>
             <p class="container__text">*Champs obligatoire</p>
             <p class="container__text">Renseigner votre adresse email et validez pour recevoir un lien de réinitialisation du mot de passe.</p>
