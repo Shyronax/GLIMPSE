@@ -26,7 +26,7 @@
             <p class="container__text">Renseigner votre nouveau mot de passe.</p>
             <form action="changePwd.php" class="form" method="post">
                 <input type="hidden" name="selector" value="<?=$selector?>">
-                <input type="hidden" name="validator" value="<?=$validator?>">
+                <input type="hidden" name="token" value="<?=$token?>">
                 <div class="form__container form__container--center">
                 <div class="form__field">
                         <label for="mdp" class="form__label">Nouveau mot de passe*</label>
