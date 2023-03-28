@@ -32,7 +32,6 @@
                             <th scope="col">Date</th>
                             <th scope="col">Heure</th>
                             <th scope="col">Nombre de billets</th>
-                            <th scope="col">Prix total</th>
                         </tr>
                     </thead>
                     <tbody class="table__body">
@@ -42,7 +41,6 @@
                             <td class="table__cell"><?=$ticket['jour_ticket']?></td>
                             <td class="table__cell"><?=$ticket['heure_ticket']?></td>
                             <td class="table__cell"><?=$ticket['nbplace_ticket']?></td>
-                            <td class="table__cell">10€</td>
                         </tr>
                         <?php
                     } ?>
