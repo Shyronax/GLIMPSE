@@ -8,7 +8,7 @@
 </head>
 <body>
     <?php 
-        include "src/element/nav.html";
+        include "src/element/nav.php";
     ?>
     <main>
         <div class="container">
@@ -18,29 +18,29 @@
                 <div class="form__container">
                     <div class="form__field">
                         <label for="nom" class="form__label">Nom*</label>
-                        <input type="text" name='nom' class="form__input" required>
+                        <input type="text" name='nom' class="form__input" id="nom" required>
                     </div>
                     <div class="form__field">
                         <label for="prenom" class="form__label">Prénom*</label>
-                        <input type="text" name='prenom' class="form__input" required>
+                        <input type="text" name='prenom' class="form__input" id="prenom" required>
                     </div>
                     <div class="form__field">
                         <label for="mail" class="form__label">Email*</label>
-                        <input type="email" name='mail' class="form__input" required>
+                        <input type="email" name='mail' class="form__input" id="mail" required>
                     </div>
                     <div class="form__field">
                         <label for="mail-conf" class="form__label">Confirmation mail*</label>
-                        <input type="email"  name='mail-conf' class="form__input" required>
+                        <input type="email"  name='mail-conf' class="form__input" id="mail-conf" required>
                     </div>
                     <div class="form__field">
-                        <label for="mdp" class="form__label">Mot de passe*</label>
+                        <label for="password" class="form__label">Mot de passe*</label>
                         <div class="pos-relative">
                             <input type="password" name="mdp" class="form__input" id="password">
                             <i class="far fa-eye input__icon" id="eyeIcon"></i>
                         </div>
                     </div>
                     <div class="form__field">
-                        <label for="mdp-conf" class="form__label">Confirmation mot de passe*</label>
+                        <label for="passwordConf" class="form__label">Confirmation mot de passe*</label>
                         <div class="pos-relative">
                             <input type="password" name="mdp-conf" class="form__input" id="passwordConf">
                             <i class="far fa-eye input__icon" id="eyeIconConf"></i>

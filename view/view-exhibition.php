@@ -9,7 +9,7 @@
 </head>
 <body>
     <?php 
-        include "src/element/nav.html";
+        include "src/element/nav.php";
     ?>
     <main>
         <div class="main__banner">

@@ -8,7 +8,6 @@ function dbConnect() {
 
 function addClient($nom, $prenom, $email, $mdp){
     $db=dbConnect();
-    var_dump($db);
     $query="SELECT * FROM client WHERE email=:email";
     $stmt=$db->prepare($query);
     $stmt->bindParam(':email',$email, PDO::PARAM_STR);
@@ -16,7 +15,7 @@ function addClient($nom, $prenom, $email, $mdp){
     $result=$stmt->fetch(PDO::FETCH_ASSOC);
 
     if($result){
-        return("déjà existant");
+        return ("already exists");
         // header("Location: controller.php?page=inscription");
     } else {
         $query='INSERT INTO client (nom, prenom, email, pass) VALUES (:nom, :prenom, :email, :pass)';
@@ -28,18 +27,24 @@ function addClient($nom, $prenom, $email, $mdp){
         $stmt->bindParam(':email',$email, PDO::PARAM_STR); 
         $stmt->bindParam(':pass', $hash , PDO::PARAM_STR); 
         $stmt->execute();
-        var_dump($nom);
-        var_dump($prenom);
-        var_dump($email);
-        var_dump($mdp);
-        var_dump($hash);
-        var_dump($stmt);
+        $insertedId=$db->lastInsertId();
+
+        $query='SELECT * FROM ticket WHERE id=:id';
+        $stmt=$db->prepare($query);
+        $stmt->bindParam(':id', $insertedId, PDO::PARAM_INT);
+        $stmt->execute();
+    
+        $result=$stmt->fetch(PDO::FETCH_ASSOC);
+        if($result){
+            return ("added");
+        } else {
+            return ("error");
+        }
     }
 }
 
 function loginClient($email, $mdp){
     $db=dbConnect();
-    var_dump($db);
     $query="SELECT * FROM client WHERE email = :email";
     
     $stmt=$db->prepare($query);
@@ -53,14 +58,14 @@ function loginClient($email, $mdp){
             $_SESSION['nom'] = $result['nom'];
             $_SESSION['prenom'] = $result['prenom'];
             $_SESSION['mail'] = $result['mail'];
-            return("connecté");
+            return true;
             // header("Location: controller.php?page=home");
         } else {
-            return("pas connecté");
+            return false;
             // header("Location: controller.php?page=connection");
         }
     } else {
-        return("pas connecté");
+        return false;
         // header("Location: controller.php?page=connection");
     }
 }
@@ -78,5 +83,18 @@ function addTicket($jour, $heure, $nom, $prenom, $mail, $tarif, $client=null){
     $stmt->bindParam(':mail', $mail, PDO::PARAM_STR);
     $stmt->bindParam(':tarif', $tarif, PDO::PARAM_STR);
     $stmt->execute();
+    $insertedId=$db->lastInsertId();
+
+    $query='SELECT * FROM ticket WHERE id=:id';
+    $stmt=$db->prepare($query);
+    $stmt->bindParam(':id', $insertedId, PDO::PARAM_INT);
+    $stmt->execute();
+
+    $result=$stmt->fetch(PDO::FETCH_ASSOC);
+    if($result){
+        return true;
+    } else {
+        return false;
+    }
 }
 ?>

@@ -19,7 +19,7 @@ $_SESSION['price3'] = $_POST['price3'];
 </head>
 <body>
     <?php 
-        include "src/element/nav.html";
+        include "src/element/nav.php";
     ?>
     <main>
         <div class="container container--medium container--center">

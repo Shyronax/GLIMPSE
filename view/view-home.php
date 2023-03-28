@@ -8,7 +8,7 @@
 </head>
 <body>
     <?php 
-        include "src/element/nav.html";
+        include "src/element/nav.php";
         include "src/element/chatbot.html";
     ?>
     <main class="main">

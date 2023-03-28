@@ -9,7 +9,7 @@
 </head>
 <body>
     <?php 
-        include "src/element/nav.html";
+        include "src/element/nav.php";
     ?>
     <main>
         <div class="container container--small container--center">
@@ -27,12 +27,12 @@
                         <h2 class="form__container-ticket-title">Date</h2>
                             <div class="form__field">
                                 <label for="date" class="form__label">Date</label>
-                                <input type="date" name='date' <?php if(isset($_SESSION['date'])){echo("value={$_SESSION['date']}");}?>  min="2023-03-26" max="2023-07-26"class="form__input" required>
+                                <input type="date" name='date' <?php if(isset($_SESSION['date'])){echo("value={$_SESSION['date']}");}?>  min="2023-03-31" max="2023-06-25"class="form__input" id="date" required>
                             </div>
                             <div class="form__field">
                                 <label for="heure" class="form__label">Heure</label>
 
-                                <input list="times" type="time" name="heure" min="08:00" max="17:00" step="3600" class="form__input" required>
+                                <input list="times" type="time" name="heure" min="08:00" max="17:00" step="3600" class="form__input" id="heure" required>
 
                                 <datalist id="times">
                                     <option value="08:00:00" <?php if(isset($_SESSION['heure'])){if($_SESSION['heure']="08:00"){echo("selected");}}?>>
@@ -54,34 +54,34 @@
                             <h2 class="form__container-ticket-title">Places</h2>
                             <div class="form__field">
                                 <label for="price1" class="form__label">Plein tarif (5€)</label>
-                                <input type="number" <?php if(isset($_SESSION['price1'])){echo("value={$_SESSION['price1']}");}?> name='price1' class="form__input" min="0" max="10" value="0" required>
+                                <input type="number" <?php if(isset($_SESSION['price1'])){echo("value={$_SESSION['price1']}");}?> name='price1' class="form__input" min="0" max="10" value="0" id="price1" required>
                             </div>
                             <div class="form__field">
                                 <label for="price2" class="form__label">Moins de 26 ans (2€)</label>
-                                <input type="number" <?php if(isset($_SESSION['price2'])){echo("value={$_SESSION['price2']}");}?> name='price2' class="form__input" min="0" max="10" value="0" required>
+                                <input type="number" <?php if(isset($_SESSION['price2'])){echo("value={$_SESSION['price2']}");}?> name='price2' class="form__input" min="0" max="10" value="0" id="price2" required>
                             </div>
                             <div class="form__field">
                                 <label for="price3" class="form__label">Enfant de - 10ans (gratuit)</label>
-                                <input type="number" <?php if(isset($_SESSION['price3'])){echo("value={$_SESSION['price3']}");}?> name='price3' class="form__input" min="0" max="10" value="0" required>
+                                <input type="number" <?php if(isset($_SESSION['price3'])){echo("value={$_SESSION['price3']}");}?> name='price3' class="form__input" min="0" max="10" value="0" id="price3" required>
                             </div>
                         </div>
                         <div class="form__container">
                         <h2 class="form__container-ticket-title">Informations personnelles</h2>
                             <div class="form__field">
                                 <label for="nom" class="form__label">Nom*</label>
-                                <input <?php if(isset($_SESSION['nom'])){echo("value={$_SESSION['nom']}");}?> type="text" name='nom' class="form__input" required>
+                                <input <?php if(isset($_SESSION['nom'])){echo("value={$_SESSION['nom']}");}?> type="text" name='nom' class="form__input" id="nom" required>
                             </div>
                             <div class="form__field">
                                 <label for="prenom" class="form__label">Prénom*</label>
-                                <input <?php if(isset($_SESSION['prenom'])){echo("value={$_SESSION['prenom']}");}?> type="text" name='prenom' class="form__input" required>
+                                <input <?php if(isset($_SESSION['prenom'])){echo("value={$_SESSION['prenom']}");}?> type="text" name='prenom' class="form__input" id="prenom" required>
                             </div>
                             <div class="form__field">
                                 <label for="mail" class="form__label">Email*</label>
-                                <input <?php if(isset($_SESSION['mail'])){echo("value={$_SESSION['mail']}");}?> type="email" name='mail' class="form__input" required>
+                                <input <?php if(isset($_SESSION['mail'])){echo("value={$_SESSION['mail']}");}?> type="email" name='mail' class="form__input" id="mail" required>
                             </div>
                             <div class="form__field">
                                 <label for="mail-conf" class="form__label">Confirmation mail*</label>
-                                <input <?php if(isset($_SESSION['mail'])){echo("value={$_SESSION['mail']}");}?> type="email"  name='mail-conf' class="form__input" required>
+                                <input <?php if(isset($_SESSION['mail'])){echo("value={$_SESSION['mail']}");}?> type="email"  name='mail-conf' class="form__input" id="mail-conf" required>
                             </div>
                         </div>
                     </div>

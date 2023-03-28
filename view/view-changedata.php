@@ -8,7 +8,7 @@
 </head>
 <body>
     <?php 
-        include "src/element/nav.html";
+        include "src/element/nav.php";
     ?>
     <main>
         <div class="container">
@@ -17,12 +17,8 @@
             <form action="" class="form" method="post">
                 <div class="form__container form__container--center">
                     <div class="form__field">
-                        <label for="login" class="form__label">Login*</label>
-                        <input type="text" name='login' class="form__input" required>
-                    </div>
-                    <div class="form__field">
                         <label for="mail" class="form__label">Email*</label>
-                        <input type="email" name='mail' class="form__input" required>
+                        <input type="email" name='mail' class="form__input" id="mail" required>
                     </div>
                     <input type="submit" class="btn btn--secondary" value="Enregistrer"></input>
                 </div>   
