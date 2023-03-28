@@ -3,7 +3,7 @@ import { AuthContext } from "../context/AuthContext";
 import { Button } from "../components/buttons/Button";
 
 export const Login = () => {
-	const [pseudo, setPseudo] = useState("");
+	const [email, setEmail] = useState("");
 	const [mdp, setMdp] = useState("");
 	const [error, setError] = useState("");
 	const authContext = useContext(AuthContext);
@@ -16,7 +16,7 @@ export const Login = () => {
 				"Content-Type": "application/json",
 			},
 			body: JSON.stringify({
-				pseudo,
+				email,
 				mdp,
 			}),
 		})
@@ -41,11 +41,11 @@ export const Login = () => {
 			)}
 
 			<label>
-				login:
+				email:
 				<input
 					type="text"
-					value={pseudo}
-					onChange={(event) => setPseudo(event.target.value)}
+					value={email}
+					onChange={(event) => setEmail(event.target.value)}
 				/>
 			</label>
 			<label>

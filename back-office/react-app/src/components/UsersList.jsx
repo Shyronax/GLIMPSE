@@ -8,7 +8,8 @@ export const UsersList = ({ dataGET, handleDelete }) => {
 			<thead>
 				<tr>
 					<td>ID</td>
-					<td>Pseudo</td>
+					<td>Nom</td>
+					<td>Prénom</td>
 					<td>Email</td>
 					<td>Actions</td>
 				</tr>
@@ -18,7 +19,8 @@ export const UsersList = ({ dataGET, handleDelete }) => {
 				{dataGET.map((d) => (
 					<tr key={d.id_utilisateur}>
 						<td>{d.id_utilisateur}</td>
-						<td>{d.pseudo_utilisateur}</td>
+						<td>{d.nom_utilisateur}</td>
+						<td>{d.prenom_utilisateur}</td>
 						<td>{d.email_utilisateur}</td>
 						<td>
 							<Button
@@ -31,7 +33,7 @@ export const UsersList = ({ dataGET, handleDelete }) => {
 								<Button
 									type={"button"}
 									onClick={() =>
-										handleDelete(d.id_utilisateur, d.pseudo_utilisateur)
+										handleDelete(d.id_utilisateur, d.email_utilisateur)
 									}
 								>
 									Supprimer

@@ -14,9 +14,9 @@ export const Accounts = () => {
 			.then((data) => setData(data));
 	}, []);
 
-	const handleDelete = (id, pseudo) => {
+	const handleDelete = (id, email) => {
 		const confirmed = window.confirm(
-			`Êtes-vous sûr de vouloir supprimer l'utilisateur ${pseudo} ? Cette action est irréversible.`
+			`Êtes-vous sûr de vouloir supprimer cet utilisateur (${email}) ? Cette action est irréversible.`
 		);
 		if (confirmed) {
 			fetch("/github/glimpse/back-office/back/api/utilisateur/" + id, {
@@ -34,7 +34,7 @@ export const Accounts = () => {
 	return (
 		<div>
 			<h1>Gestion des comptes</h1>
-			<p>Gérez les comptes utilisateurs du site de l’exposition.</p>
+			<p>Gérez les comptes utilisateurs du site de l'exposition.</p>
 			<UsersList dataGET={data} handleDelete={handleDelete} />
 			<Button type={"button"} onClick={() => navigate(`/comptes/ajouter`)}>
 				Ajouter

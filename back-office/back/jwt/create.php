@@ -14,7 +14,7 @@ $keyid = 'decoded';
 // Données à encoder dans le JWT (payload)
 $payload = [
     'id' => '1', // user id dans la bdd, 1 car admin.
-    'pseudo' => $pseudo, // pseudo de l'admin
+    'email' => $email, // email de l'admin
     'iat' => $issuedAt, // date de création du token
     'nbf' => $notBefore, // date de début de validité du token
     'exp' => $expire, // date d'expiration du token

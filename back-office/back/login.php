@@ -7,11 +7,11 @@ if($_SERVER["REQUEST_METHOD"] === 'POST' || $_SERVER["REQUEST_METHOD"] === 'OPTI
     $data = json_decode(file_get_contents('php://input'), true);
 
      // Vérification de l'existence des données
-     if(isset($data['pseudo']) && isset($data['mdp'])) {
-        $pseudo = $data['pseudo'];
+     if(isset($data['email']) && isset($data['mdp'])) {
+        $email = $data['email'];
         $mdp = $data['mdp'];
 
-        if(loginAndJWT($pseudo, $mdp) === "ok") {
+        if(login($email, $mdp) === "ok") {
             // Création du JWT
             require('jwt/create.php');
 
@@ -36,10 +36,10 @@ if($_SERVER["REQUEST_METHOD"] === 'POST' || $_SERVER["REQUEST_METHOD"] === 'OPTI
     } else {
         $response=array(
             'status'=> 0,
-            'status_message'=>"Erreur : vous n'avez pas renseigné le pseudo ou le mot de passe"
+            'status_message'=>"Erreur : vous n'avez pas renseigné le login ou le mot de passe"
         );
         sendJSON($response);
     }
 } else {
-    header('Location: http://localhost:5173/connexion');
+    header('Location: http://localhost:5173');
 }

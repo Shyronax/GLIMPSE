@@ -53,34 +53,14 @@ if(isset($_COOKIE['jwt'])) {
                 $data = json_decode(file_get_contents('php://input'), true);
                     
                 switch($url[0]){
-                    case "auth":
-                        // Vérification de l'existence des données
-                        if(isset($data['pseudo']) && isset($data['mdp'])) {
-                            $pseudo = $data['pseudo'];
-                            $mdp = $data['mdp'];
-                            login($pseudo, $mdp);
-                        } else {
-                            $response=array(
-                                'status'=> 0,
-                                'status_message'=>"Erreur : vous n'avez pas renseigné le pseudo ou le mot de passe"
-                            );
-                            sendJSON($response);
-                        }
-                    break;
                     case "tickets" : 
                         addTicket($data);
                     break;
                     case "utilisateurs" : 
-                        if(searchUser($data['pseudo'],'pseudo_utilisateur')){
+                        if(searchUser($data['email'],'email_utilisateur')){
                             $response=array(
                                 'status'=> 0,
-                                'status_message'=>"Erreur : le pseudo ". $data['pseudo'] ." est déjà pris."
-                            );
-                            sendJSON($response);
-                        } else if(searchUser($data['email'],'email_utilisateur')){
-                            $response=array(
-                                'status'=> 0,
-                                'status_message'=>"Erreur : l'email ". $data['email'] ." est déjà pris."
+                                'status_message'=>"Erreur : cet email ". $data['email'] ." est déjà pris."
                             );
                             sendJSON($response);
                         } else {

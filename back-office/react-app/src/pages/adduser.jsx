@@ -6,7 +6,8 @@ export const AddUser = ({ goBack }) => {
 	const navigate = useNavigate();
 
 	// Déclaration des variables d'état
-	const [pseudo, setPseudo] = useState("");
+	const [nom, setNom] = useState("");
+	const [prenom, setPrenom] = useState("");
 	const [email, setEmail] = useState("");
 	const [mdp, setMdp] = useState("");
 	const [mdpConfirm, setMdpConfirm] = useState("");
@@ -18,7 +19,7 @@ export const AddUser = ({ goBack }) => {
 	const handleSubmit = async (e) => {
 		e.preventDefault();
 
-		if (pseudo == "" || email == "" || mdp == "") {
+		if (nom == "" || prenom == "" || email == "" || mdp == "") {
 			setStatus({
 				nb: 0,
 				message: "Veuillez remplir tous les champs.",
@@ -30,7 +31,8 @@ export const AddUser = ({ goBack }) => {
 			});
 		} else {
 			const body = {
-				pseudo,
+				nom,
+				prenom,
 				email,
 				mdp,
 			};
@@ -42,12 +44,13 @@ export const AddUser = ({ goBack }) => {
 				},
 				body: JSON.stringify(body),
 			})
-				.then((response) => response.json())
+				.then((response) => response.text())
 				.then((data) => {
-					setStatus({
-						nb: data.status,
-						message: data.status_message,
-					});
+					// setStatus({
+					// 	nb: data.status,
+					// 	message: data.status_message,
+					// });
+					console.log(data);
 				});
 		}
 	};
@@ -67,12 +70,21 @@ export const AddUser = ({ goBack }) => {
 				)}
 
 				<label>
-					login:
+					nom:
 					<input
 						required
 						type="text"
-						value={pseudo}
-						onChange={(event) => setPseudo(event.target.value)}
+						value={nom}
+						onChange={(event) => setNom(event.target.value)}
+					/>
+				</label>
+				<label>
+					prenom:
+					<input
+						required
+						type="text"
+						value={prenom}
+						onChange={(event) => setPrenom(event.target.value)}
 					/>
 				</label>
 				<label>

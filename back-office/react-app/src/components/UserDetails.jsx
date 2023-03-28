@@ -6,7 +6,8 @@ export const UserDetails = ({ dataGET, goBack }) => {
 	const navigate = useNavigate();
 
 	// Déclaration des variables d'état
-	const [pseudo, setPseudo] = useState("");
+	const [nom, setNom] = useState("");
+	const [prenom, setPrenom] = useState("");
 	const [email, setEmail] = useState("");
 	const [mdp, setMdp] = useState("");
 	const [mdpConfirm, setMdpConfirm] = useState("");
@@ -16,16 +17,22 @@ export const UserDetails = ({ dataGET, goBack }) => {
 
 	// Afficher les données de l'utilisateur
 	useEffect(() => {
-		setPseudo(dataGET.pseudo_utilisateur || "");
+		setNom(dataGET.nom_utilisateur || "");
+		setPrenom(dataGET.prenom_utilisateur || "");
 		setEmail(dataGET.email_utilisateur || "");
-	}, [dataGET.pseudo_utilisateur, dataGET.email_utilisateur]);
+	}, [
+		dataGET.nom_utilisateur,
+		dataGET.prenom_utilisateur,
+		dataGET.email_utilisateur,
+	]);
 
 	// Fonction de soumission du formulaire
 	const handleSubmit = async (e) => {
 		e.preventDefault();
 		if (isMdpTheSame) {
 			const body = {
-				pseudo,
+				nom,
+				prenom,
 				email,
 			};
 
@@ -66,11 +73,19 @@ export const UserDetails = ({ dataGET, goBack }) => {
 				<div style={{ height: "1rem" }}></div>
 			)}
 			<label>
-				login:
+				nom:
 				<input
 					type="text"
-					value={pseudo ? pseudo : dataGET.pseudo_utilisateur}
-					onChange={(event) => setPseudo(event.target.value)}
+					value={nom ? nom : dataGET.nom_utilisateur}
+					onChange={(event) => setNom(event.target.value)}
+				/>
+			</label>
+			<label>
+				prenom:
+				<input
+					type="text"
+					value={prenom ? prenom : dataGET.prenom_utilisateur}
+					onChange={(event) => setPrenom(event.target.value)}
 				/>
 			</label>
 			<label>
