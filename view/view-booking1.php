@@ -39,11 +39,9 @@
                             <div class="form__field">
                                 <label for="heure" class="form__label">Heure</label>
 
-                                <input list="times" type="time" name="heure" min="08:00" max="17:00" step="3600" class="form__input" id="heure" required>
+                                <input list="times" type="time" name="heure" min="10:00" max="17:00" step="3600" class="form__input" id="heure" required>
 
                                 <datalist id="times">
-                                    <option value="08:00:00" <?php if(isset($_SESSION['heure'])){if($_SESSION['heure']="08:00"){echo("selected");}}?>>
-                                    <option value="09:00:00" <?php if(isset($_SESSION['heure'])){if($_SESSION['heure']="09:00"){echo("selected");}}?>>
                                     <option value="10:00:00" <?php if(isset($_SESSION['heure'])){if($_SESSION['heure']="10:00"){echo("selected");}}?>>
                                     <option value="11:00:00" <?php if(isset($_SESSION['heure'])){if($_SESSION['heure']="11:00"){echo("selected");}}?>>
                                     <option value="12:00:00" <?php if(isset($_SESSION['heure'])){if($_SESSION['heure']="12:00"){echo("selected");}}?>>
