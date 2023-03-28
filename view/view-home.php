@@ -30,7 +30,7 @@
         </div>
         <div class="card">
             <div class="card__header">
-                <h2 class="card__title">L'expostion</h2>
+                <h2 class="card__title">L'exposition</h2>
             </div>
             <div class="card__main">
                 <div class="card__media">
