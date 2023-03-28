@@ -112,7 +112,7 @@ function getOneById($id, $table){
 
 function getClientTickets($client){
     $db=dbConnect();
-    $query="SELECT * FROM tickets WHERE id_utilisateur = :id";
+    $query="SELECT * FROM ticket WHERE ext_utilisateur = :id";
     $stmt=$db->prepare($query);
     $stmt->bindParam(':id', $client, PDO::PARAM_INT);
     $stmt->execute();
