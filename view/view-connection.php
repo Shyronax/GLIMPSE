@@ -26,7 +26,7 @@
                 <div class="form__container">
                     <div class="form__field">
                         <label for="mail" class="form__label">Email*</label>
-                        <input type="text" name='mail'class="form__input" id="mail" required>
+                        <input type="email" name='mail'class="form__input" id="mail" required>
                     </div>
                     <div class="form__field">
                         <label for="password" class="form__label">Mot de passe*</label>
