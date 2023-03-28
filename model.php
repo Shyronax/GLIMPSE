@@ -153,4 +153,3 @@ function insertIntoReinitMdp($mail,$selector,$token,$exp){
     $stmt->bindParam(':exp',$exp, PDO::PARAM_STR);
     $stmt->execute();
 }
-

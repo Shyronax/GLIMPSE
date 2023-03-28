@@ -10,7 +10,13 @@
             <li class="nav__menu-item"><a href="controller.php?page=about" class="nav__menu-item-link">Notre histoire</a></li>
         </ul>
         <div class="nav__buttons">
-            <a href="controller.php?page=connection" class="btn btn--tertiary">Se connecter</a>
+            <?php
+            if(isset($_SESSION['id'])){
+                echo("<a href='controller.php?page=account' class='btn btn--tertiary'>Mon compte</a>");
+            } else {
+                echo("<a href='controller.php?page=connection' class='btn btn--tertiary'>Se connecter</a>");
+            }
+            ?>
             <a href="controller.php?page=booking1" class="btn btn--primary">
                 <p class="text--bold">Réserver</p>
                 <i class="fa-solid fa-arrow-right btn__icon"></i>
