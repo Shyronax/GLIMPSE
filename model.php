@@ -140,16 +140,41 @@ function deleteFromReinitMdp($mail){
     $stmt->execute();
 }
 
-function insertIntoReinitMdp($mail,$selector,$token,$exp){
+function reinitMdp($selector,$date,$token,$mdp){
     $db=dbConnect();
-    $query="INSERT INTO reinit_mdp (email_reinit_mdp, selector_reinit_mdp, token_reinit_mdp, exp_reinit_mdp) VALUES (:mail, :selector, :token, :exp)";
+    $query=$db->prepare("SELECT * FROM reinit_mdp WHERE selector_reinit_mdp=:selector AND exp_reinit_mdp>=:exp");
 
-    $tokenHash = password_hash($token, PASSWORD_DEFAULT);
+    $query->bindParam(':selector', $selector , PDO::PARAM_STR); 
+    $query->bindParam(':exp', $current_time , PDO::PARAM_STR); 
+    $query->execute();
+    $result=$query->fetch(PDO::FETCH_ASSOC);
 
-    $stmt=$db->prepare($query);
-    $stmt->bindParam(':mail',$mail, PDO::PARAM_STR);
-    $stmt->bindParam(':selector',$selector, PDO::PARAM_STR);
-    $stmt->bindParam(':token',$tokenHash, PDO::PARAM_STR);
-    $stmt->bindParam(':exp',$exp, PDO::PARAM_STR);
-    $stmt->execute();
+    // S'il y a bien le selector, on vérifie le token hashé associé
+    if($result){
+        $token_bin = hex2bin($token);
+        $token_check = password_verify($token_bin, $result["token"]);
+
+        if($token_check === true){
+            $token_mail = $result["email"];
+            $query=$db->prepare("SELECT * FROM utilisateurs WHERE email_utilisateur=:email");
+            $query->bindParam(':email', $token_mail , PDO::PARAM_STR);
+            $query->execute();
+            $result=$query->fetch(PDO::FETCH_ASSOC);
+
+            // si l'email renseigné est bien dans la table des utilisateurs, réinitialiser le mdp
+            if($result){
+                $mdp_hash = password_hash($mdp, PASSWORD_DEFAULT);
+                $query=$db->prepare("UPDATE utilisateurs SET mdp=:mdp WHERE login=:email");
+                $query->bindParam(':email', $token_mail, PDO::PARAM_STR);
+                $query->bindParam(':mdp', $mdp, PDO::PARAM_STR);
+                $query->execute();
+                echo"c'est bon !!";
+            }
+        } else {
+            echo "erreur : tocken invalide";
+        }
+    } else {
+        echo "erreur : lien invalide/expiré";
+    }
 }
+
