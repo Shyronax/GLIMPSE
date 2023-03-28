@@ -14,7 +14,7 @@
         <div class="container">
             <h1 class="container__title">Modification des informations personnelles</h1>
             <p class="container__text">*Champs obligatoire</p>
-            <form action="" class="form" method="post">
+            <form action="modifClient.php" class="form" method="post">
                 <div class="form__container form__container--center">
                     <div class="form__field">
                         <label for="mail" class="form__label">Email*</label>
