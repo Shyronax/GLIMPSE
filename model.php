@@ -30,7 +30,7 @@ function addClient($nom, $prenom, $email, $mdp){
         $stmt->execute();
         $insertedId=$db->lastInsertId();
 
-        $query='SELECT * FROM ticket WHERE id=:id';
+        $query='SELECT * FROM utilisateur WHERE id_utilisateur=:id';
         $stmt=$db->prepare($query);
         $stmt->bindParam(':id', $insertedId, PDO::PARAM_INT);
         $stmt->execute();
@@ -55,11 +55,11 @@ function loginClient($email, $mdp){
     $result=$stmt->fetch(PDO::FETCH_ASSOC);
 
     if($result){
-        if(password_verify($mdp, $result['pass'])){
-            $_SESSION['id'] = $result['id'];
-            $_SESSION['nom'] = $result['nom'];
-            $_SESSION['prenom'] = $result['prenom'];
-            $_SESSION['mail'] = $result['mail'];
+        if(password_verify($mdp, $result['mdp_utilisateur'])){
+            $_SESSION['id'] = $result['id_utilisateur'];
+            $_SESSION['nom'] = $result['nom_utilisateur'];
+            $_SESSION['prenom'] = $result['prenom_utilisateur'];
+            $_SESSION['mail'] = $result['email_utilisateur'];
             return true;
             // header("Location: controller.php?page=home");
         } else {
@@ -72,22 +72,22 @@ function loginClient($email, $mdp){
     }
 }
 
-function addTicket($jour, $heure, $nom, $prenom, $mail, $tarif, $client=null){
+function addTicket($jour, $heure, $nom, $prenom, $tarif1, $tarif2, $tarif3, $client=null){
     $db=dbConnect();
-    $query="INSERT INTO ticket (jour_ticket, heure_ticket, ext_utilisateur, nom, prenom, mail, tarif) VALUES (:jour_ticket, :heure_ticket, :ext_utilisateur, :nom, :prenom, :mail, :tarif)";
+    $query="INSERT INTO ticket (jour_ticket, heure_ticket, ext_utilisateur, nom_ticket, prenom_ticket, nbplace_ticket) VALUES (:jour_ticket, :heure_ticket, :ext_utilisateur, :nom_ticket, :prenom_ticket, :nbplace_ticket)";
 
+    $nbplace=$tarif1+$tarif2+$tarif3;
     $stmt=$db->prepare($query);
     $stmt->bindParam(':jour_ticket', $jour);
     $stmt->bindParam(':heure_ticket', $heure);
-    $stmt->bindParam(':ext_utilisateur', $client, PDO::PARAM_INT);
-    $stmt->bindParam(':nom', $nom, PDO::PARAM_STR);
-    $stmt->bindParam(':prenom', $prenom, PDO::PARAM_STR);
-    $stmt->bindParam(':mail', $mail, PDO::PARAM_STR);
-    $stmt->bindParam(':tarif', $tarif, PDO::PARAM_STR);
+    $stmt->bindParam(':ext_utilisateur', $client);
+    $stmt->bindParam(':nom_ticket', $nom, PDO::PARAM_STR);
+    $stmt->bindParam(':prenom_ticket', $prenom, PDO::PARAM_STR);
+    $stmt->bindParam(':nbplace_ticket', $nbplace, PDO::PARAM_INT);
     $stmt->execute();
     $insertedId=$db->lastInsertId();
 
-    $query='SELECT * FROM ticket WHERE id=:id';
+    $query='SELECT * FROM ticket WHERE id_ticket=:id';
     $stmt=$db->prepare($query);
     $stmt->bindParam(':id', $insertedId, PDO::PARAM_INT);
     $stmt->execute();

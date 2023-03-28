@@ -23,12 +23,12 @@
                     <h2 class="review-card__title">Réservation</h2>
                 </div>
                 <ul class="list--none">
-                    <li><span class="text--bold">Date :</span> le 11 avril 2023 de 8h30 à 10h30</li>
-                    <li><span class="text--bold">Nombre de places :</span> 5 places</li>
-                    <i><span class="text--bold">Total :</span> 12€</i>
+                <li><span class="text--bold">Date :</span> le <?=$_SESSION['date']?> à <?=$_SESSION['heure']?></li>
+                    <li><span class="text--bold">Nombre de places :</span> <?=$_SESSION['price1'] + $_SESSION['price2'] + $_SESSION['price3'] ?> places</li>
+                    <i><span class="text--bold">Total :</span> <?= 5 * $_SESSION['price1'] + 2 * $_SESSION['price2']?>€</i>
                 </ul>
             </div>  
-            <p class="container__text text--center">Votre billet vous a été envoyé à cette adresse <span class="text--bold">monemail@gmail.com</span>. <br>
+            <p class="container__text text--center">Votre billet vous a été envoyé à cette adresse <span class="text--bold"><?=$_SESSION['mail']?></span>. <br>
             Vous pouvez également télécharger votre billet en cliquant sur le bouton ci-dessous.</p>
             <a href="downloadTicket.php" class="btn btn--secondary">Télécharger mon billet en PDF</a>   
             <a href="controller.php?page=home" class="container__link">Retourner à l'accueil</a>
