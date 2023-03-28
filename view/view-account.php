@@ -16,7 +16,6 @@
             <div class="section">
                 <h2 class="section__title">Informations personnelles</h2>
                 <div>
-                    <p class="section__text"><span class="text--bold">Login</span> : <?=$client['pseudo_utilisateur']?></p>
                     <p class="section__text"><span class="text--bold">Adresse mail</span> : <?=$client['email_utilisateur']?></p>
                 </div>
                 <div class="section__buttons">
@@ -69,7 +68,7 @@
                 <?php
                 } ?>
             </div>
-            <a href="" class="btn btn--secondary">Se déconnecter</a>    
+            <a href="logout.php" class="btn btn--secondary">Se déconnecter</a>    
         </div>
     </main>
     <?php 
