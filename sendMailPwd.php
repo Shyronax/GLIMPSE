@@ -48,11 +48,19 @@ if(isset($_POST['mail'])){
     $mail->addAddress($toEmail);
     $mail->isHTML(true);
     $mail->Subject = 'Réinitialisation de votre mot de passe';
-    $mail->Body    = "Réinitialisez de votre mot de passe en cliquant sur ce lien (valable 30 minutes) : $url";
+    $mail->Body    = "
+    <h1 style='font-size:1.2rem'>Réinitialisation de mot de passe</h1>
+    <p style='font-size:1rem'>Bonjour ! Vous avez demandé un lien de réinitialisation de mot de passe sur le site de <a href='https://millecultureuneorigine.but-mmi-champs.fr'>Mille Cultures, une Origine</a>.<br> 
+    Cliquez sur ce lien pour réinitialiser votre mot de passe : <br>
+    $url<br>
+    Attention, ce lien n'est valide que pendant 30 minutes.</p>
+    <p style='font-size:1rem'>Cordialement,<br>
+    Mille Culture, une Origine</p>";
     
     $mail->send();
     header('Location: controller.php?page=mailconf');
 } else {
     header("Location: controller.php?page=pwdforgot");
 }
+?>
 
