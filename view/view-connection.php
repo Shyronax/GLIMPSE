@@ -3,7 +3,7 @@
 <head>
     <?php 
         include "src/element/head.html";
-        $_SESSION['prev'] = $_GET['prev']
+        $_SESSION['prev'] = $_GET['prev'];
     ?>
     <title>Connexion - Mille Cultures, Une Origine</title>
 </head>
@@ -13,6 +13,13 @@
     ?>
     <main>
         <div class="container">
+            <?php
+            if (isset($_GET['status'])){
+                if($_GET['status'] == "error"){
+                    echo("<div class='form__message--error'>Les identifiants sont incorrects.</div>");
+                }
+            }
+            ?>
             <h1 class="container__title">Se connecter</h1>
             <p class="container__text">*Champs obligatoires</p>
             <form action="connexionClient.php" class="form" method="post">

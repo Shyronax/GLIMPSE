@@ -31,6 +31,7 @@ body {
   /* --color-dark-hover: #1b222a; */
   --color-light: #ffffff;
   /* --color-light-hover: #ffffff; */
+  --color-success: #425A4C;
   --color-error: #DE330D;
   /* --color-danger-hover: #991b1b; */
   --color-link: #420F10;
@@ -656,6 +657,14 @@ main {
 
 .form__input--error {
     border-color: var(--color-error);
+}
+
+.form__message--error{
+    color: var(--color-error);
+}
+
+.form__message--succes{
+    color: var(--color-success);
 }
 
 .form__link {

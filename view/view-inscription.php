@@ -12,6 +12,21 @@
     ?>
     <main>
         <div class="container">
+        <?php
+            if (isset($_GET['status'])){
+                switch($_GET['status']){
+                    case "existing": 
+                        echo("<div class='form__message--error'>Un compte associé à cette adresse mail existe déjà.</div>");
+                        break;
+                    case "error": 
+                        echo("<div class='form__message--error'>Une erreur inattendue est survenue. Veuillez réessayez ultérieurement.</div>");
+                        break;
+                    default: 
+                        echo("<div class='form__message--success'>Votre compte a bien été créé!</div>");
+                        break;
+                }
+            }
+            ?>
             <h1 class="container__title">S'incrire</h1>
             <p class="container__text">*Champs obligatoires</p>
             <form action="inscriptionClient.php" class="form" method="post">

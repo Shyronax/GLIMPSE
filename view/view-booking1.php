@@ -14,6 +14,13 @@
     <main>
         <div class="container container--small container--center">
             <div>
+            <?php
+            if (isset($_GET['status'])){
+                if($_GET['status'] == "error"){
+                    echo("<div class='form__message--error'>Une erreur inattendue est survenue. Veuillez réessayez ultérieurement.</div>");
+                }
+            }
+            ?>
                 <h1 class="container__title">Billetterie</h1>
                 <p class="container__subtitle">Choix de réservation (1/3)</p>
             </div>
