@@ -925,4 +925,8 @@ main {
         font-size: 0.875rem;
     }
 
+    .card-gallery__group--row {
+        display: none;
+    }
+
 }
