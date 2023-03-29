@@ -18,7 +18,7 @@
             }
             ?>
             <a href="controller.php?page=booking1" class="btn btn--primary">
-                <p class="text--bold">Réserver</p>
+                <p class="btn__text">Réserver</p>
                 <i class="fa-solid fa-arrow-right btn__icon"></i>
             </a>
         </div>

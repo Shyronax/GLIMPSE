@@ -23,7 +23,7 @@
                     <p class="caption">Découvrez l'histoire fascinante et la culture vibrante des Pueblos à travers notre exposition interactive.</p>
                 </div>
                 <a href="controller.php?page=booking1" class="btn btn--primary">
-                    <p class="text--bold">Acheter mon billet</p>
+                    <p class="btn__text">Acheter mon billet</p>
                     <i class="fa-solid fa-arrow-right btn__icon"></i>
                 </a>
             </div>
@@ -42,7 +42,7 @@
                         <p>Contenus audiovisuels, dispositif interactif, poteries et autres objets sacrés seront l'occasion de vous plonger dans une <span class="text--highlight">ambiance immersive</span>, afin de découvrir l'univers des peuples Pueblos.</p>
                     </div>
                     <a href="controller.php?page=exhibition" class="btn btn--primary">
-                        <p class="text--bold">Plus d'info' sur l'expo'</p>
+                        <p class="btn__text">Plus d'info' sur l'expo'</p>
                         <i class="fa-solid fa-arrow-right btn__icon"></i>
                     </a>
                 </div>
@@ -79,7 +79,7 @@
                         </div>
                     </div>
                     <a href="controller.php?page=visit" class="btn btn--primary">
-                        <p class="text--bold">Préparer ma visite</p>
+                        <p class="btn__text">Préparer ma visite</p>
                         <i class="fa-solid fa-arrow-right btn__icon"></i>
                     </a>
                 </div>

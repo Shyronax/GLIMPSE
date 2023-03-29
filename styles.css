@@ -115,6 +115,10 @@ h1 {
     transition: 0.3s ease-in-out;
 }
 
+.btn__text {
+    font-weight: 700;
+}
+
 .btn--primary {
     color: var(--color-primary-text);
     background-color: var(--color-primary);
@@ -876,13 +880,35 @@ main {
         width: 90vw;
     }
 
+    .btn__text {
+        font-size: 0.9rem;
+    }
+
     /* page d'accueil */
     .card__header {
         flex-direction: column;
+        padding: 2rem 3rem;
     }
 
     .card__header--sm {
         padding: 1rem 1rem;
+    }
+
+    .card__title {
+        text-align: center;
+    }
+
+    .card__main {
+        flex-direction: column;
+    }
+
+    .card__media, .card__info {
+        width: 100%;
+    }
+    
+    .card__info {
+        padding: 2.5rem 1rem;
+        align-items: center;
     }
 
     .hero__content {
@@ -903,6 +929,10 @@ main {
     .caption {
         text-align: center;
         font-size: 0.875rem;
+    }
+
+    .card-gallery__group--row {
+        display: none;
     }
 
 }
