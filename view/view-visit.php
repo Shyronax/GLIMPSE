@@ -18,7 +18,7 @@
         <div class="main__header">
             <h1 class="main__title">Visiter</h1>
         </div>
-        <div class="container flex--start">
+        <div class="container container-info flex--start">
         <nav aria-label="Breadcrumb" class="breadcrumb">
             <ul class="breadcrumb__list">
                 <li class="breadcrumb__list-item"><a href="controller.php?page=home" class="breadcrumb__list-item-link">Accueil</a></li>
