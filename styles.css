@@ -876,12 +876,12 @@ main {
         display: none;
     }
 
-    main {
-        width: 90vw;
-    }
-
     .btn__text {
         font-size: 0.9rem;
+    }
+
+    .chatbot-icon {
+        display: none;
     }
 
     /* page d'accueil */
@@ -933,6 +933,19 @@ main {
 
     .card-gallery__group--row {
         display: none;
+    }
+
+    /* main */
+    main {
+        width: 90vw;
+    }
+
+    .main__header {
+        padding: 2rem 3rem;
+    }
+
+    .main__banner {
+        height: 20vh;
     }
 
     /* footer */
