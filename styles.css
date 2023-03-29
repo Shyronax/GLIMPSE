@@ -383,9 +383,7 @@ main {
 }
 
 .card__media {
-    width: 60%;
-    /* à changer !! */
-    height: 467px;
+    width: 62%;
     overflow: hidden;
 }
 
@@ -401,8 +399,8 @@ main {
 }
 
 .card__info {
-    width: 40%;
-    padding: 0 2.5rem;
+    width: 38%;
+    padding: 5rem 2.5rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
