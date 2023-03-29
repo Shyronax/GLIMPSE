@@ -38,11 +38,11 @@
                     <tbody class="table__body">
                         <?php foreach($tickets as $ticket){ ?>
                         <tr>
-                            <th scope='row'>#<?=$ticket['id_ticket']?></th>
-                            <td class="table__cell"><?=$ticket['jour_ticket']?></td>
-                            <td class="table__cell"><?=$ticket['heure_ticket']?></td>
-                            <td class="table__cell"><?=$ticket['nbplace_ticket']?></td>
-                            <td class="table__cell">
+                            <th data-label="Référence" scope='row'>#<?=$ticket['id_ticket']?></th>
+                            <td data-label="Date" class="table__cell"><?=$ticket['jour_ticket']?></td>
+                            <td data-label="Heure" class="table__cell"><?=$ticket['heure_ticket']?></td>
+                            <td data-label="Nombre de billets" class="table__cell"><?=$ticket['nbplace_ticket']?></td>
+                            <td data-label="Facture" class="table__cell">
                                 <a href="downloadFacture?id=<?=$ticket['id_ticket']?>" class="table__link">Télécharger la facture (PDF)</a>
                             </td>
                         </tr>
