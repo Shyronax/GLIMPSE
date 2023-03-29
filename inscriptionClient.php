@@ -1,8 +1,6 @@
 <?php
-include('model.php');
+require 'model.php';
 $result = addClient($_POST['nom'], $_POST['prenom'], $_POST['mail'], $_POST['mdp']);
-include('sendMailCreaCompte.php');
-header('Location: controller.php?page=mailcreacompte');
 switch ($result) {
     case 'already exists':
         header('Location: controller.php?page=inscription&status=existing');
@@ -13,7 +11,8 @@ switch ($result) {
         break;
         
     default:
-        header('Location: controller.php?page=inscription&status=success');
+        require 'sendMailCreaCompte.php';
+        header('Location: controller.php?page=mailcreacompte');
         break;
 }
 ?>

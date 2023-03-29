@@ -1,5 +1,5 @@
 <?php
-require "model.php";
+require_once "model.php";
 require "phpmailer/vendor/autoload.php";
 
 // librairie PHPMailer pour gérer l'envoi de mail
@@ -9,6 +9,7 @@ use PHPMailer\PHPMailer\SMTP;
 if(isset($_POST['mail'])){
 
     $toEmail=$_POST['mail'];
+    $url="http://localhost/github/glimpse/controller.php?page=accountconf"; 
 
     // Config du mail à envoyer
     $mail = new PHPMailer(true);
