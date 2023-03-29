@@ -346,7 +346,13 @@ main {
     border-radius: 10px;
     background-color: #D3D9D5;
     filter: drop-shadow(5px 5px 1px var(--color-dark));
+}
 
+#triangle{
+    position: absolute;
+    right: 2rem;
+    bottom: 1rem;
+    color: var(--color-dark);
 }
 
 
