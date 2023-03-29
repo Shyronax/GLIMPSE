@@ -4,6 +4,7 @@
     <?php 
         include "src/element/head.html";
     ?>
+    <script src="inscription.js" defer></script>
     <title>Inscription - Mille Cultures, Une Origine</title>
 </head>
 <body>
@@ -41,28 +42,28 @@
                     </div>
                     <div class="form__field">
                         <label for="mail" class="form__label">Email*</label>
-                        <input type="email" name='mail' class="form__input" id="mail" required>
+                        <input type="email" name='mail' class="form__input" id="mail" onKeyUp="checkMailAndPass()" required>
                     </div>
                     <div class="form__field">
                         <label for="mail-conf" class="form__label">Confirmation mail*</label>
-                        <input type="email"  name='mail-conf' class="form__input" id="mail-conf" required>
+                        <input type="email"  name='mail-conf' class="form__input" id="mail-conf" onKeyUp="checkMailAndPass()" required>
                     </div>
                     <div class="form__field">
                         <label for="password" class="form__label">Mot de passe*</label>
                         <div class="pos-relative">
-                            <input type="password" name="mdp" class="form__input" id="password">
+                            <input type="password" name="mdp" class="form__input" id="password" onKeyUp="checkMailAndPass()" required>
                             <i class="far fa-eye input__icon" id="eyeIcon"></i>
                         </div>
                     </div>
                     <div class="form__field">
                         <label for="passwordConf" class="form__label">Confirmation mot de passe*</label>
                         <div class="pos-relative">
-                            <input type="password" name="mdp-conf" class="form__input" id="passwordConf">
+                            <input type="password" name="mdp-conf" class="form__input" id="passwordConf" onKeyUp="checkMailAndPass()" required>
                             <i class="far fa-eye input__icon" id="eyeIconConf"></i>
                         </div>
                     </div>
                 </div>
-                <input type="submit" class="btn btn--secondary" value="S'inscrire">
+                <input type="submit" class="btn btn--secondary" value="S'inscrire" id="submit">
             </form>
             <p class="container__text"><span class="text--semi-bold">Vous avez déjà un compte ? </span><a href="controller.php?page=connection" class="container__link">Connectez-vous !</a></p>
         </div>
