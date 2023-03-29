@@ -54,6 +54,7 @@
                             </ul>
                         </div>
                         <p class="section__text text--bold">! Pensez à vous munir de votre réservation (imprimée ou numérique) afin de la présenter à l'accueil.</p>
+                        <span id="rules"></span>
                     </div>
                     <div class="section">
                         <div class="section__header">
