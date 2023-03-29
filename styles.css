@@ -1009,6 +1009,10 @@ main {
         text-align: center;
     }
 
+    .section__buttons {
+        flex-direction: column;
+    }
+
     /* form */
     .form {
         width: 100%;
