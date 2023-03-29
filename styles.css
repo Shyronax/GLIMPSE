@@ -887,5 +887,21 @@ main {
 
     .hero__content {
         flex-direction: column;
+        padding: 2rem 1rem;
+        gap: 0.5rem;
     }
+
+    .hero__title {
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    .hero__info {
+        max-width: 100%;
+    }
+
+    .caption {
+        text-align: center;
+    }
+
 }
