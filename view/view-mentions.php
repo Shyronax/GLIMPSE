@@ -189,7 +189,7 @@
                     <p class="sub-section__text">Toute reproduction, représentation, modification, diffusion, adaptation, traduction, transfert ou exploitation de quelque manière que ce soit, sous quelque forme que ce soit, de tout ou partie de ces contenus, sans notre autorisation, est interdite.</p>
                     <br>
                     <h4 class="sub-section__subtitle">Contenu provenant de sources tierces</h4>
-                    <p class="sub-section__text">Certains médias tels que des images, des vidéos ou des sons utilisés sur ce site web peuvent provenir de différentes sources extérieures. Nous nous efforçons d'utiliser des médias libres de droits ou ayant une licence d'utilisation appropriée, conformément aux lois relatives à la propriété intellectuelle.</p>
+                    <p class="sub-section__text">Certains médias tels que des images, des vidéos ou des sons utilisés sur ce site web peuvent provenir de différentes sources extérieures. Nous nous efforçons d'utiliser des médias libres de droits, avec les droits réservés (DR) dessus ou ayant une licence d'utilisation appropriée, conformément aux lois relatives à la propriété intellectuelle.</p>
 
                     <p class="sub-section__text">Ci-dessous, nous listons les sources de tous les médias provenant de sources tierces utilisés sur notre site web :</p>
                     <ul class="sub-section__list">
