@@ -941,11 +941,11 @@ main {
     }
 
     .main__header {
-        padding: 2rem 3rem;
+        padding: 2rem;
     }
 
     .main__title {
-        font-size: 2.5rem;
+        font-size: 2.2rem;
     }
 
     .main__banner {
