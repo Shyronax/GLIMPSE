@@ -3,9 +3,9 @@
         "normal": "megrim_normal_09e5111fe7ba7667948fca3b9030940a"
     },
     "montserrat": {
-        "normal": "D:\\xampp\\htdocs\\github\\glimpse\\dompdf\\vendor\\dompdf\\dompdf\/lib\/fonts\/montserrat_normal_b74b751c20b429298921949795391ef1",
-        "500": "D:\\xampp\\htdocs\\github\\glimpse\\dompdf\\vendor\\dompdf\\dompdf\/lib\/fonts\/montserrat_500_a34ab50d0b60a015b62e11133b0bf05b",
-        "600": "montserrat_600_54346339d706ca965bcbed499d2795db",
-        "bold": "D:\\xampp\\htdocs\\github\\glimpse\\dompdf\\vendor\\dompdf\\dompdf\/lib\/fonts\/montserrat_bold_4b7576218464d90344a2d2769cab2f75"
+        "normal": "C:\\wamp64\\www\\GLIMPSE\\dompdf\\vendor\\dompdf\\dompdf\/lib\/fonts\/montserrat_normal_b74b751c20b429298921949795391ef1",
+        "500": "C:\\wamp64\\www\\GLIMPSE\\dompdf\\vendor\\dompdf\\dompdf\/lib\/fonts\/montserrat_500_a34ab50d0b60a015b62e11133b0bf05b",
+        "600": "C:\\wamp64\\www\\GLIMPSE\\dompdf\\vendor\\dompdf\\dompdf\/lib\/fonts\/montserrat_600_54346339d706ca965bcbed499d2795db",
+        "bold": "montserrat_bold_4b7576218464d90344a2d2769cab2f75"
     }
 }
