@@ -37,7 +37,7 @@
                     </thead>
                     <tbody class="table__body">
                         <?php foreach($tickets as $ticket){ ?>
-                        <tr>
+                        <tr class="table__row">
                             <th data-label="Référence" scope='row'>#<?=$ticket['id_ticket']?></th>
                             <td data-label="Date" class="table__cell"><?=$ticket['jour_ticket']?></td>
                             <td data-label="Heure" class="table__cell"><?=$ticket['heure_ticket']?></td>
@@ -45,7 +45,7 @@
                             <td data-label="Facture" class="table__cell">
                                 <a href="downloadFacture?id=<?=$ticket['id_ticket']?>" class="table__link">Télécharger la facture (PDF)</a>
                             </td>
-                        </tr>
+                        </tr class="table__row">
                         <?php
                     } ?>
                     </tbody>

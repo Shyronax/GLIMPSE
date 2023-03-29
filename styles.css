@@ -1036,6 +1036,27 @@ main {
         font-size: 1.3rem;
     }
 
+    /* tableau */
+    .table__header {
+        display: none;
+    }
+    
+    .table__row{
+        display: block;
+        margin-bottom: 40px;
+    }
+    
+    .table__cell {
+        display: block;
+        text-align: right;
+    }
+    
+    .table__cell:before {
+        content: attr(data-label);
+        float: left;
+        font-weight: bold;
+    }
+
     /* liste */
     .sub-section__list {
         padding: 15px;
