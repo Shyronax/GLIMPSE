@@ -558,15 +558,15 @@ main {
     color: var(--color-primary-text);
 }
 
-.container__link {
+.container__link, .table__link {
     color: var(--color-link);
 }
 
-.container__link:hover {
+.container__link:hover, .table__link:hover {
     color: var(--color-link-hover);
 }
 
-.container__link:visited {
+.container__link:visited, .table__link:visited {
     color: var(--color-link-visited);
 }
 
