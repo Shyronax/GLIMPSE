@@ -30,7 +30,7 @@
             </div>  
             <p class="container__text text--center">Votre billet vous a été envoyé à cette adresse <span class="text--bold"><?=$_SESSION['mail']?></span>. <br>
             Vous pouvez également télécharger votre billet en cliquant sur le bouton ci-dessous.</p>
-            <a href="downloadFacture.php?id=<?=$_SESSION['id_ticket']?>" class="btn btn--secondary">Télécharger mon billet en PDF</a>   
+            <a href="downloadTicket.php?id=<?=$_SESSION['id_ticket']?>" class="btn btn--secondary">Télécharger mon billet en PDF</a>   
             <a href="controller.php?page=home" class="container__link">Retourner à l'accueil</a>
         </div>
     </main>
