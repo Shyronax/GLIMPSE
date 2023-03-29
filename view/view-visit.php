@@ -4,6 +4,7 @@
     <?php 
         include "src/element/head.html";
     ?>
+    <script src="textbox.js" defer></script>
     <title>Visiter - Mille Cultures, Une Origine</title>
 </head>
 <body>

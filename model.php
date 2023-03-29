@@ -94,6 +94,7 @@ function addTicket($jour, $heure, $nom, $prenom, $tarif1, $tarif2, $tarif3, $cli
 
     $result=$stmt->fetch(PDO::FETCH_ASSOC);
     if($result){
+        $_SESSION['id_ticket'] = $insertedId;
         return true;
     } else {
         return false;
