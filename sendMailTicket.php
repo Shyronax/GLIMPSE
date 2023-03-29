@@ -33,8 +33,8 @@ if(isset($_SESSION['mail']) && $_GET['id']){
     $mail->setFrom('site@milleculturesuneorigine.but-mmi-champs.fr', 'Mille Cultures, une Origine');
     $mail->addAddress($toEmail);
     $mail->isHTML(true);
-    $mail->addStringAttachment($pdfFacture, 'mcuo-reservation-facture.pdf');
-    $mail->addStringAttachment($pdfTicket, 'mcuo-reservation-ticket.pdf');
+    $mail->addStringAttachment($pdfFacture, 'facture-mcuo-reservation.pdf');
+    $mail->addStringAttachment($pdfTicket, 'ticket-mcuo-reservation.pdf');
     $mail->Subject = 'Ticket et facture de votre réservation';
     $mail->Body    = "
     <h1 style='font-size:1.2rem'>Merci pour votre réservation !</h1>
