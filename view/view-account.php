@@ -20,7 +20,7 @@
                 </div>
                 <div class="section__buttons">
                     <a href="controller.php?page=changedata" class="btn btn--secondary">Modifier</a>
-                    <a href="selfDeleteClient.php?id=<?=$_SESSION['id']?>" class="btn btn--secondary">Supprimer mon compte</a>
+                    <a href="selfDeleteClient.php?id=<?=$_SESSION['id']?>" class="btn btn--quaternary">Supprimer mon compte</a>
                 </div>
             </div>
             <div class="section">

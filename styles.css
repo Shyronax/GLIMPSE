@@ -172,6 +172,11 @@ h1 {
     background-color: var(--color-primary);
 }
 
+.btn--quaternary {
+    color: var(--color-primary);
+    background-color: var(--color-primary-background);
+}
+
 
 /* list */
 .list--none {
