@@ -17,7 +17,7 @@
                 <p class="text--semi-bold">Du 31 mars au 25 juin 2023</p>
                 <p class="text--semi-bold">Réservation en ligne obligatoire</p>
             </div>
-            <div class="flex hero__content">
+            <div class="hero__content">
                 <div class="hero__info">
                     <h1 class="hero__title">Les Pueblos</h1>
                     <p class="caption">Découvrez l'histoire fascinante et la culture vibrante des Pueblos à travers notre exposition interactive.</p>
