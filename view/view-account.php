@@ -51,7 +51,7 @@
                     </tbody>
                 </table>
             </div>
-            <a href="logout.php" class="btn btn--secondary">Se déconnecter</a>    
+            <a href="logout.php" class="btn btn--tertiary">Se déconnecter</a>    
         </div>
     </main>
     <?php 
