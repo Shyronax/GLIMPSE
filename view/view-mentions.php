@@ -232,7 +232,7 @@
                     <h3 class="sub-section__title">Images</h3>
                     <ul class="sub-section__list">
                         <li class="sub-section__list-item">Photos : <a href="https://www.crystalinks.com/anasazi.html" class="sub-section__list-item-link">Anasazi</a>, <a href="https://www.crystalinks.com/anasazi.html" class="sub-section__list-item-link">Anasazi</a></li>
-                        <li class="sub-section__list-item">Illustrations, symboles et logo : <a href="glimpse.but-mmi-champs.fr" class="sub-section__list-item-link">Glimpse</a></li>
+                        <li class="sub-section__list-item">Illustrations, symboles et logo : <a href="https://glimpse.but-mmi-champs.fr/" class="sub-section__list-item-link"  target="_blank">Glimpse</a></li>
                         <li class="sub-section__list-item"><a href="" class="sub-section__list-item-link "></a></li>
                     </ul>
                 </div>
@@ -240,7 +240,7 @@
                 <div class="sub-section">
                     <h3 class="sub-section__title">Vidéos</h3>
                     <ul class="sub-section__list">
-                        <li class="sub-section__list-item"><a href="glimpse.but-mmi-champs.fr" class="sub-section__list-item-link ">Glimpse</a></li>
+                        <li class="sub-section__list-item"><a href="https://glimpse.but-mmi-champs.fr/" class="sub-section__list-item-link " target="_blank">Glimpse</a></li>
                     </ul>
                 </div>
             </div>
