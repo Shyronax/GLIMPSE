@@ -344,7 +344,7 @@ main {
     width: 75vw;
     padding: 1.5rem;
     border-radius: 10px;
-    background-color: var(--color-secondary-background);
+    background-color: #D3D9D5;
     filter: drop-shadow(5px 5px 1px var(--color-dark));
 
 }
