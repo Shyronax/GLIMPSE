@@ -853,4 +853,27 @@ main {
     justify-content: start;
 }
 
+/* ----------------------------- *
+ *          MEDIA QUERY          *
+ * ----------------------------- */
 
+/* pour téléphone */
+@media only screen and (max-width: 767px) {
+    /* changement généraux */
+    .nav__logo-name {
+        display: none;
+    }
+
+    main {
+        width: 90vw;
+    }
+
+    /* page d'accueil */
+    .card__header {
+        flex-direction: column;
+    }
+
+    .card__header--sm {
+        padding: 1rem 1rem;
+    }
+}
