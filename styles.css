@@ -883,6 +883,10 @@ main {
     .chatbot-icon {
         display: none;
     }
+
+    .container--row {
+        flex-direction: column;
+    }
     
     .link-back {
         left: 4vh;
