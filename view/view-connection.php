@@ -3,30 +3,40 @@
 <head>
     <?php 
         include "src/element/head.html";
+        $_SESSION['prev'] = $_GET['prev'];
     ?>
     <title>Connexion - Mille Cultures, Une Origine</title>
 </head>
 <body>
     <?php 
-        include "src/element/nav.html";
+        include "src/element/nav.php";
     ?>
     <main>
         <div class="container">
+            <?php
+            if (isset($_GET['status'])){
+                if($_GET['status'] == "error"){
+                    echo("<div class='form__message--error'>Les identifiants sont incorrects.</div>");
+                } elseif($_GET['status'] == "pwdchangesuccess"){
+                    echo("<div class='form__message'>Votre mot de passe a bien été réinitialisé.</div>");
+                }
+            }
+            ?>
             <h1 class="container__title">Se connecter</h1>
             <p class="container__text">*Champs obligatoires</p>
             <form action="connexionClient.php" class="form" method="post">
                 <div class="form__container">
                     <div class="form__field">
-                        <label for="mail" class="form__label">Login / Email*</label>
-                        <input type="text" name='mail'class="form__input" required>
+                        <label for="mail" class="form__label">Email*</label>
+                        <input type="email" name='mail'class="form__input" id="mail" required>
                     </div>
                     <div class="form__field">
-                        <label for="mdp" class="form__label">Mot de passe*</label>
+                        <label for="password" class="form__label">Mot de passe*</label>
                         <div class="pos-relative">
                             <input type="password" name="mdp" class="form__input" id="password">
                             <i class="far fa-eye input__icon" id="eyeIcon"></i>
                         </div>
-                        <a href="" class="form__link">Mot de passe oublié ?</a>
+                        <a href="controller.php?page=pwdreinit" class="form__link">Mot de passe oublié ?</a>
                     </div>
                 </div>
                 <input type="submit" class="btn btn--secondary" value="Se connecter">

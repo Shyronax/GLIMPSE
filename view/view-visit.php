@@ -4,11 +4,12 @@
     <?php 
         include "src/element/head.html";
     ?>
+    <script src="textbox.js" defer></script>
     <title>Visiter - Mille Cultures, Une Origine</title>
 </head>
 <body>
     <?php 
-        include "src/element/nav.html";
+        include "src/element/nav.php";
         include "src/element/chatbot.html";
     ?>
     <main>

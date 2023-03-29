@@ -1,5 +1,5 @@
 <?php
-session_start();
+require "model.php";
 
 // require "model_blog.php";
 
@@ -26,22 +26,39 @@ if (isset($_GET["page"])) {
         case "inscription":
             include "view/view-inscription.php";
             break;
+        case "mailcreacompte":
+            include "view/view-mailcreacompte.php";
+            break;
         case "accountconf":
             include "view/view-accountconf.php";
             break;
         case "connection":
             include "view/view-connection.php";
             break;
-        case "pwdforgot":
-            include "view/view-pwdforgot.php";
+        case "pwdreinit":
+            include "view/view-pwdreinit.php";
+            break;
+        case "pwdchangeform":
+            $selector = $_GET["selector"];
+            $token = $_GET["token"];
+            if(empty($selector) || empty($token)){
+                header("Location: index.php?page=pwdreinit");
+            } else {
+                if(ctype_xdigit($selector) == true && ctype_xdigit($token) == true){
+                    include "view/view-pwdchangeform.php";
+                }
+            }
             break;
         case "mailconf":
             include "view/view-mailconf.php";
             break;
         case "account":
+            $client = getOneById($_SESSION["id"], "utilisateur");
+            $tickets = getClientTickets($_SESSION["id"]);
             include "view/view-account.php";
             break;
         case "changedata":
+            $client = getOneById($_SESSION["id"], "utilisateur");
             include "view/view-changedata.php";
             break;
         case "pwdreinit":

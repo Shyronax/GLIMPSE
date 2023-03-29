@@ -8,7 +8,7 @@
 </head>
 <body>
     <?php 
-        include "src/element/nav.html";
+        include "src/element/nav.php";
     ?>
     <main>
         <div class="container">
@@ -194,8 +194,8 @@
 
                     <p class="sub-section__text">Ci-dessous, nous listons les sources de tous les médias provenant de sources tierces utilisés sur notre site web :</p>
                     <ul class="sub-section__list">
-                        <li class="sub-section__list-item">Banques d'images et de vidéos : nous utilisons parfois des médias provenant de banques d'images et de vidéos telles que [nom de la banque d'images ou de vidéos].</li>
-                        <li class="sub-section__list-item">Sites web de partage de médias : nous pouvons également utiliser des médias provenant de sites web de partage de médias tels que [nom du site de partage de médias].</li>
+                        <li class="sub-section__list-item">Banques d'images et de vidéos : nous utilisons parfois des médias provenant de banques d'images et de vidéos.</li>
+                        <li class="sub-section__list-item">Sites web de partage de médias : nous pouvons également utiliser des médias provenant de sites web de partage de médias.</li>
                         <li class="sub-section__list-item">Médias créés par des tiers : enfin, certains médias peuvent être créés par des tiers, tels que des photographes, des artistes ou des vidéastes, et être utilisés avec leur permission.</li>
                     </ul>
                     

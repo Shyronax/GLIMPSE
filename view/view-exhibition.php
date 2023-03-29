@@ -5,11 +5,12 @@
         include "src/element/head.html";
         include "src/element/chatbot.html";
     ?>
+    <script src="textbox.js" defer></script>
     <title>Exposition - Mille Cultures, Une Origine</title>
 </head>
 <body>
     <?php 
-        include "src/element/nav.html";
+        include "src/element/nav.php";
     ?>
     <main>
         <div class="main__banner">
