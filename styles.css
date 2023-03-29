@@ -326,6 +326,31 @@ main {
     width: 8rem;
 }
 
+.chatbot-icon:hover{
+    cursor: pointer;
+}
+
+.textbox{
+    position: fixed;
+    bottom: 4rem;
+    left: 8rem;
+    z-index: 1000;
+    width: 75vw;
+    padding: 1.5rem;
+    border-radius: 10px;
+    background-color: var(--color-secondary-background);
+    filter: drop-shadow(5px 5px 1px var(--color-dark));
+
+}
+
+.textbox--hidden{
+    display: none;
+}
+
+.textbox__dialogue{
+    color: var(--color-dark);
+}
+
 /* ----------------------------- *
  *              CARD             *
  * ----------------------------- */

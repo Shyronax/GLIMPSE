@@ -5,6 +5,7 @@
         include "src/element/head.html";
         include "src/element/chatbot.html";
     ?>
+    <script src="textbox.js" defer></script>
     <title>Exposition - Mille Cultures, Une Origine</title>
 </head>
 <body>
