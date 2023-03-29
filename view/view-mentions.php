@@ -25,7 +25,6 @@
                     <span id="edition"></span>
                     <li class="section__list-item"><a href="#autre" class="section__list-item-link">Contenu intégré d'autres sites web</a></li>
                     <li class="section__list-item"><a href="#autorisation" class="section__list-item-link">Autorisation du droit à l'image pour les vidéos et images</a></li>
-                    <li class="section__list-item"><a href="#media" class="section__list-item-link">Sources des médias (images & vidéos)</a></li>
                 </ul>
             </div>
             <div class="section">
@@ -221,7 +220,6 @@
             </div>
             <div class="section">
                 <h2 class="section__title">Autorisation du droit à l'image pour les vidéos et images</h2>
-                <span id="media"></span>
                 <div class="section__container-text">
                     <p class="section__text">Chaque personne dont l'image apparaît sur le site certifie l'autorisation du droit à l'image. Nous respectons ce droit et nous ne publions aucune vidéo ou image mettant en scène une personne sans son consentement.</p>
                 </div>
