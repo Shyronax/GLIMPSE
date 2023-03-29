@@ -1,5 +1,5 @@
 const textbox = document.createElement('div');
-textbox.classList.add('textbox', 'textbox--hidden');
+textbox.classList.add('textbox', 'hidden');
 const textboxDialogue = document.createElement('p');
 textboxDialogue.classList.add('textbox__dialogue');
 textbox.appendChild(textboxDialogue);
@@ -30,12 +30,12 @@ switch(window.location.href.split('page=')[1]){
 portrait.addEventListener('click', () => {
     if(dialoguePointer < dialogue.length){
         if(dialoguePointer === 0){
-            textbox.classList.remove('textbox--hidden');
+            textbox.classList.remove('hidden');
         }
         textboxDialogue.innerHTML=dialogue[dialoguePointer];
         dialoguePointer++;
     } else {
-        textbox.classList.add('textbox--hidden');
+        textbox.classList.add('hidden');
         dialoguePointer = 0;
     }
 });

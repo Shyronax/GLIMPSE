@@ -196,6 +196,12 @@ h1 {
     position: relative;
 }
 
+/* display: none */
+
+.hidden{
+    display: none;
+}
+
 /* ----------------------------- *
  *             MAIN              *
  * ----------------------------- */
@@ -343,9 +349,6 @@ main {
 
 }
 
-.textbox--hidden{
-    display: none;
-}
 
 .textbox__dialogue{
     color: var(--color-dark);

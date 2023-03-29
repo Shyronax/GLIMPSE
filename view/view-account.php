@@ -43,7 +43,7 @@
                             <td class="table__cell"><?=$ticket['heure_ticket']?></td>
                             <td class="table__cell"><?=$ticket['nbplace_ticket']?></td>
                             <td class="table__cell">
-                                <a href="/images/myw3schoolsimage.jpg" download>Télécharger la facture (PDF)</a>
+                                <a href="downloadTicket?id=<?=$ticket['id_ticket']?>">Télécharger la facture (PDF)</a>
                             </td>
                         </tr>
                         <?php
