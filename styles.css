@@ -393,17 +393,12 @@ main {
 .card__video {
     width: 100%;
     height: 100%;
-}
-
-.card__info {
-    width: 100%;
-    height: 100%;
     aspect-ratio: 16/9;
 }
 
 .card__info {
     width: 38%;
-    padding: 4.7rem 2.5rem;
+    padding: 0 2.5rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
