@@ -955,11 +955,14 @@ main {
     /* container */
     .container {
         padding: 1.5rem;
-        display: block;
     }
 
     .container__title {
         font-size: 2.5rem;
+    }
+
+    .container-info {
+        display: block;
     }
 
     .main-container {
