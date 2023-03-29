@@ -45,6 +45,7 @@
                         <label for="mail-conf" class="form__label">Confirmation mail*</label>
                         <input type="email"  name='mail-conf' class="form__input" id="mail-conf" onKeyUp="checkMailAndPass()" required>
                     </div>
+                    <div class="form__message--error hidden" id="mail-error">Les adresses mail ne correspondent pas.</div>
                     <div class="form__field">
                         <label for="password" class="form__label">Mot de passe*</label>
                         <div class="pos-relative">
@@ -59,6 +60,7 @@
                             <i class="far fa-eye input__icon" id="eyeIconConf"></i>
                         </div>
                     </div>
+                    <div class="form__message--error hidden" id="pass-error">Les mots de passe ne correspondent pas.</div>
                 </div>
                 <input type="submit" class="btn btn--secondary" value="S'inscrire" id="submit">
             </form>
