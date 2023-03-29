@@ -948,6 +948,21 @@ main {
         height: 20vh;
     }
 
+    /* container */
+    .container {
+        padding: 1.5rem;
+        display: block;
+    }
+
+    .main-container {
+        width: 100%;
+        padding: 2rem 0;
+    }
+
+    .deco-container {
+        display: none;
+    }
+
     /* footer */
     .footer {
         padding: 2rem;
