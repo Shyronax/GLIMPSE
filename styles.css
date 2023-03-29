@@ -547,6 +547,10 @@ main {
     font-size: 3rem;
 }
 
+.container__title-middle {
+    text-align: center;
+}
+
 .container__subtitle {
     text-align: center;
     font-weight: 700;
