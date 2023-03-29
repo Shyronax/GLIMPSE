@@ -18,9 +18,10 @@ document.querySelector('.btn--confirmer').addEventListener('click', () => {
         document.querySelector('.form__container').style.transform = "translate("+ (200 - etape * 100) +"%, 0)";
         document.querySelector('.form__container-date').style.transform = "translate("+ (200 - etape * 100) +"%, 0)";
         document.querySelector('.form__container-ticket').style.transform = "translate("+ (200 - etape * 100) +"%, 0)";
-    } else if(document.getElementById('mail').value === document.getElementById('conf-mail').value){
+    } else if(document.getElementById('mail').value === document.getElementById('mail-conf').value){
         document.querySelector('form').submit();
     } else {
+        document.getElementById('email-error').classList.remove('hidden');
         document.getElementById('mail').classList.add('form__input--error');
         document.getElementById('mail-conf').classList.add('form__input--error');
     }

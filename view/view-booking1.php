@@ -88,6 +88,7 @@
                                 <label for="mail-conf" class="form__label">Confirmation mail*</label>
                                 <input <?php if(isset($_SESSION['mail'])){echo("value={$_SESSION['mail']}");}?> type="email"  name='mail-conf' class="form__input" id="mail-conf" required>
                             </div>
+                            <div class="form__message--error hidden" id="email-error">Les adresses mail ne correspondent pas.</div>
                         </div>
                     </div>
                 </div>
