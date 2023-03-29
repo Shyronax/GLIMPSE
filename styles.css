@@ -1011,6 +1011,7 @@ main {
 
     .section__buttons {
         flex-direction: column;
+        align-items: center;
     }
 
     /* form */
