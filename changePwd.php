@@ -2,21 +2,21 @@
 
 if(isset($_POST['changepwd-submit'])){
     $selector = $_POST['selector'];
-    $validator = $_POST['validator'];
+    $token = $_POST['token'];
     $pwd = $_POST['mdp'];
     $pwdConf = $_POST['mdp-conf'];
-
-    if(empty($pwd) || empty($pwdConf)){
-        header("Location: index.php?page=pwdchange&selector=".$selector."&validator=".$validator."&err=emptypwd");
-        die();
-    } elseif($pwd != $pwdConf){
-        header("Location: index.php?page=pwdchange&selector=".$selector."&validator=".$validator."&err=pwdnotmatch");
+    $date = date("U");
+    
+    if($pwd === $pwdConf){
+        require "model.php";
+        reinitMdp($selector,$date,$token,$pwd);
+    } elseif(empty($pwd) || empty($pwdConf)){
+        header("Location: controller.php?page=pwdchangeform&selector=".$selector."&token=".$token."&err=emptypwd");
+    } else {
+        header("Location: controller.php?page=pwdchangeform&selector=".$selector."&token=".$token."&err=pwdnotmatch");
         die();
     }
 
-    $date = date("U");
-    require "model.php";
-
 } else {
-    header("Location: index.php");
+    header("Location: controller.php?page=pwdreinit");
 }

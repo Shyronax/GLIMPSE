@@ -17,6 +17,8 @@
             if (isset($_GET['status'])){
                 if($_GET['status'] == "error"){
                     echo("<div class='form__message--error'>Les identifiants sont incorrects.</div>");
+                } elseif($_GET['status'] == "pwdchangesuccess"){
+                    echo("<div class='form__message'>Votre mot de passe a bien été réinitialisé.</div>");
                 }
             }
             ?>
@@ -34,7 +36,7 @@
                             <input type="password" name="mdp" class="form__input" id="password">
                             <i class="far fa-eye input__icon" id="eyeIcon"></i>
                         </div>
-                        <a href="" class="form__link">Mot de passe oublié ?</a>
+                        <a href="controller.php?page=pwdreinit" class="form__link">Mot de passe oublié ?</a>
                     </div>
                 </div>
                 <input type="submit" class="btn btn--secondary" value="Se connecter">

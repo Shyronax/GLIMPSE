@@ -35,14 +35,14 @@ if (isset($_GET["page"])) {
         case "pwdreinit":
             include "view/view-pwdreinit.php";
             break;
-        case "pwdchange":
+        case "pwdchangeform":
             $selector = $_GET["selector"];
-            $validator = $_GET["validator"];
-            if(empty($selector) || empty($validator)){
+            $token = $_GET["token"];
+            if(empty($selector) || empty($token)){
                 header("Location: index.php?page=pwdreinit");
             } else {
-                if(ctype_xdigit($selector) !== false && ctype_xdigit($validator) !== false){
-                    include "view/view-pwdchange.php";
+                if(ctype_xdigit($selector) == true && ctype_xdigit($token) == true){
+                    include "view/view-pwdchangeform.php";
                 }
             }
             break;
