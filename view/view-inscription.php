@@ -22,9 +22,6 @@
                     case "error": 
                         echo("<div class='form__message--error'>Une erreur inattendue est survenue. Veuillez réessayez ultérieurement.</div>");
                         break;
-                    default: 
-                        echo("<div class='form__message--success'>Votre compte a bien été créé!</div>");
-                        break;
                 }
             }
             ?>
