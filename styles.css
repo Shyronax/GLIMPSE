@@ -976,6 +976,18 @@ main {
         line-height: 1.7;
     }
 
+    .section-gallery__col {
+        align-items: center;
+    }
+
+    .section-gallery__row {
+        flex-direction: column;
+    }
+
+    .section-gallery__col-text {
+        text-align: center;
+    }
+
     /* footer */
     .footer {
         padding: 2rem;
