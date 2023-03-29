@@ -46,22 +46,22 @@
                         <input type="email"  name='mail-conf' class="form__input" id="mail-conf" onKeyUp="checkMailAndPass()" required>
                     </div>
                     <div class="form__message--error hidden" id="mail-error">Les adresses mail ne correspondent pas.</div>
-                    <div>Le mot de passe doit contenir au minimum <span id="char" class="form__message--error">10 caractères,</span> <span id="maj" class="form__message--error">1 majuscule</span> et <span id="num" class="form__message--error">2 chiffres</span></div>
                     <div class="form__field">
                         <label for="password" class="form__label">Mot de passe*</label>
                         <div class="pos-relative">
                             <input type="password" name="mdp" class="form__input" id="password" onKeyUp="onKeyUp()" required>
                             <i class="far fa-eye input__icon" id="eyeIcon"></i>
                         </div>
+                        <div>Le mot de passe doit contenir au minimum <span id="char" class="form__message--error">10 caractères,</span> <span id="maj" class="form__message--error">1 majuscule</span> et <span id="num" class="form__message--error">2 chiffres</span></div>
                     </div>
                     <div class="form__field">
                         <label for="passwordConf" class="form__label">Confirmation mot de passe*</label>
                         <div class="pos-relative">
                             <input type="password" name="mdp-conf" class="form__input" id="passwordConf" onKeyUp="checkMailAndPass()" required>
                             <i class="far fa-eye input__icon" id="eyeIconConf"></i>
+                            <div class="form__message--error hidden" id="pass-error">Les mots de passe ne correspondent pas.</div>
                         </div>
                     </div>
-                    <div class="form__message--error hidden" id="pass-error">Les mots de passe ne correspondent pas.</div>
                 </div>
                 <input type="submit" class="btn btn--secondary" value="S'inscrire" id="submit">
             </form>
