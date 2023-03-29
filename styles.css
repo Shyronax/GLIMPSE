@@ -115,6 +115,10 @@ h1 {
     transition: 0.3s ease-in-out;
 }
 
+.btn__text {
+    font-weight: 700;
+}
+
 .btn--primary {
     color: var(--color-primary-text);
     background-color: var(--color-primary);
