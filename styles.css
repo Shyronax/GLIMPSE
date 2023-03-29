@@ -884,4 +884,8 @@ main {
     .card__header--sm {
         padding: 1rem 1rem;
     }
+
+    .hero__content {
+        flex-direction: column;
+    }
 }
