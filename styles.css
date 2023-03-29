@@ -908,6 +908,7 @@ main {
     
     .card__info {
         padding: 2.5rem 1rem;
+        align-items: center;
     }
 
     .hero__content {
