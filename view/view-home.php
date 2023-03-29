@@ -35,9 +35,7 @@
             </div>
             <div class="card__main">
                 <div class="card__media">
-                <iframe class="card__video"
-                    src="https://www.youtube.com/watch?v=jI4fHHaQLu4">
-                </iframe>
+                    <iframe src="https://www.youtube.com/embed/Pm5RqJt3seU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="card__video"></iframe>
                 </div>
                 <div class="card__info">
                     <div class="card__text">
