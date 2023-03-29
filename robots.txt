@@ -1,0 +1,13 @@
+User-agent: *
+Disallow: /controller.php
+Disallow: /model.php
+Disallow: /phpmailer/
+Disallow: /dompdf/
+Disallow: /view/
+
+Allow: /view/view-about.php
+Allow: /view/view-exhibition.php
+Allow: /view/view-home.php
+Allow: /view/view-visit.php
+Allow: /view/view-faq.php
+Allow: /src/
