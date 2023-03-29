@@ -26,6 +26,9 @@ if (isset($_GET["page"])) {
         case "inscription":
             include "view/view-inscription.php";
             break;
+        case "mailcreacompte":
+            include "view/view-mailcreacompte.php";
+            break;
         case "accountconf":
             include "view/view-accountconf.php";
             break;
