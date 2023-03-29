@@ -887,10 +887,15 @@ main {
     /* page d'accueil */
     .card__header {
         flex-direction: column;
+        padding: 2rem 3rem;
     }
 
     .card__header--sm {
         padding: 1rem 1rem;
+    }
+
+    .card__title {
+        text-align: center;
     }
 
     .card__main {
