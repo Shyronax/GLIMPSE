@@ -880,6 +880,10 @@ main {
         width: 90vw;
     }
 
+    .btn__text {
+        font-size: 0.9rem;
+    }
+
     /* page d'accueil */
     .card__header {
         flex-direction: column;
