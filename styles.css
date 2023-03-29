@@ -888,7 +888,7 @@ main {
     .hero__content {
         flex-direction: column;
         padding: 2rem 1rem;
-        gap: 0.5rem;
+        gap: 1.5rem;
     }
 
     .hero__title {
@@ -902,6 +902,7 @@ main {
 
     .caption {
         text-align: center;
+        font-size: 0.875rem;
     }
 
 }
