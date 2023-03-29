@@ -884,7 +884,7 @@ main {
         display: none;
     }
 
-    .container--row {
+    .container--row, .container--row-reverse {
         flex-direction: column;
     }
     
