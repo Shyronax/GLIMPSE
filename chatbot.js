@@ -1,9 +1,5 @@
-const textbox = document.createElement('div');
-textbox.classList.add('textbox', 'hidden');
-const textboxDialogue = document.createElement('p');
-textboxDialogue.classList.add('textbox__dialogue');
-textbox.appendChild(textboxDialogue);
-document.body.appendChild(textbox);
+const textbox = document.querySelector('.textbox');
+const textboxDialogue = document.querySelector('.textbox__dialogue');
 const portrait = document.querySelector('.chatbot-icon');
 
 let dialogue;
@@ -28,6 +24,14 @@ switch(window.location.href.split('page=')[1]){
 }
 
 portrait.addEventListener('click', () => {
+    textbox.classList.toggle('hidden');
+    if(dialoguePointer === 0){
+        textboxDialogue.innerHTML=dialogue[dialoguePointer];
+        dialoguePointer++;
+    }
+});
+
+textbox.addEventListener('click', () => {
     if(dialoguePointer < dialogue.length){
         if(dialoguePointer === 0){
             textbox.classList.remove('hidden');

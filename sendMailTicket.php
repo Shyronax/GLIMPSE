@@ -6,10 +6,11 @@ require "phpmailer/vendor/autoload.php";
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
 
-if(isset($_POST['mail'])){
+if(isset($_SESSION['mail']) && $_GET['id']){
 
-    $toEmail=$_POST['mail'];
-    $url="http://localhost/github/glimpse/controller.php?page=accountconf"; 
+    include("createTicketPDF.php");
+    $toEmail=$_SESSION['mail'];
+    $pdf=$dompdf->output();
 
     // Config du mail à envoyer
     $mail = new PHPMailer(true);
@@ -28,20 +29,18 @@ if(isset($_POST['mail'])){
     $mail->setFrom('site@milleculturesuneorigine.but-mmi-champs.fr', 'Mille Cultures, une Origine');
     $mail->addAddress($toEmail);
     $mail->isHTML(true);
-    $mail->Subject = 'Confirmation de création du compte';
+    $mail->addStringAttachment($pdf, 'mcuo-reservation-facture.pdf');
+    $mail->Subject = 'Facture de votre réservation';
     $mail->Body    = "
-    <h1 style='font-size:1.2rem'>Confirmation de compte</h1>
-    <p style='font-size:1rem'>Bonjour ! Vous avec procédé à la création d'un compte sur le site de <a href='https://millecultureuneorigine.but-mmi-champs.fr'>Mille Cultures, une Origine</a>.<br> 
-    Cliquez sur ce lien pour confirmer votre inscription : <br>
-    $url<br>
-    Si vous n'êtes pas à l'origine de cette demande, merci d'ignorer ce mail.</p>
+    <h1 style='font-size:1.2rem'>Merci pour votre réservation !</h1>
+    <p style='font-size:1rem'>Bonjour ! Vous avez réserver une place pour l'exposition <strong>Les Pueblos</strong> sur le site de <a href='https://millecultureuneorigine.but-mmi-champs.fr'>Mille Cultures, une Origine</a>.<br> 
+    Vous trouverez votre facture en pièce jointe au format PDF.<br>
     <p style='font-size:1rem'>Cordialement,<br>
     Mille Culture, une Origine</p>";
     
     $mail->send();
-    header('Location: controller.php?page=accountconf');
+    header('Location: controller.php?page=booking5');
 } else {
-    // header("Location: controller.php?page=pwdforgot");
+    header('Location: controller.php?page=booking1&status=error');
+    die();
 }
-?>
-
