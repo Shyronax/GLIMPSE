@@ -25,7 +25,6 @@
                     <span id="edition"></span>
                     <li class="section__list-item"><a href="#autre" class="section__list-item-link">Contenu intégré d'autres sites web</a></li>
                     <li class="section__list-item"><a href="#autorisation" class="section__list-item-link">Autorisation du droit à l'image pour les vidéos et images</a></li>
-                    <li class="section__list-item"><a href="#media" class="section__list-item-link">Sources des médias (images & vidéos)</a></li>
                 </ul>
             </div>
             <div class="section">
@@ -190,7 +189,7 @@
                     <p class="sub-section__text">Toute reproduction, représentation, modification, diffusion, adaptation, traduction, transfert ou exploitation de quelque manière que ce soit, sous quelque forme que ce soit, de tout ou partie de ces contenus, sans notre autorisation, est interdite.</p>
                     <br>
                     <h4 class="sub-section__subtitle">Contenu provenant de sources tierces</h4>
-                    <p class="sub-section__text">Certains médias tels que des images, des vidéos ou des sons utilisés sur ce site web peuvent provenir de différentes sources extérieures. Nous nous efforçons d'utiliser des médias libres de droits ou ayant une licence d'utilisation appropriée, conformément aux lois relatives à la propriété intellectuelle.</p>
+                    <p class="sub-section__text">Certains médias tels que des images, des vidéos ou des sons utilisés sur ce site web peuvent provenir de différentes sources extérieures. Nous nous efforçons d'utiliser des médias libres de droits, avec les droits réservés (DR) dessus ou ayant une licence d'utilisation appropriée, conformément aux lois relatives à la propriété intellectuelle.</p>
 
                     <p class="sub-section__text">Ci-dessous, nous listons les sources de tous les médias provenant de sources tierces utilisés sur notre site web :</p>
                     <ul class="sub-section__list">
@@ -221,27 +220,8 @@
             </div>
             <div class="section">
                 <h2 class="section__title">Autorisation du droit à l'image pour les vidéos et images</h2>
-                <span id="media"></span>
                 <div class="section__container-text">
                     <p class="section__text">Chaque personne dont l'image apparaît sur le site certifie l'autorisation du droit à l'image. Nous respectons ce droit et nous ne publions aucune vidéo ou image mettant en scène une personne sans son consentement.</p>
-                </div>
-            </div>
-            <div class="section">
-                <h2 class="section__title">Sources des médias (images & vidéos)</h2>
-                <div class="sub-section">
-                    <h3 class="sub-section__title">Images</h3>
-                    <ul class="sub-section__list">
-                        <li class="sub-section__list-item">Photos : <a href="https://www.crystalinks.com/anasazi.html" class="sub-section__list-item-link">Anasazi</a>, <a href="https://www.crystalinks.com/anasazi.html" class="sub-section__list-item-link">Anasazi</a></li>
-                        <li class="sub-section__list-item">Illustrations, symboles et logo : <a href="glimpse.but-mmi-champs.fr" class="sub-section__list-item-link">Glimpse</a></li>
-                        <li class="sub-section__list-item"><a href="" class="sub-section__list-item-link "></a></li>
-                    </ul>
-                </div>
-                
-                <div class="sub-section">
-                    <h3 class="sub-section__title">Vidéos</h3>
-                    <ul class="sub-section__list">
-                        <li class="sub-section__list-item"><a href="glimpse.but-mmi-champs.fr" class="sub-section__list-item-link ">Glimpse</a></li>
-                    </ul>
                 </div>
             </div>
         </div>

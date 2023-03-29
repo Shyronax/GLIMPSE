@@ -21,7 +21,7 @@
                 }
             }
             ?>
-                <h1 class="container__title">Billetterie</h1>
+                <h1 class="container__title container__title-middle">Billetterie</h1>
                 <p class="container__subtitle">Choix de réservation (1/3)</p>
             </div>
             <p class="container__text text--center">Veuillez choisir une date de visite pour l'exposition.</p>

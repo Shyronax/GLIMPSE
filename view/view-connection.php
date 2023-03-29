@@ -41,7 +41,7 @@
                 </div>
                 <input type="submit" class="btn btn--secondary" value="Se connecter">
             </form>
-            <p class="container__text"><span class="text--semi-bold">Vous n'avez pas de compte ? </span><a href="controller.php?page=inscription" class="container__link">Inscrivez-vous !</a></p>
+            <p class="container__text container__text-form"><span class="text--semi-bold">Vous n'avez pas de compte ? </span><a href="controller.php?page=inscription" class="container__link">Inscrivez-vous !</a></p>
         </div>
     </main>
     <?php 
