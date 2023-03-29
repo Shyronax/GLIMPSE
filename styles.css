@@ -972,6 +972,10 @@ main {
         font-size: 1.7rem;
     }
 
+    .section__list-item {
+        line-height: 1.7;
+    }
+
     /* footer */
     .footer {
         padding: 2rem;
