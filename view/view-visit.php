@@ -18,7 +18,7 @@
         <div class="main__header">
             <h1 class="main__title">Visiter</h1>
         </div>
-        <div class="container flex--start">
+        <div class="container container-info flex--start">
         <nav aria-label="Breadcrumb" class="breadcrumb">
             <ul class="breadcrumb__list">
                 <li class="breadcrumb__list-item"><a href="controller.php?page=home" class="breadcrumb__list-item-link">Accueil</a></li>
@@ -42,7 +42,7 @@
                             <h2 class="section__title">Horaires et accès</h2>
                         </div>
                         <p class="section__text text--bold">L'IUT est ouvert du lundi au vendredi, de 8h à 18h. Fermeture durant les jours fériés.</p>
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1153.0237163742015!2d2.5843720477426624!3d48.83721962462024!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e60e33dd9a3fdd%3A0x7e5ced48ab7fc8df!2sIUT%20de%20Marne-la-Vall%C3%A9e%20-%20Universit%C3%A9%20Gustave%20Eiffel!5e0!3m2!1sfr!2sfr!4v1679320145226!5m2!1sfr!2sfr" width="700" height="470" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1153.0237163742015!2d2.5843720477426624!3d48.83721962462024!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e60e33dd9a3fdd%3A0x7e5ced48ab7fc8df!2sIUT%20de%20Marne-la-Vall%C3%A9e%20-%20Universit%C3%A9%20Gustave%20Eiffel!5e0!3m2!1sfr!2sfr!4v1679320145226!5m2!1sfr!2sfr" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="card__map"></iframe>
                         <p class="section__text text--bold">IUT de Marne-la-Vallée - Université Gustave Eiffel</p>
                         <p class="section__text">2, rue Albert Einstein <br>
                         77420 Champs-sur-Marne</p>
