@@ -1,6 +1,6 @@
 <nav class="nav">
     <a href="controller.php?page=home" class="nav__logo-link">
-        <img src="src/img/logo.png" alt="" class="nav__logo-img">
+        <img src="src/img/logo.png" alt="Retour à l'accueil" class="nav__logo-img">
         <p class="nav__logo-name">Mille cultures, une origine</p>
     </a>
     <div class="nav__group">

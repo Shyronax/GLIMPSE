@@ -275,12 +275,18 @@ main {
     list-style: none;
     display: flex;
     gap: 3.75rem; 
+    margin: 0;
+}
+
+.nav__menu-item {
+    padding: 1rem 0.5rem;
 }
 
 .nav__menu-item-link {
     text-decoration: none;
     color: var(--color-light);
     font-weight: 600;
+    padding: 1rem 0.5rem;
 }
 
 .nav__buttons {
@@ -543,6 +549,10 @@ main {
 
 .container__link:hover {
     color: var(--color-link-hover);
+}
+
+.container__link:visited {
+    color: var(--color-link-visited);
 }
 
 .main-container {
@@ -830,11 +840,13 @@ main {
 
 .footer__utility-copy {
     font-weight: 500;
+    padding: 1rem;
 }
 
 .footer__utility-link {
     text-decoration: none;
     color: var(--color-light);
+    padding: 1rem;
 }
 
 .footer__utility-link:hover {

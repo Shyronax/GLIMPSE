@@ -1,0 +1,21 @@
+/* Modifications : la couleur de fond de page - la police - l'unité utilisée pour la taille de la police  */
+body { 
+    background-color :#fff;
+    font-family : serif;
+    font-size : 16pt;
+}
+
+/* Modifications : agrandissement du contenu principal */
+main {
+    width: 100vw;
+}
+
+/* éléments dispensables pour l'impression */
+.nav, .breadcrumb, .card-gallery, .main__banner, .deco-container, .chatbot-icon, .btn, .btn-primary, .footer__utility-link {
+    display: none;
+}
+
+/* image à retirer */
+.hero {
+    background-image: none;
+}
