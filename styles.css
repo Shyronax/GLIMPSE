@@ -1022,6 +1022,11 @@ main {
         font-size: 1.3rem;
     }
 
+    /* liste */
+    .sub-section__list {
+        padding: 15px;
+    }
+
     /* footer */
     .footer {
         padding: 2rem;
