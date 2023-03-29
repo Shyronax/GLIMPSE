@@ -49,6 +49,9 @@
                         <p class="section__text text--bold">Au moyen d'une tablette tactile, et guidés par nos mascottes Ponito et Kohana, vous aurez l'occasion durant l'exposition de dessiner des symboles de la culture Pueblos et de découvrir ce qu'ils représentent.</p>
                         <p class="section__text"></p>
                         <iframe src="https://www.youtube.com/embed/opjLCbjNMaU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="card__video"></iframe>
+                        <p class="section__text">Ponito & Kohana doivent décorer le vase avec des symboles, mais ils ne s'en souviennent plus. Ils ont besoin de ton aide pour dessiner les symboles ! </p>
+
+                        <p class="section__text">Pour cela, vous devrez relier les points entre eux dans le bon ordre afin de reconstituer les symboles que vous verrez durant l'exposition.</p>
                     </div>
                 </div>
                 <div class="deco-container">
