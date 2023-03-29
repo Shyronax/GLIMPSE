@@ -1005,6 +1005,10 @@ main {
         text-align: center;
     }
 
+    .form__container-ticket-title {
+        font-size: 1.3rem;
+    }
+
     /* footer */
     .footer {
         padding: 2rem;
