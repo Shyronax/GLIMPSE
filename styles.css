@@ -722,8 +722,9 @@ main {
     color: var(--color-error);
 }
 
-.form__message--succes{
+.form__message--success{
     color: var(--color-success);
+    font-weight: 700;
 }
 
 .form__link {
