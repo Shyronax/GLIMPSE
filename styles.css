@@ -885,6 +885,18 @@ main {
         padding: 1rem 1rem;
     }
 
+    .card__main {
+        flex-direction: column;
+    }
+
+    .card__media, .card__info {
+        width: 100%;
+    }
+    
+    .card__info {
+        padding: 2.5rem 1rem;
+    }
+
     .hero__content {
         flex-direction: column;
         padding: 2rem 1rem;
