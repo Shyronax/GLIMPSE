@@ -20,7 +20,7 @@
                 </div>
                 <div class="section__buttons">
                     <a href="controller.php?page=changedata" class="btn btn--secondary">Modifier</a>
-                    <a href="" class="btn btn--secondary">Supprimer mon compte</a>
+                    <a href="selfDeleteClient.php?id=<?=$_SESSION['id']?>" class="btn btn--secondary">Supprimer mon compte</a>
                 </div>
             </div>
             <div class="section">
@@ -43,7 +43,7 @@
                             <td class="table__cell"><?=$ticket['heure_ticket']?></td>
                             <td class="table__cell"><?=$ticket['nbplace_ticket']?></td>
                             <td class="table__cell">
-                                <a href="downloadTicket?id=<?=$ticket['id_ticket']?>">Télécharger la facture (PDF)</a>
+                                <a href="downloadFacture?id=<?=$ticket['id_ticket']?>">Télécharger la facture (PDF)</a>
                             </td>
                         </tr>
                         <?php

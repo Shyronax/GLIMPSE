@@ -17,7 +17,7 @@ $dompdf->loadHtml('<html lang="fr">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Megrim&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <title>Billet</title>
+    <title>Facture</title>
     <style>
         body {
             position: relative; 
@@ -46,20 +46,17 @@ $dompdf->loadHtml('<html lang="fr">
 
         h2 {
             margin: 0.5rem 0;
+            text-transform: uppercase;
         }
 
         main {
             background-color: #FAEFE4;
-            padding: 20px;
+            padding: 30px 70px;
             position: relative;
         }
 
-        .qr {
-            position: absolute;
-            width: 10rem;
-            right: 10%;
-            top: 5%;
-
+        a {
+            color: black;
         }
 
         hr {
@@ -98,34 +95,34 @@ $dompdf->loadHtml('<html lang="fr">
 <body>
     <div class="header">
         <img src="src/img/logoTicket.png" alt="">
-        <h1>Billet</h1>
+        <h1>Facture</h1>
     </div>
     <main>
         <div>
-            <p><span class="bold">Numéro du billet</span> : #'.$ticket['id_ticket'].'</p>
-            <p><span class="bold">Au nom de</span> : '.$ticket['prenom_ticket'].' '.$ticket['nom_ticket'].'</p>
-        </div>
-        <img id="barcode" class="qr" src="https://barcodeapi.org/api/qr/'.$ticket['id_ticket'].'">
-        <div>
-            <h2>EXPOSITION</h2>
-            <p>“Mille Culture, une Origine - Les Pueblos”</p>
+            <p><span class="bold">Numéro de la facture</span> : #'.$ticket['id_ticket'].'</p>
+            <h2>Coordonnées</h2>
+            <p><span class="bold">Nom :</span> '.$ticket['nom_ticket'].'</p>
+            <p><span class="bold">Prénom :</span> '.$ticket['prenom_ticket'].'</p>
+            <p><span class="bold">Mail :</span> '.$_SESSION['mail'].'</p>
         </div>
         <hr>
         <div>
-            <h2>DATE & HEURE</h2>
-            <p>Le <span class="bold">'.$ticket['jour_ticket'].'</span> à <span class="bold">'.$ticket['heure_ticket'].'</span></p>
-        </div>
-        <div>
-            <h2>LIEU</h2>
-            <p>IUT de Marne-la-Vallée - Université Gustave Eiffel <br>
-                2, rue Albert Einstein <br>
-                77420 Champs-sur-Marne <br>
-                FRANCE</p>
+            <h2>Réservation</h2>
+            <p><span class="bold">Exposition : </span>“Mille Culture, une Origine - Les Pueblos”</p>
+            <p><span class="bold">Date & heure : </span>Le <span class="bold">'.$ticket['jour_ticket'].'</span> à <span class="bold">'.$ticket['heure_ticket'].'</span></p>
+            <p><span class="bold">Nombre de places : </span> '.$ticket['nbplace_ticket'].' place(s).</p>
         </div>
         <hr>
         <div>
-            <h2>DETAILS DU BILLET</h2>
-            <p>'.$ticket['nbplace_ticket'].' place(s)</p>
+            <h2>Prix</h2>
+            <p>(Toutes les taxes sont comprises dans le prix)</p>
+        </div>
+        <hr>
+        <div>
+            <h2>Informations complémentaires</h2>
+            <p>Paiement effectué par <span class="bold">carte bancaire</span></p>
+            <br>
+            <p>Si vous souhaitez consulter les conditions de vente, nous vous invitons à consulter notre site : <a href="https://milleculturesuneorigine.but-mmi-champs.fr/">Mille Cultures, Une Origine</a></p>
         </div>
     </main>
     <footer>

@@ -131,6 +131,14 @@ function modifClient($id,$login,$mail){
     $stmt->execute();
 }
 
+function deleteClient($id){
+    $db=dbConnect();
+    $query="DELETE FROM utilisateur WHERE id_utilisateur=:id";
+    $stmt=$db->prepare($query);
+    $stmt->bindParam(':id', $id, PDO::PARAM_INT);
+    $stmt->execute();
+}
+
 
 // fonctions pour la réinitialisation du mot de passe
 function deleteFromReinitMdp($mail){
