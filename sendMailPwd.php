@@ -33,7 +33,6 @@ if(isset($_POST['mail'])){
     $mail = new PHPMailer(true);
     $mail->CharSet="UTF-8";
     $mail->isSMTP();
-    $mail->SMTPDebug = 2;
 
     // Paramètres SMTP Hostinger
     $mail->Host = 'smtp.hostinger.fr';
