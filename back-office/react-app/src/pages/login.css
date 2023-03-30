@@ -1,0 +1,81 @@
+.main-login {
+    display: flex;
+}
+
+.admin {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1em;
+    background-color: white;
+    padding: 0 10%;
+}
+
+.admin__title {
+    font-size: 2.2rem;
+    letter-spacing: 0.15rem;
+    font-weight: 700;
+}
+
+.admin__text {
+    color: var(--brown);
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+}
+
+.auth {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 2;
+    flex-direction: column;
+    gap: 5em;
+}
+
+.auth__bloc {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.auth__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.auth__site {
+    display: flex;
+    align-items: center;
+    gap: 1.2em;
+    color: var(--brown);
+    align-self: flex-end;
+    margin-top: 2rem;
+}
+
+.auth__site a {
+    color: var(--brown);
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.auth__champs {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2em;
+    gap: 0.5rem;
+}
+
+.auth__label {
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.auth__input {
+    min-width: 40vw;
+}
+
+.auth__error {
+    height: 2.2rem;
+}

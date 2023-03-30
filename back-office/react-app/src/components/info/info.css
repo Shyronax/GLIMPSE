@@ -1,0 +1,22 @@
+.infos {
+    gap: 1em;
+}
+
+.info {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    padding: 1.8em;
+    margin-bottom: 1em;
+    border-radius: 7px;
+    flex-direction: column;
+}
+
+.info__number {
+    color: var(--brown);
+    font-size: 2.6rem;
+}
+
+.info__text {
+    font-size: 0.9rem;
+}

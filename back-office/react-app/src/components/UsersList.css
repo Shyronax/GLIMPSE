@@ -1,0 +1,27 @@
+td:has(> .actions) {
+    display: flex;
+    justify-content: center;
+}
+
+.gestion__stats {
+    padding: 2em;
+}
+
+.gestion__table {
+    text-align: center;
+    padding: 2em;
+    background-color: white;
+    border-spacing: 0;
+    border-radius: 0.5em;
+}
+
+.table__user,
+.table__item {
+    padding: 0.5em 1em;
+    border: 0.5px solid var(--beige-fonce);
+}
+
+.table__actions {
+    display: flex;
+    justify-content: center;
+}
