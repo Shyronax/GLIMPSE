@@ -22,17 +22,16 @@ try {
     $mail->CharSet="UTF-8";
     $mail->isSMTP();
 
-    // Paramètres Gmail
-    $mail->isSMTP();
-    $mail->Host = "smtp.gmail.com";
+    // Paramètres SMTP Hostinger
+    $mail->Host = 'smtp.hostinger.fr';
+    $mail->SMTPSecure = 'tls';
+    $mail->Port = 587;
     $mail->SMTPAuth = true;
-    $mail->Username = 'milleculturesuneorigine@gmail.com';
-    $mail->Password = 'milleculturesuneorigine77420';
-    $mail->SMTPSecure = "ssl";
-    $mail->Port = 465;
+    $mail->Username = 'site@milleculturesuneorigine.but-mmi-champs.fr';
+    $mail->Password = 'Milleculturesuneorigine77420!';
 
     // Config des emails et message
-    $mail->setFrom('milleculturesuneorigine@gmail.com', 'Mille Cultures, une Origine');
+    $mail->setFrom('site@milleculturesuneorigine.but-mmi-champs.fr', 'Mille Cultures, une Origine');
     $mail->addAddress($toEmail);
     $mail->isHTML(true);
     $mail->addStringAttachment($pdfFacture, 'facture-mcuo-reservation.pdf');

@@ -14,8 +14,11 @@ if(isset($_POST['mail'])){
     $selector=bin2hex(random_bytes(8));
     $token=random_bytes(32);
 
-    $url="https://millecultureuneorigine.but-mmi-champs.fr/controller.php?page=pwdchangeform&selector=".$selector."&token=".bin2hex($token); 
+//----------------CHANGER L'URL AVANT DEPLOIEMENT SUR HOSTINGER !!!!-------------------------
 
+    $url="http://localhost/github/glimpse/controller.php?page=pwdchangeform&selector=".$selector."&token=".bin2hex($token); 
+
+//-------------------------------------------------------------------------------------------
 
     // Date actuelle au format Unix + 1800 sec = fin de valitidé du lien
     $expires=date("U")+1800; // 30 minutes
@@ -31,17 +34,16 @@ if(isset($_POST['mail'])){
     $mail->CharSet="UTF-8";
     $mail->isSMTP();
 
-    // Paramètres Gmail
-    $mail->isSMTP();
-    $mail->Host = "smtp.gmail.com";
+    // Paramètres SMTP Hostinger
+    $mail->Host = 'smtp.hostinger.fr';
+    $mail->SMTPSecure = 'tls';
+    $mail->Port = 587;
     $mail->SMTPAuth = true;
-    $mail->Username = 'milleculturesuneorigine@gmail.com';
-    $mail->Password = 'milleculturesuneorigine77420';
-    $mail->SMTPSecure = "ssl";
-    $mail->Port = 465;
+    $mail->Username = 'site@milleculturesuneorigine.but-mmi-champs.fr';
+    $mail->Password = 'Milleculturesuneorigine77420!';
 
     // Config des emails et message
-    $mail->setFrom('milleculturesuneorigine@gmail.com', 'Mille Cultures, une Origine');
+    $mail->setFrom('site@milleculturesuneorigine.but-mmi-champs.fr', 'Mille Cultures, une Origine');
     $mail->addAddress($toEmail);
     $mail->isHTML(true);
     $mail->Subject = 'Réinitialisation de votre mot de passe';
