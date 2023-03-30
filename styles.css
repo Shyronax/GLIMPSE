@@ -113,6 +113,7 @@ h1 {
     cursor: pointer;
     text-decoration: none;
     transition: 0.3s ease-in-out;
+    text-align: center;
 }
 
 .btn__text {
