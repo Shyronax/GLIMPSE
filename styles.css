@@ -897,10 +897,6 @@ main {
 /* pour téléphone */
 @media only screen and (max-width: 767px) {
     /* changement généraux */
-    .nav {
-        width: 100%;
-        border: none;
-    }
     .nav__logo-name {
         display: none;
     }
@@ -1101,6 +1097,12 @@ main {
     .hamburger.active .bar:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
     }
+
+    .nav {
+        width: 100%;
+        border: none;
+    }
+
     .nav__group {
         position: fixed;
         left: 0;
