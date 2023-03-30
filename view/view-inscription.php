@@ -4,7 +4,7 @@
     <?php 
         include "src/element/head.html";
     ?>
-    <script src="inscription.js" defer></script>
+    <script src="src/js/inscription.js" defer></script>
     <title>Inscription - Mille Cultures, Une Origine</title>
 </head>
 <body>
