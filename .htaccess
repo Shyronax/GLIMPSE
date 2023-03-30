@@ -1,1 +1,2 @@
-ErrorDocument 404 /controller.php?page=error404
+ErrorDocument 404 http://localhost/GLIMPSE/controller.php?page=error404
+ErrorDocument 403 http://localhost/GLIMPSE/controller.php?page=error403
