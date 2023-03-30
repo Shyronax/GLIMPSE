@@ -21,7 +21,7 @@ if(isset($_POST['mail'])){
     $mail->Host = "smtp.gmail.com";
     $mail->SMTPAuth = true;
     $mail->Username = 'milleculturesuneorigine@gmail.com';
-    $mail->Password = 'milleculturesuneorigine77420';
+    $mail->Password = 'artrcqgvfviibosb';
     $mail->SMTPSecure = "ssl";
     $mail->Port = 465;
 

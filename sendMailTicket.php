@@ -22,14 +22,14 @@ try {
     $mail->CharSet="UTF-8";
     $mail->isSMTP();
 
-    // Paramètres Gmail
-    $mail->isSMTP();
-    $mail->Host = "smtp.gmail.com";
-    $mail->SMTPAuth = true;
-    $mail->Username = 'milleculturesuneorigine@gmail.com';
-    $mail->Password = 'milleculturesuneorigine77420';
-    $mail->SMTPSecure = "ssl";
-    $mail->Port = 465;
+   // Paramètres Gmail
+   $mail->isSMTP();
+   $mail->Host = "smtp.gmail.com";
+   $mail->SMTPAuth = true;
+   $mail->Username = 'milleculturesuneorigine@gmail.com';
+   $mail->Password = 'artrcqgvfviibosb';
+   $mail->SMTPSecure = "ssl";
+   $mail->Port = 465;
 
     // Config des emails et message
     $mail->setFrom('milleculturesuneorigine@gmail.com', 'Mille Cultures, une Origine');
