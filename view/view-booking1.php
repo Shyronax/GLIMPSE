@@ -4,7 +4,7 @@
     <?php 
         include "src/element/head.html";
     ?>
-    <script src="form.js" defer></script>
+    <script src="src/js/form.js" defer></script>
     <title>Réservation - Mille Cultures, Une Origine</title>
 </head>
 <body>
