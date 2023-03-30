@@ -1,11 +1,7 @@
-export const NavElement = ({ children, linkImg, isActive }) => {
-	return (
-		<div>
-			<img
-				src={isActive ? `img/active-${linkImg}.svg` : `img/${linkImg}.svg`}
-				alt=""
-			/>
-			<p>{children}</p>
-		</div>
-	);
+export const NavElement = ({ children, isActive }) => {
+    return (
+        <div className={isActive ? `nav__item nav__item--active` : `nav__item`}>
+            <p className="nav__link">{children}</p>
+        </div>
+    );
 };
