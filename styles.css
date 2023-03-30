@@ -1080,8 +1080,69 @@ main {
     .sub-section__list {
         padding: 15px;
     }
+}
+  
+@media (max-width: 1110px) {
+    /* navbar */
+    .hamburger {
+        display: block;
+        z-index: 200;
+        position: fixed;
+        right: 3rem;
+        top: 0.5rem;
+    }
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(30px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    .nav__group {
+        position: fixed;
+        left: 0;
+        top: -200%;
+        gap: 0;
+        display: flex;
+        flex-direction: column;
+        background-color: var(--color-primary-text);
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        padding: 7em 0;
+    }
 
-    /* footer */
+    .nav__menu {
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-start;
+        padding-bottom: 3rem;
+        gap: 0;
+    }
+    .nav__menu-item {
+        font-size: 1.5rem;
+    }
+
+    .nav__group.active {
+        top: 0;
+        height: 100vh;
+    }
+
+    .nav__buttons {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 2vw;
+    }
+
+    .btn {
+        font-size: 1em;
+        padding: 1em;
+    }
+
+/* footer */
     .footer {
         padding: 2rem;
     }
@@ -1102,65 +1163,4 @@ main {
         flex-direction: column;
         align-items: center;
     }
-
-}
-  
-@media (max-width: 1110px) {
-.hamburger {
-    display: block;
-    z-index: 200;
-    position: fixed;
-    right: 3rem;
-    top: 0.5rem;
-}
-.hamburger.active .bar:nth-child(2) {
-    opacity: 0;
-}
-.hamburger.active .bar:nth-child(1) {
-    transform: translateY(30px) rotate(45deg);
-}
-.hamburger.active .bar:nth-child(3) {
-    transform: translateY(-8px) rotate(-45deg);
-}
-.nav__group {
-    position: fixed;
-    left: 0;
-    top: -200%;
-    gap: 0;
-    display: flex;
-    flex-direction: column;
-    background-color: var(--color-primary-text);
-    width: 100%;
-    text-align: center;
-    transition: 0.3s;
-    padding: 7em 0;
-}
-
-.nav__menu {
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-start;
-    padding-bottom: 3rem;
-    gap: 0;
-}
-.nav__menu-item {
-    font-size: 1.5rem;
-}
-
-.nav__group.active {
-    top: 0;
-    height: 100vh;
-}
-
-.nav__buttons {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    gap: 2vw;
-}
-
-.btn {
-    font-size: 1em;
-    padding: 1em;
-}
 }
