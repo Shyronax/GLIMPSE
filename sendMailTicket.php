@@ -6,7 +6,8 @@ require "phpmailer/vendor/autoload.php";
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
 
-if(isset($_SESSION['mail']) && $_GET['id']){
+try {
+    if(isset($_SESSION['mail']) && $_GET['id']){
 
     include("createTicketPDF.php");
     $pdfTicket=$dompdf->output();
@@ -48,4 +49,7 @@ if(isset($_SESSION['mail']) && $_GET['id']){
 } else {
     header('Location: controller.php?page=booking1&status=error');
     die();
+}
+} catch(Exception $e) {
+    header('Location: controller.php?page=booking1&status=error');
 }
