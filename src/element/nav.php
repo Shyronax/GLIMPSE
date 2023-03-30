@@ -1,9 +1,4 @@
 <nav class="nav">
-    <div class="hamburger">
-        <div class="bar">——</div>
-        <div class="bar">——</div>
-        <div class="bar">——</div>
-    </div>
     <a href="controller.php?page=home" class="nav__logo-link">
         <img src="src/img/logo.png" alt="Retour à l'accueil" class="nav__logo-img">
         <p class="nav__logo-name">Mille cultures, une origine</p>
@@ -29,3 +24,8 @@
         </div>
     </div>
 </nav>
+<div class="hamburger" for="toggle">
+    <span class="bar"></span>
+    <span class="bar"></span>
+    <span class="bar"></span>
+</div>
