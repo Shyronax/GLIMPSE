@@ -1,14 +1,13 @@
 import { Chart } from "../components/Chart";
 import { Info } from "../components/info/Info";
 import { useEffect, useState } from "react";
-import "./stats.css";
 
 export const Stats = () => {
     // Récupérer les données de réservations par l'API
     let [data, setData] = useState([]);
 
     useEffect(() => {
-        fetch("/github/glimpse/back-office/back/api/tickets")
+        fetch("/back/api/tickets")
             .then((response) => response.json())
             .then((data) => setData(data));
     }, []);
