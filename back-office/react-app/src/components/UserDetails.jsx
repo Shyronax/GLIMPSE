@@ -40,17 +40,13 @@ export const UserDetails = ({ dataGET, goBack }) => {
                 body.mdp = mdp;
             }
 
-            fetch(
-                "/github/glimpse/back-office/back/api/utilisateur/" +
-                    dataGET.id_utilisateur,
-                {
-                    method: "PUT",
-                    headers: {
-                        "Content-Type": "application/json",
-                    },
-                    body: JSON.stringify(body),
-                }
-            )
+            fetch("/back/api/utilisateur/" + dataGET.id_utilisateur, {
+                method: "PUT",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify(body),
+            })
                 .then((response) => response.json())
                 .then((data) => {
                     setStatus({

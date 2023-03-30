@@ -5,7 +5,7 @@ export const Settings = () => {
     let [data, setData] = useState([]);
 
     useEffect(() => {
-        fetch("/github/glimpse/back-office/back/api/utilisateur/1")
+        fetch("/back/api/utilisateur/1")
             .then((response) => response.json())
             .then((data) => setData(data));
     }, []);

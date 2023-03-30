@@ -8,14 +8,14 @@ export const Profile = () => {
     let [data, setData] = useState([]);
 
     useEffect(() => {
-        fetch("/github/glimpse/back-office/back/api/utilisateur/" + id)
+        fetch("/back/api/utilisateur/" + id)
             .then((response) => response.json())
             .then((data) => setData(data));
     }, []);
 
     return (
         <div className="contenu">
-            <div>
+            <div className="title">
                 <h1 className="title__element">Profil</h1>
                 <p className="title__subtitle">
                     Modifier les données d'un

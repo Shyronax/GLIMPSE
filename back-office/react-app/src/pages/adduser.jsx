@@ -37,7 +37,7 @@ export const AddUser = ({ goBack }) => {
                 mdp,
             };
 
-            fetch("/github/glimpse/back-office/back/api/utilisateurs", {
+            fetch("/back/api/utilisateurs", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
@@ -46,11 +46,10 @@ export const AddUser = ({ goBack }) => {
             })
                 .then((response) => response.text())
                 .then((data) => {
-                    // setStatus({
-                    // 	nb: data.status,
-                    // 	message: data.status_message,
-                    // });
-                    console.log(data);
+                    setStatus({
+                        nb: data.status,
+                        message: data.status_message,
+                    });
                 });
         }
     };

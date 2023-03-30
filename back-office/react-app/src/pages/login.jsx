@@ -11,7 +11,7 @@ export const Login = () => {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        fetch("/github/glimpse/back-office/back/login.php", {
+        fetch("/back/login.php", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
