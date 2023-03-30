@@ -9,23 +9,24 @@ use PHPMailer\PHPMailer\SMTP;
 if(isset($_POST['mail'])){
 
     $toEmail=$_POST['mail'];
-    $url="http://localhost/github/glimpse/controller.php?page=accountconf"; 
+    $url="https://millecultureuneorigine.but-mmi-champs.fr/controller.php?page=accountconf"; 
 
     // Config du mail à envoyer
     $mail = new PHPMailer(true);
     $mail->CharSet="UTF-8";
     $mail->isSMTP();
 
-    // Paramètres SMTP Hostinger
-    $mail->Host = 'smtp.hostinger.fr';
-    $mail->SMTPSecure = 'tls';
-    $mail->Port = 587;
+    // Paramètres Gmail
+    $mail->isSMTP();
+    $mail->Host = "smtp.gmail.com";
     $mail->SMTPAuth = true;
-    $mail->Username = 'site@milleculturesuneorigine.but-mmi-champs.fr';
-    $mail->Password = 'Milleculturesuneorigine77420!';
+    $mail->Username = 'milleculturesuneorigine@gmail.com';
+    $mail->Password = 'milleculturesuneorigine77420';
+    $mail->SMTPSecure = "ssl";
+    $mail->Port = 465;
 
     // Config des emails et message
-    $mail->setFrom('site@milleculturesuneorigine.but-mmi-champs.fr', 'Mille Cultures, une Origine');
+    $mail->setFrom('milleculturesuneorigine@gmail.com', 'Mille Cultures, une Origine');
     $mail->addAddress($toEmail);
     $mail->isHTML(true);
     $mail->Subject = 'Confirmation de création du compte';
@@ -41,7 +42,7 @@ if(isset($_POST['mail'])){
     $mail->send();
     header('Location: controller.php?page=accountconf');
 } else {
-    // header("Location: controller.php?page=pwdforgot");
+    header("Location: controller.php?page=inscription");
 }
 ?>
 
